@@ -5,15 +5,54 @@
     <link herf="assets/icon/MALogo.png">
     <meta charset="UTF-8">
     <meta name="MINDARTLK.com">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        header {
+            position: relative;
+            height: 80px;
+            width: 100%;
+            border: 1px solid red;
+            font-size: 23px ;
+        }
 
+        header > nav {
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+
+        nav > ul {
+            list-style-type: none;
+        }
+
+        nav > ul > li {
+            text-align-all: left;
+            display: inline;
+            margin-left: 8px;
+        }
+    </style>
 </head>
 <body>
 <header>
+    <p>MINDARTLK.com</p>
     <nav>
-        <p>MINDARTLK.com <a href="myProjects/whoami.html">Who AM I?</a> <a href="myProjects/myedu.html">My Education</a>
-            <a href="myProjects/myskils.html">My Skils and Tools</a> <a href="myProjects/gallery.html">Gallery</a>
-            <a href="myProjects/mywork.html">My Work</a> <a href="myProjects/projects.html">Projects</a> <a
-                    href="myProjects/contactus.html">Contact Us</a></p>
+
+        <!-- <p>MINDARTLK.com <a href="myProjects/whoami.html">Who AM I?</a> <a href="myProjects/myedu.html">My Education</a>
+             <a href="myProjects/myskils.html">My Skills and Tools</a> <a href="myProjects/gallery.html">Gallery</a>
+             <a href="myProjects/mywork.html">My Work</a> <a href="myProjects/projects.html">Projects</a> <a
+                     href="myProjects/contactus.html">Contact Us</a></p>-->
+
+        <ul>
+            <!--<li>MINDARTLK.com</li>-->
+            <li><a>Who AM I?</a></li>
+            <li>My Education</li>
+            <li>My Skills and Tools</li>
+            <li>Gallery</li>
+            <li>My Work</li>
+            <li>Projects</li>
+            <li>Contact Us</li>
+
+        </ul>
     </nav>
 </header>
 
