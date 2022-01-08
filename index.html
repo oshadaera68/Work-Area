@@ -2,38 +2,125 @@
 <html lang="en">
 <head>
     <title>MINDARTLK.com</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/navigation.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <link href="assets/css/normalize.css" rel="stylesheet">
     <link herf="assets/icon/MALogo.png">
-    <link rel="stylesheet" href="assets/css/main-page.css">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="MINDARTLK.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <style>
-        body>main>section>p:nth-child(1){
 
+    <style>
+        header {
+            position: fixed;
+            height: 99px;
+            width: 99.8%;
+            font-size: 19px;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            z-index: 1;
         }
+
+        header > nav {
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+
+        nav > ul {
+            list-style-type: none;
+        }
+
+        nav > ul > li {
+            text-align-all: left;
+            font-family: 'Ubuntu', sans-serif;
+            display: inline;
+            margin-left: 6px;
+            color: white;
+            padding: 0 20px 0 20px;
+        }
+
+        nav > ul > li:hover {
+            cursor: pointer;
+            color: #0652DD;
+        }
+
+        body > header > p {
+            font-family: 'Lato', sans-serif;
+            color: darkred;
+        }
+
+        body > main > section {
+            background-color: #3498db;
+        }
+
+        body > main > section > img {
+            position: relative;
+            height: 400px;
+            width: 400px;
+            left: 403px;
+            top: 28px;
+        }
+
+        body > main > section > address {
+            position: relative;
+            left: 0px;
+            top: -150px;
+            z-index: 1;
+            margin-bottom: auto;
+        }
+
+        main > section > nav > a:nth-child(1) {
+            position: relative;
+            top: -416px;
+            left: 8px;
+        }
+
+        main > section > nav > a:nth-child(2) {
+            position: relative;
+            top: -347px;
+            left: -58px;
+        }
+
+        main > section > nav > a:nth-child(3) {
+            position: relative;
+            top: -275px;
+            left: -122px;
+        }
+
+        main > section > nav > a:nth-child(4) {
+            position: relative;
+            top: -212px;
+            left: -186px;
+        }
+
+        main > section > nav > a:nth-child(5) {
+            position: relative;
+            top: -146px;
+            left: -249px;
+        }
+
+        main > section > nav > a:nth-child(6) {
+            position: relative;
+            top: -74px;
+            left: -313px;
+        }
+
+
     </style>
 </head>
+
 <body>
 <header>
-    <p>MINDARTLK.com</p>
+    <p>MINDARTLK.COM</p>
     <nav>
-
-        <!-- <p>MINDARTLK.com <a href="myProjects/whoami.html">Who AM I?</a> <a href="myProjects/myedu.html">My Education</a>
-             <a href="myProjects/myskils.html">My Skills and Tools</a> <a href="myProjects/gallery.html">Gallery</a>
-             <a href="myProjects/mywork.html">My Work</a> <a href="myProjects/projects.html">Projects</a> <a
-                     href="myProjects/contactus.html">Contact Us</a></p>-->
-
         <ul>
             <!--<li>MINDARTLK.com</li>-->
             <li>Who AM I?</li>
@@ -43,18 +130,16 @@
             <li>My Work</li>
             <li>Projects</li>
             <li>Contact Us</li>
-
         </ul>
     </nav>
 </header>
 
 <main>
-
     <section>
         <p>Hello...</p>
         <p>I'm</p>
 
-        <img alt="main photo" src="assets/images/MainPagePhoto.jpg" >
+        <img alt="main photo" src="assets/images/MainPagePhoto.jpg">
 
         <address>
             Oshada Eranga.....<br>
@@ -64,211 +149,23 @@
         </address>
 
         <nav>
-            <a href="https://www.instagram.com/mind_art_lk/"><img alt="instagram" height=84
-                                                                  src="assets/images/instagram.png" width=84></a>
+            <a href="https://www.instagram.com/mind_art_lk/"><img alt="instagram" height=60
+                                                                  src="assets/images/instagram.png" width=60></a>
             <a href="https://www.linkedin.com/in/oshada-eranga-b2497520a/"><img alt="linkedin"
-                                                                                height=85
+                                                                                height=60
                                                                                 src="assets/images/linkedin.png"
-                                                                                width=88></a>
-            <a href="https://github.com/oshadaera68"><img alt="github" height=92 src="assets/images/github.png"
-                                                          width=85></a>
+                                                                                width=60></a>
+            <a href="https://github.com/oshadaera68"><img alt="github" height=60 src="assets/images/github.png"
+                                                          width=60></a>
             <a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube"
-                                                                                    height=96
+                                                                                    height=60
                                                                                     src="assets/images/youtube.png"
-                                                                                    width=93></a>
-            <a href="https://twitter.com/mindArtLk10"><img alt="twitter" height=79 src="assets/images/twitter.png"
-                                                           width=86></a>
-            <a href="https://www.facebook.com/oshada.eranga.39"><img alt="facebook" height=92
-                                                                     src="assets/images/facebook.png" width=91></a>
+                                                                                    width=60></a>
+            <a href="https://twitter.com/mindArtLk10"><img alt="twitter" height=60 src="assets/images/twitter.png"
+                                                           width=60></a>
+            <a href="https://www.facebook.com/oshada.eranga.39"><img alt="facebook" height=60
+                                                                     src="assets/images/facebook.png" width=60></a>
         </nav>
     </section>
-    <br>
-
-    <section>
-        <p>Who Am I?</p>
-        <section>
-            <p>Hello, I’m Oshada Eranga. My <br>
-                age is 20 years old. I’m Started<br>
-                Learning Software Engineering<br>
-                in IJSE @ 2021. And also, I <br>
-                loved a tech, <br>
-                Photo and video editing.In<br>
-                spent my time, I watched<br>
-                movies and listening Songs.
-            </p>
-            <aside>
-                <img height=400 src="../assets/images/page2.jpg" width=300>
-            </aside>
-
-        </section>
-        <br>
-        <section>
-            <h1>My Education</h1>
-            <section>
-                <article>
-                    Firstly, I went to G/Tittagalla <br>
-                    Atanikitta College, Tittagalla.<br>
-                    (2007-2014)
-                </article>
-                <br>
-                <article>
-                    Secondly, I went to G/Dikkumbura<br>
-                    Sri Siddhartha Collage,<br>
-                    Dikkumbura.(2014-2020)
-                </article>
-                <br>
-                <article>
-                    Thirdly, I went to Britishway<br>
-                    English Academy(galle) for<br>
-                    learning English.(2018)<br>
-                    <a href="https://www.britishway.lk/"><img alt="BWEA" src="../assets/images/bwea.jpg"></a>
-
-                </article>
-                <br>
-                <article>
-                    Forthly, I'm Study now in Institute<br>
-                    of Java and Software Enginnering.<br>
-                    (IJSE)<br>
-                    <a href="https://www.ijse.lk/"><img alt="IJSE" src="../assets/images/ijse.png"></a>
-                </article>
-
-            </section>
-        </section>
-        <br>
-        <section>
-            <h2>My Skills</h2>
-            <section>
-                <img alt="java" height="229" src="../assets/images/java-logo-vert-blk.png" width=223>
-                <img alt="hibernate" src="../assets/images/hibernate.jpg">
-                <img alt="mysql" height=229 src="../assets/images/mysql.jpg" width=239>
-                <img alt="nodeJs" src="../assets/images/nodejs.jpg">
-                <img alt="html" src="../assets/images/html.png">
-            </section>
-
-            <br>
-            <h2>Using Tools</h2>
-            <section>
-                <img alt="Intellij Idea" src="../assets/images/IntelliJ_IDEA_logo_01.png" width=275>
-                <img alt="VS Code" height=176 src="../assets/images/Visual_Studio_Code_1.35_icon.png" width="190">
-                <img alt="photoshop" height="195" src="../assets/images/photoshop-logo_0.png" width="209">
-                <img alt="filmora" src="../assets/images/filmora.jpg">
-                <img alt="slack" src="../assets/images/271-2713491_slack-on-the-mac-app-store-slack-logo.png" width=203>
-            </section>
-        </section>
-        <br>
-        <section>
-            <h2>My Works</h2>
-
-            <h3>Youtube</h3>
-            <section>
-                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen height="200"
-                        src="https://www.youtube.com/embed/GsQRmlo59G8"
-                        title="YouTube video player"
-                        width="300"></iframe>
-                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen height="200"
-                        src="https://www.youtube.com/embed/890LMiyjhYU"
-                        title="YouTube video player"
-                        width="300"></iframe>
-                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen height="200"
-                        src="https://www.youtube.com/embed/cq15l6CARMg"
-                        title="YouTube video player"
-                        width="300"></iframe>
-                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen height="200"
-                        src="https://www.youtube.com/embed/maNcOF9meQI"
-                        title="YouTube video player"
-                        width="300"></iframe>
-            </section>
-
-            <h3>Photo Editing</h3>
-            <section>
-                <img alt="thumbnail image" height=229 src="assets/images/Thumbnail.jpg" width=413>
-                <img alt="face logo image" height=290 src="assets/images/logo%20photo2.jpg" width=398>
-                <img alt="logo mockup image" height=268 src="assets/images/logo%20mockup.jpg" width=456>
-                <img alt="logo image" height=291 src="assets/images/logoImage.png" width=325>
-            </section>
-        </section>
-        <br>
-        <section>
-            <h2>Gallery</h2>
-            <section>
-                <img alt="First Image" src="../assets/images/1.jpg">
-                <img alt="Second Image" height=500 src="../assets/images/3.jpg" width=500>
-                <img alt="Third Image" height=700 src="../assets/images/2.jpg" width=500>
-            </section>
-        </section>
-        <br>
-        <section>
-            <h2>Projects</h2>
-            <section>
-                <img alt="pos system" height=316 src="../assets/images/pos.png" width=474>
-                <img alt="final project" height=323 src="../assets/images/finalPro.png" width=504>
-            </section>
-
-            <h2>Assignments</h2>
-            <section>
-
-            </section>
-        </section>
-        <br>
-        <section>
-            <h2>contact us</h2>
-            <section>
-                <p><a href="https://www.instagram.com/mind_art_lk/"><img alt="linkedin"
-                                                                         height="52" src="../assets/images/linkedin.png"
-                                                                         width="53">oshada
-                    eranga</a></p>
-                <p><a href="https://www.linkedin.com/in/oshada-eranga-b2497520a/"><img
-                        alt="instagram" height="54" src="../assets/images/instagram.png" width="54">mind_art_lk</a></p>
-                <p><a href="https://twitter.com/mindArtLk10"><img alt="twitter" height="47"
-                                                                  src="../assets/images/twitter.png" width="49">@mindArtLk10</a>
-                </p>
-                <p><a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img
-                        alt="youtube" height="49" src="../assets/images/youtube.png" width="51">MINDARTLK.Official</a>
-                </p>
-                <p><a href="https://www.facebook.com/oshada.eranga.39"><img alt="facebook"
-                                                                            height="54"
-                                                                            src="../assets/images/facebook.png"
-                                                                            width="54">Oshada
-                    Eranga</a></p>
-                <p><a href="https://github.com/oshadaera68"><img alt="github" height="48"
-                                                                 src="../assets/images/github.png" width="52">oshadaera68</a>
-                </p>
-                <p><a href="mailto:oshadaeranga919@gmail.com"><img alt="gmail" height="40"
-                                                                   src="../assets/images/gmail.png" width="46">oshsdaeranga919@gmail.com</a>
-                </p>
-            </section>
-        </section>
-        <br>
-
-        <br>
-        <section>
-            <h2>Leave a comment</h2>
-            <p>What is your feel about me?</p>
-            <p>Tell your ideas for comment section</p>
-            <section>
-                <form action="response.html">
-                    <input placeholder="name" type="text"><br><br>
-                    <textarea cols="30" name="address" placeholder="comment" rows="10"></textarea><br><br>
-                    <button>submit</button>
-                </form>
-            </section>
-        </section>
-    </section>
 </main>
-
-<footer>
-    <p>Powered By MINDARTLK.</p>
-    <p>CopyRight By MINDARTLK.All Rights Reserved.2021</p>
-
-    <p><img src="assets/images/placeholder.png" alt="location" height="44" width="44">Sekkupalawatta, Kataluwa, Ahangama
-    </p>
-    <p><img src="assets/images/whatsapp.png" alt="whatsapp" height="45" width="46">+94 76 76 27 455</p>
-    <p><img src="assets/images/phone.png" alt="contact" height="45" width="45">+94 77 81 11 630</p>
-</footer>
-
 </body>
-</html>
