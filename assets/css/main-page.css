@@ -1,0 +1,18 @@
+body > main > section:nth-child(1) {
+    background-color: #3498db;
+}
+
+main > section > address {
+    position: relative;
+    left: 954px;
+    right: 900px;
+    top: -180px;
+}
+
+body > main > section > img {
+    position: relative;
+    left: 354px;
+    top: 29px;
+    height: 511px;
+    width: 551px;
+}
