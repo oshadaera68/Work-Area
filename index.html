@@ -20,14 +20,14 @@
             position: fixed;
             height: 65px;
             width: 100%;
-            font-size: 18px;
+            font-size: 20px;
             background-color: #3498db;
             top: 0;
             right: 0;
             left: 0;
             margin: auto;
             z-index: 1;
-           /* border: 2px solid red;*/
+            /* border: 2px solid red;*/
         }
 
         header > nav {
@@ -44,12 +44,11 @@
             text-align-all: left;
             font-family: 'Ubuntu', sans-serif;
             display: inline;
-            margin-left: 6px;
             color: white;
             padding: 0 20px 0 10px;
         }
 
-        nav > ul > li:hover {
+        nav > ul:nth-child(2) > li:hover {
             cursor: pointer;
             color: #0652DD;
         }
@@ -60,7 +59,7 @@
         }
 
         body > main > section {
-            position: relative;
+            /*position: relative;*/
             background-color: #3498db;
         }
 
@@ -68,51 +67,55 @@
             position: relative;
             height: 399px;
             width: 399px;
-            left: 394px;
+            left: 244px;
             top: 28px;
         }
 
-        body>main>section>p{
+        body > main > section > p {
             position: relative;
             font-family: 'Ubuntu', sans-serif;
             top: 58px;
             left: 15px;
+            bottom: 3px;
+            margin: auto;
+            color: white;
         }
 
-        body>main>section>p:nth-child(1){
-           /* position: relative;*/
-            font-size: 21px;
-        }
-
-        body>main>section>p:nth-child(2){
+        body > main > section > p:nth-child(1) {
             /* position: relative;*/
-            font-size: 21px;
+            font-size: 27px;
+            top: 76px;
         }
 
-        body > main > section > address {
-            position: relative;
-            left: 0px;
-            top: -150px;
-            z-index: 1;
-            margin-bottom: -21px;
+        body > main > section > p:nth-child(2) {
+            /* position: relative;*/
+            font-size: 27px;
+            top: 88px;
         }
 
-        main > section > nav > a:nth-child(1) {
-            position: relative;
-            top: -419px;
-            left: 8px;
+        main > nav > ul:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            flex-basis: 1px;
         }
 
-        main > section > nav > a:nth-child(2) {
+        main > section > nav > ul:nth-child(1)>li:nth-child(1) {
             position: relative;
-            top: -347px;
-            left: -58px;
+            top: -418px;
+            left: -39px;
         }
 
-        main > section > nav > a:nth-child(3) {
+        main > section > nav > ul:nth-child(1)>li:nth-child(2) {
             position: relative;
-            top: -275px;
-            left: -122px;
+            top: -352px;
+            left: -133px;
+        }
+
+        main > section > nav > ul:nth-child(1)>li:nth-child(3) {
+            position: relative;
+            top: -284px;
+            left: -227px;
         }
 
         main > section > nav > a:nth-child(4) {
@@ -132,7 +135,6 @@
             top: -74px;
             left: -313px;
         }
-
 
     </style>
 </head>
@@ -169,22 +171,35 @@
         </address>
 
         <nav>
-            <a href="https://www.instagram.com/mind_art_lk/"><img alt="instagram" height=60
-                                                                  src="assets/images/instagram.png" width=60></a>
-            <a href="https://www.linkedin.com/in/oshada-eranga-b2497520a/"><img alt="linkedin"
-                                                                                height=60
-                                                                                src="assets/images/linkedin.png"
-                                                                                width=60></a>
-            <a href="https://github.com/oshadaera68"><img alt="github" height=60 src="assets/images/github.png"
-                                                          width=60></a>
-            <a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube"
-                                                                                    height=60
-                                                                                    src="assets/images/youtube.png"
-                                                                                    width=60></a>
-            <a href="https://twitter.com/mindArtLk10"><img alt="twitter" height=60 src="assets/images/twitter.png"
-                                                           width=60></a>
-            <a href="https://www.facebook.com/oshada.eranga.39"><img alt="facebook" height=60
-                                                                     src="assets/images/facebook.png" width=60></a>
+
+            <ul>
+                <li><a href="https://www.instagram.com/mind_art_lk/"><img alt="instagram" height=59
+                                                                          src="assets/images/instagram.png"
+                                                                          width=59></a></li>
+                <li><a href="https://www.linkedin.com/in/oshada-eranga-b2497520a/"><img alt="linkedin" height=59
+                                                                                        src="assets/images/linkedin.png"
+                                                                                        width=59></a></li>
+                <li><a href="https://github.com/oshadaera68"><img alt="github" height=59 src="assets/images/github.png"
+                                                                  width=59></a></li>
+                <li><a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube" height=59
+                                                                                            src="assets/images/youtube.png"
+                                                                                            width=59></a></li>
+                <li><img alt="twitter" height=59 src="assets/images/twitter.png"
+                         width=59></li>
+                <li><img alt="facebook" height=59
+                         src="assets/images/facebook.png" width=59></li>
+            </ul>
+            <!--
+             <a href="https://github.com/oshadaera68"><img alt="github" height=59 src="assets/images/github.png"
+                                                           width=59></a>
+             <a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube"
+                                                                                     height=59
+                                                                                     src="assets/images/youtube.png"
+                                                                                     width=59></a>
+             <a href="https://twitter.com/mindArtLk10"><img alt="twitter" height=59 src="assets/images/twitter.png"
+                                                            width=59></a>
+             <a href="https://www.facebook.com/oshada.eranga.39"><img alt="facebook" height=59
+                                                                      src="assets/images/facebook.png" width=59></a>-->
         </nav>
     </section>
 </main>
