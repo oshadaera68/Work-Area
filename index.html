@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>MINDARTLK.com</title>
+    <meta charset="UTF-8">
     <link href="assets/css/normalize.css" rel="stylesheet">
-    <link herf="assets/icon/MALogo.png">
+    <title>MINDARTLK | Oshada Eranga</title>
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -11,12 +11,19 @@
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="MINDARTLK.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
     <style>
-        header {
+        /*nav started*/
+        #header1 {
             position: fixed;
             height: 65px;
             width: 100%;
@@ -30,7 +37,7 @@
             /* border: 2px solid red;*/
         }
 
-        header > nav {
+        #header1 > nav {
             top: 0;
             right: 0;
             position: absolute;
@@ -43,136 +50,185 @@
         nav > ul > li {
             text-align-all: left;
             font-family: 'Ubuntu', sans-serif;
-            display: inline;
+            display: inline-block;
             color: white;
             padding: 0 20px 0 10px;
         }
 
-        nav > ul:nth-child(2) > li:hover {
+        nav > ul > li:hover {
             cursor: pointer;
-            color: #0652DD;
+            color: red;
         }
 
-        body > header > p {
-            font-family: 'Lato', sans-serif;
+        body > #header1 > p {
+            font-family: 'Roboto', sans-serif;
             color: white;
         }
 
-        body > main > section {
-            /*position: relative;*/
-            background-color: #3498db;
-        }
+        /*nav ended*/
 
-        body > main > section > img {
+        /*about started*/
+        #section1 > img {
             position: relative;
-            height: 399px;
-            width: 399px;
-            left: 244px;
-            top: 28px;
-        }
-
-        body > main > section > p {
-            position: relative;
-            font-family: 'Ubuntu', sans-serif;
+            left: 132px;
             top: 58px;
-            left: 15px;
-            bottom: 3px;
-            margin: auto;
-            color: white;
+            /*right: 107px;*/
+            height: 400px;
+            width: 400px;
+            opacity: 3;
         }
 
-        body > main > section > p:nth-child(1) {
-            /* position: relative;*/
+        #section1 > p {
+            margin: 10px;
+        }
+
+        #section1 > p:nth-child(1) {
+            position: relative;
             font-size: 27px;
             top: 76px;
         }
 
-        body > main > section > p:nth-child(2) {
-            /* position: relative;*/
+        #section1 > p:nth-child(2) {
+            position: relative;
             font-size: 27px;
-            top: 88px;
+            top: 76px;
         }
 
-        main > nav > ul:nth-child(1) {
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            flex-basis: 1px;
+        #nav1 > #ul1 {
+            list-style-type: none;
+            margin-top: 39px;
+            /*margin-left: 270px;*/
+            margin-right: 39px;
+            margin-bottom: 345px;
+
         }
 
-        main > section > nav > ul:nth-child(1)>li:nth-child(1) {
+        #nav1 > #ul1 > li {
             position: relative;
-            top: -418px;
-            left: -39px;
+            /*display: inline-flex;*/
+            top: 19px;
+            padding-bottom: 30px;
         }
 
-        main > section > nav > ul:nth-child(1)>li:nth-child(2) {
+        /* #nav1 > #ul1 > li:nth-child(6) {
+             position: relative;
+             top: 200px;
+         }*/
+
+        body > #paragraph1 {
+
+            font-size: 20px;
             position: relative;
-            top: -352px;
-            left: -133px;
         }
 
-        main > section > nav > ul:nth-child(1)>li:nth-child(3) {
+        /*-----------Who Am I?------------------------*/
+
+        #section2 > #paragraph1 {
+            font-family: 'Oswald', sans-serif;
+            font-kerning: none;
+            color: #F3EBEB;
+            font-size: 49px;
+            top: 100px;
+        }
+
+        #section2 {
+            background-color: #9FCDEF;
+            height: 1006px;
+        }
+
+        #section2 > p {
             position: relative;
-            top: -284px;
-            left: -227px;
+
+            top: 300px;
         }
 
-        main > section > nav > a:nth-child(4) {
+        #section2 > #subSection1 > aside > img {
             position: relative;
-            top: -212px;
-            left: -186px;
+            /* background-image: -moz-element(2);*/
+            left: 751px;
+            height: auto;
+            width: 33%;
+            top: -400px;
         }
 
-        main > section > nav > a:nth-child(5) {
+        aside {
+            height: 426px;
+        }
+
+        #subSection1 {
+            height: 420px;
+        }
+
+        #paragraph2 {
             position: relative;
-            top: -146px;
-            left: -249px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 46px;
+            font-style: inherit;
+            top: 119px;
         }
 
-        main > section > nav > a:nth-child(6) {
+        form {
             position: relative;
-            top: -74px;
-            left: -313px;
+            top: -327px;
+            bottom: 230px;
+            /* z-index: 1;*/
         }
 
+        /*--------Who am I? finished------------------------*/
+
+        /*-----------------------my education----------------*/
+
+        #hd1{
+            font-family: 'Oswald', sans-serif;
+
+        }
+
+        #art1 {
+            position: relative;
+            font-family: 'Ubuntu', sans-serif;
+            border: 2px solid red;
+            width: 332px;
+            background-color: #3498db;
+            color: white;
+            font-size: 25px;
+            left: 120px;
+            font-kerning: initial;
+        }
+
+        /*-----------------------my education finished----------------*/
     </style>
 </head>
-
 <body>
-<header>
+<header id="header1">
     <p>MINDARTLK.COM</p>
     <nav>
         <ul>
-            <!--<li>MINDARTLK.com</li>-->
-            <li>Who AM I?</li>
+            <li>Who Am I?</li>
             <li>My Education</li>
-            <li>My Skills and Tools</li>
+            <li>My Skils and Tools</li>
             <li>Gallery</li>
-            <li>My Work</li>
+            <li>My Works</li>
             <li>Projects</li>
             <li>Contact Us</li>
         </ul>
     </nav>
 </header>
-
 <main>
-    <section>
+    <section id="section1">
         <p>Hello...</p>
         <p>I'm</p>
 
         <img alt="main photo" src="assets/images/MainPagePhoto.jpg">
 
-        <address>
+        <p>
             Oshada Eranga.....<br>
             I'm <i>Youtuber.</i><br>
             I'm <i>Software Developer.</i><br>
             I'm <i>loved an video editing<br>and video editing</i>
-        </address>
+        </p>
 
-        <nav>
-
-            <ul>
+        <nav id="nav1">
+            <ul id="ul1">
                 <li><a href="https://www.instagram.com/mind_art_lk/"><img alt="instagram" height=59
                                                                           src="assets/images/instagram.png"
                                                                           width=59></a></li>
@@ -184,23 +240,70 @@
                 <li><a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube" height=59
                                                                                             src="assets/images/youtube.png"
                                                                                             width=59></a></li>
-                <li><img alt="twitter" height=59 src="assets/images/twitter.png"
-                         width=59></li>
-                <li><img alt="facebook" height=59
-                         src="assets/images/facebook.png" width=59></li>
+                <li><a href="https://twitter.com/mindArtLk10"><img alt="twitter" height=59
+                                                                   src="assets/images/twitter.png"
+                                                                   width=59></a></li>
+                <li><a href="https://www.facebook.com/oshada.eranga.39"><img alt="facebook" height=59
+                                                                             src="assets/images/facebook.png" width=59></a>
+                </li>
             </ul>
-            <!--
-             <a href="https://github.com/oshadaera68"><img alt="github" height=59 src="assets/images/github.png"
-                                                           width=59></a>
-             <a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube"
-                                                                                     height=59
-                                                                                     src="assets/images/youtube.png"
-                                                                                     width=59></a>
-             <a href="https://twitter.com/mindArtLk10"><img alt="twitter" height=59 src="assets/images/twitter.png"
-                                                            width=59></a>
-             <a href="https://www.facebook.com/oshada.eranga.39"><img alt="facebook" height=59
-                                                                      src="assets/images/facebook.png" width=59></a>-->
         </nav>
+    </section>
+    <br>
+    <section id="section2">
+        <p id="paragraph1">Who Am I?</p>
+        <section id="subSection1">
+            <p id="paragraph2">Hello, I’m Oshada Eranga. My <br>
+                age is 20 years old. I’m Started<br>
+                Learning Software Engineering<br>
+                in IJSE @ 2021. And also, I <br>
+                loved a tech, <br>
+                Photo and video editing.In<br>
+                spent my time, I watched<br>
+                movies and listening Songs.
+            </p>
+            <aside>
+                <img alt="page2img" src="../assets/images/page2.jpg">
+            </aside>
+            <form>
+                <button>
+                    Download CV
+                </button>
+            </form>
+        </section>
+    </section>
+    <br>
+    <section>
+        <h1 id="hd1">My Education</h1>
+        <section>
+            <article id="art1">
+                Firstly, I went to G/Tittagalla <br>
+                Atanikitta College, Tittagalla.<br>
+                (2007-2014)
+            </article>
+            <br>
+            <article id="art2">
+                Secondly, I went to G/Dikkumbura<br>
+                Sri Siddhartha Collage,<br>
+                Dikkumbura.(2014-2020)
+            </article>
+            <br>
+            <article id="art3">
+                Thirdly, I went to Britishway<br>
+                English Academy(galle) for<br>
+                learning English.(2018)<br>
+                <a href="https://www.britishway.lk/"><img alt="BWEA" src="../assets/images/bwea.jpg"></a>
+            </article>
+            <br>
+            <article id="art4">
+                Forthly, I'm Study now in Institute<br>
+                of Java and Software Enginnering.<br>
+                (IJSE)<br>
+                <a href="https://www.ijse.lk/"><img alt="IJSE" src="../assets/images/ijse.png"></a>
+            </article>
+
+        </section>
     </section>
 </main>
 </body>
+</html>
