@@ -17,8 +17,8 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
     <style>
@@ -68,6 +68,10 @@
         /*nav ended*/
 
         /*about started*/
+        #section2 {
+            position: relative;
+        }
+
         #section1 > img {
             position: relative;
             left: 132px;
@@ -178,21 +182,58 @@
 
         /*-----------------------my education----------------*/
 
-        #hd1{
-            font-family: 'Oswald', sans-serif;
+        #section4 {
+            position: relative;
+        }
 
+        #hd1 {
+            position: relative;
+            font-family: 'Oswald', sans-serif;
+            top: 37px;
         }
 
         #art1 {
             position: relative;
             font-family: 'Ubuntu', sans-serif;
-            border: 2px solid red;
+            /*border: 2px solid red;*/
             width: 332px;
             background-color: #3498db;
             color: white;
-            font-size: 25px;
-            left: 120px;
+            font-size: 22px;
+            left: 130px;
+            top: 100px;
             font-kerning: initial;
+        }
+
+        #art2 {
+            position: relative;
+            font-family: 'Ubuntu', sans-serif;
+            /*border: 2px solid red;*/
+            width: 332px;
+            background-color: #3498db;
+            font-size: 21px;
+            left: 765px;
+            color: white;
+            font-kerning: initial;
+            top: 64px;
+        }
+
+        #art3 {
+            position: relative;
+            font-family: 'Ubuntu', sans-serif;
+            border: 2px solid red;
+            background-color: #3498db;
+            font-size: 22px;
+            color: white;
+            width: 332px;
+            top: 95px;
+            left: 128px;
+        }
+
+        a>img:nth-child(1){
+            position: relative;
+            left: 126px;
+            top: 100px;
         }
 
         /*-----------------------my education finished----------------*/
@@ -273,7 +314,7 @@
         </section>
     </section>
     <br>
-    <section>
+    <section id="section4">
         <h1 id="hd1">My Education</h1>
         <section>
             <article id="art1">
@@ -292,15 +333,15 @@
                 Thirdly, I went to Britishway<br>
                 English Academy(galle) for<br>
                 learning English.(2018)<br>
-                <a href="https://www.britishway.lk/"><img alt="BWEA" src="../assets/images/bwea.jpg"></a>
             </article>
+            <a href="https://www.britishway.lk/"><img alt="BWEA" src="../assets/images/bwea.jpg" width="100" height="100"></a>
             <br>
             <article id="art4">
                 Forthly, I'm Study now in Institute<br>
                 of Java and Software Enginnering.<br>
                 (IJSE)<br>
-                <a href="https://www.ijse.lk/"><img alt="IJSE" src="../assets/images/ijse.png"></a>
             </article>
+           <!-- <a href="https://www.ijse.lk/"><img alt="IJSE" src="../assets/images/ijse.png"></a>-->
 
         </section>
     </section>
