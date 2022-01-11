@@ -243,11 +243,34 @@
             left: 761px;
         }
 
-        img:nth-child(1) {
+        /*img:nth-child(1) {
+            position: relative;
+            left: 126px;
+            top: 94px;
+        }*/
+
+        #div1 > a {
             position: relative;
             left: 126px;
             top: 94px;
         }
+
+        #div2 > a {
+            position: relative;
+            left: 775px;
+            width: 100px;
+            height: 100px;
+            top: 87px;
+        }
+
+       /* #div2+a{
+            !*position: relative;*!
+            left: 775px;
+            width: 100px;
+            height: 100px;
+            top: 87px;
+        }*/
+
 
         /*#section4{
             border: 2px solid red;
@@ -336,7 +359,7 @@
     </section>
     <section id="section4">
         <h1 id="hd1">My Education</h1>
-        <section>
+        <section id="subSection2">
             <article id="art1">
                 Firstly, I went to G/Tittagalla <br>
                 Atanikitta College, Tittagalla.<br>
@@ -354,15 +377,15 @@
                 English Academy(galle) for<br>
                 learning English.(2018)<br>
             </article>
-            <div><a href="https://www.britishway.lk/"><img alt="BWEA" height="100" src="../assets/images/bwea.jpg"
-                                                           width="100"></a></div>
-            <br>
+            <div id="div1"><a href="https://www.britishway.lk/"><img alt="BWEA" height="100"
+                                                                     src="../assets/images/bwea.jpg"
+                                                                     width="100"></a></div>
             <article id="art4">
                 Forthly, I'm Study now in Institute<br>
                 of Java and Software Enginnering.<br>
                 (IJSE)<br>
             </article>
-            <div><a href="https://www.ijse.lk/"><img alt="IJSE" src="../assets/images/ijse.png"></a>    </div>
+            <div id="div2"><a href="https://www.ijse.lk/"><img alt="IJSE" src="../assets/images/ijse.png"></a></div>
 
         </section>
     </section>
