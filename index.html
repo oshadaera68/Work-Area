@@ -23,6 +23,10 @@
 
     <style>
         /*nav started*/
+        * {
+            text-decoration: none;
+        }
+
         #header1 {
             position: fixed;
             height: 65px;
@@ -45,17 +49,18 @@
 
         nav > ul {
             list-style-type: none;
+            color: white;
         }
 
-        nav > ul > li {
-            text-align-all: left;
+        nav > ul > li:hover {
+            text-align: left;
             font-family: 'Ubuntu', sans-serif;
             display: inline-block;
             color: white;
             padding: 0 20px 0 10px;
         }
 
-        nav > ul > li:hover {
+        nav > ul > li > a{
             cursor: pointer;
             color: red;
         }
@@ -68,6 +73,10 @@
         /*nav ended*/
 
         /*about started*/
+        #section1 {
+            background-color: #3498db;
+        }
+
         #section2 {
             position: relative;
         }
@@ -79,22 +88,27 @@
             /*right: 107px;*/
             height: 400px;
             width: 400px;
-            opacity: 3;
+            /* opacity: 3;*/
         }
 
         #section1 > p {
+            position: relative;
             margin: 10px;
         }
 
         #section1 > p:nth-child(1) {
+            color: white;
+            font-family: 'Ubuntu';
             position: relative;
-            font-size: 27px;
+            font-size: 31px;
             top: 76px;
         }
 
         #section1 > p:nth-child(2) {
+            color: white;
+            font-family: 'Ubuntu';
             position: relative;
-            font-size: 27px;
+            font-size: 31px;
             top: 76px;
         }
 
@@ -109,9 +123,10 @@
 
         #nav1 > #ul1 > li {
             position: relative;
-            /*display: inline-flex;*/
-            top: 19px;
-            padding-bottom: 30px;
+            display: flex;
+            top: -470px;
+            padding-bottom: 10px;
+            left: -40px;
         }
 
         /* #nav1 > #ul1 > li:nth-child(6) {
@@ -120,8 +135,7 @@
          }*/
 
         body > #paragraph1 {
-
-            font-size: 20px;
+            font-size: 200px;
             position: relative;
         }
 
@@ -175,7 +189,38 @@
             position: relative;
             top: -327px;
             bottom: 230px;
+            background: #1C2520;
+            color: white;
+            font-weight: 700;
+            border: none;
+            transition: all 0.6s ease;
             /* z-index: 1;*/
+        }
+
+        .button:hover {
+            background: #1C2520;
+            color: white;
+            font-weight: 700;
+            border: none;
+            transition: all 0.6s ease;
+        }
+
+        .button {
+            position: absolute;
+            width: 175px;
+            height: 47px;
+            bottom: 0;
+            background-color: #4CAF50;
+            color: white;
+            /*border-radius: 58px;*/
+            /*border: 3px solid #FFA500;*/
+            /*transition: all 0.6s ease;*/
+            /*box-shadow: 0 0 10px #8a8a8e;*/
+            left: 200px;
+            cursor: pointer;
+            font-weight: 600;
+            top: -15px;
+            font-family: 'Ubuntu', sans-serif;
         }
 
         /*--------Who am I? finished------------------------*/
@@ -255,21 +300,29 @@
             top: 94px;
         }
 
-        #div2 > a {
+        /*#div2 > a {
             position: relative;
             left: 775px;
             width: 100px;
             height: 100px;
             top: 87px;
         }
+*/
+        div:last-child {
+            position: relative;
+            left: 755px;
+            top: 63px;
+            width: 286px;
+            width: 286px;
+        }
 
-       /* #div2+a{
-            !*position: relative;*!
-            left: 775px;
-            width: 100px;
-            height: 100px;
-            top: 87px;
-        }*/
+        /* #div2+a{
+             !*position: relative;*!
+             left: 775px;
+             width: 100px;
+             height: 100px;
+             top: 87px;
+         }*/
 
 
         /*#section4{
@@ -289,13 +342,13 @@
     <p>MINDARTLK.COM</p>
     <nav>
         <ul>
-            <li>Who Am I?</li>
-            <li>My Education</li>
-            <li>My Skils and Tools</li>
-            <li>Gallery</li>
-            <li>My Works</li>
-            <li>Projects</li>
-            <li>Contact Us</li>
+            <li><a href="#WhoAmI?">Who Am I?</a></li>
+            <li><a href="#MyEducation">My Education</a></li>
+            <li><a href="#MySkilsAndTools">My Skils and Tools</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#MyWorks">My Works</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#ContactUs">Contact Us</a></li>
         </ul>
     </nav>
 </header>
@@ -351,7 +404,7 @@
                 <img alt="page2img" src="../assets/images/page2.jpg">
             </aside>
             <form>
-                <button>
+                <button class="button">
                     Download CV
                 </button>
             </form>
