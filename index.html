@@ -52,15 +52,16 @@
             color: white;
         }
 
-        nav > ul > li:hover {
+        nav > ul > li {
             text-align: left;
             font-family: 'Ubuntu', sans-serif;
             display: inline-block;
             color: white;
             padding: 0 20px 0 10px;
+            text-decoration: none;
         }
 
-        nav > ul > li > a{
+        nav > ul > li > a:hover{
             cursor: pointer;
             color: red;
         }
@@ -70,9 +71,9 @@
             color: white;
         }
 
-        /*nav ended*/
+        /*--------------nav ended-----------*/
 
-        /*about started*/
+        /*---------about started-----------*/
         #section1 {
             background-color: #3498db;
         }
@@ -118,15 +119,14 @@
             /*margin-left: 270px;*/
             margin-right: 39px;
             margin-bottom: 345px;
-
         }
 
         #nav1 > #ul1 > li {
             position: relative;
             display: flex;
-            top: -470px;
-            padding-bottom: 10px;
-            left: -40px;
+            top: -558px;
+            padding-bottom: 7px;
+            left: -42px;
         }
 
         /* #nav1 > #ul1 > li:nth-child(6) {
@@ -138,6 +138,8 @@
             font-size: 200px;
             position: relative;
         }
+
+        /*-----------------about ended----------------*/
 
         /*-----------Who Am I?------------------------*/
 
@@ -156,7 +158,6 @@
 
         #section2 > p {
             position: relative;
-
             top: 300px;
         }
 
@@ -228,7 +229,7 @@
         /*-----------------------my education----------------*/
 
         #section4 {
-            position: relative;
+            /*position: relative;*/
             background-color: #9FCDEF;
         }
 
@@ -294,6 +295,13 @@
             top: 94px;
         }*/
 
+
+        /*#section1>p:nth-child(3){
+            position: relative;
+            left: 20px;
+        }*/
+
+        .paragraph{ }
         #div1 > a {
             position: relative;
             left: 126px;
@@ -359,12 +367,11 @@
 
         <img alt="main photo" src="assets/images/MainPagePhoto.jpg">
 
-        <p>
-            Oshada Eranga.....<br>
-            I'm <i>Youtuber.</i><br>
-            I'm <i>Software Developer.</i><br>
-            I'm <i>loved an video editing<br>and video editing</i>
-        </p>
+        <p class="paragraph">Oshada Eranga.....<br></p>
+            <p>I'm <i>Youtuber.</i></p><br>
+            <p>I'm <i>Software Developer.</i></p><br>
+            <p>I'm <i>loved an video editing<br>and video editing</i></p>
+
 
         <nav id="nav1">
             <ul id="ul1">
