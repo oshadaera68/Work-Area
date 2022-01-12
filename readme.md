@@ -17,6 +17,7 @@
 ![Screenshot_2](https://user-images.githubusercontent.com/90706926/149077225-c81570e1-ae2f-44a0-9b1d-d98cac9827bf.png)
 
 ## Using Tools
-- JetBrains Webstrom 2021.3.1/Intelij Idea 2021.2.4
+- Design Tool - Figma
+- IDE - JetBrains Webstrom 2021.3.1/Intelij Idea 2021.2.4
 
 Copyright by MINDARTLK. All Rights Reserved. 2022.
