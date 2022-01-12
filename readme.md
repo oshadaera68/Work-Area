@@ -7,6 +7,7 @@
 -  [SiteMap URL][SiteMap URL]
 -  [Github Pages][Github Pages URL]
 -  [000WebHost URL][000WebHost URL]
+-  [Wireframe URL][Wireframe URL]
 
 [Mockup URL]: https://www.figma.com/file/4e4nqHj8BwNwLXpcSh7IQe/MINDARTLK.COM?node-id=0%3A1
 [SiteMap URL]:  https://www.gloomaps.com/WFejaRnTQ3
