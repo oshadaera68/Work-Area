@@ -1,6 +1,15 @@
 🔰My Portfolio
-- Figma - https://www.figma.com/file/4e4nqHj8BwNwLXpcSh7IQe/MINDARTLK.COM?node-id=0%3A1
-- Sitemap - https://www.gloomaps.com/WFejaRnTQ3
-- Website - https://mindartlkcreation.000webhostapp.com/
-- GitHub Pages - https://oshadaera68.github.io/Work-Area/
-- Wireframe - https://wireframe.cc/iouWiz
+
+### Hi there, I'm Oshada Eranga 😎
+<img src="https://readme-typing-svg.herokuapp.com?size=25&vCenter=true&width=550&lines=Hi+%F0%9F%91%8B%2C+I'm+Oshada+Eranga.;This+is+My+Profile+Website.😊;">
+
+-  [Mockup URL][Mockup URL]
+-  [SiteMap URL][SiteMap URL]
+-  [Github Pages][Github Pages URL]
+-  [000WebHost URL][000WebHost URL]
+
+[Mockup URL]: https://www.figma.com/file/4e4nqHj8BwNwLXpcSh7IQe/MINDARTLK.COM?node-id=0%3A1
+[SiteMap URL]:  https://www.gloomaps.com/WFejaRnTQ3
+[Wireframe URL]:  https://wireframe.cc/iouWiz
+[Github Pages URL]: https://oshadaera68.github.io/Work-Area/
+[000WebHost URL]: https://mindartlkcreation.000webhostapp.com/
