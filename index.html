@@ -224,7 +224,7 @@
 
         div > #H2-1 {
             position: absolute;
-            top: 1549px;
+            top: 1542px;
             left: 58px;
             font-size: 44px;
             font-family: 'Ubuntu', sans-serif;
@@ -340,6 +340,15 @@
             width: 217px;
             top: 16px;
         }
+
+        #hr4{
+            position: relative;
+            transform: rotate(180deg);
+            border: 4px solid black;
+            left: -130px;
+            width: 228px;
+            top: 334px;
+        }
        /* #thirdContent>div{}*/
 
         /*#thirdContent{
@@ -360,6 +369,21 @@
         /*section covering end*/
 
         /*forth section started*/
+
+        #forthContent>div>#hr4{
+            position: absolute;
+        }
+
+
+        #forthContent>div>#hr6{
+            position: absolute;
+            top: 2316px;
+        }
+
+        #forthContent>#div4{
+            position: absolute;
+            top: 2380px;
+        }
 
         /*forth section ended*/
 
@@ -468,20 +492,22 @@
         <hr id="hr1">
         <hr id="hr2">
         <hr id="hr3">
+        <hr id="hr4">
     </section>
     <section id="forthContent">
-        <div><h2>My Skills</h2></div>
-        <section>
-            <img alt="java" height="229" src="../assets/images/java-logo-vert-blk.png" width=223>
-            <img alt="hibernate" src="../assets/images/hibernate.jpg">
-            <img alt="mysql" height=229 src="../assets/images/mysql.jpg" width=239>
-            <img alt="nodeJs" src="../assets/images/nodejs.jpg">
-            <img alt="html" src="../assets/images/html.png">
-        </section>
+        <div><h2 id="hr6">My Skills</h2></div>
+        <div id="div4"><section>
+            <img alt="java" height="100" src="../assets/images/java-logo-vert-blk.png" width=100>
+            <img alt="hibernate" src="../assets/images/hibernate.jpg" height="100" width="100">
+            <img alt="mysql" height=100 src="../assets/images/mysql.jpg" width=100>
+            <img alt="nodeJs" src="../assets/images/nodejs.jpg" height="100" width="100">
+            <img alt="html" src="../assets/images/html.png" height="100" width="100">
+        </section></div>
 
-       <div><h2>Using Tools</h2></div>
+       <div><h2 id="hr5">Using Tools</h2></div>
         <section>
-            <img alt="Intellij Idea" src="../assets/images/IntelliJ_IDEA_logo_01.png" width=275>
+            <img alt="Intellij Idea" src="../assets/images/IntelliJ_IDEA_logo_01.png" width= "198"
+                 height="159">
             <img alt="VS Code" height=176 src="../assets/images/Visual_Studio_Code_1.35_icon.png" width="190">
             <img alt="photoshop" height="195" src="../assets/images/photoshop-logo_0.png" width="209">
             <img alt="filmora" src="../assets/images/filmora.jpg">
