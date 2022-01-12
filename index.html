@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link href="assets/css/normalize.css" rel="stylesheet">
     <title>MINDARTLK | Oshada Eranga</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link herf="assets/icon/MALogo.png">
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -11,443 +11,212 @@
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="MINDARTLK.com">
 
     <style>
-        /*nav started*/
-        * {
-            text-decoration: none;
-        }
 
-        #header1 {
+        header {
             position: fixed;
             height: 65px;
             width: 100%;
-            font-size: 20px;
+            font-size: 19px;
             background-color: #3498db;
+            box-shadow: 2px 1px 2px 1px white;
             top: 0;
             right: 0;
             left: 0;
             margin: auto;
             z-index: 1;
-            /* border: 2px solid red;*/
         }
 
-        #header1 > nav {
+        header > nav {
             top: 0;
             right: 0;
             position: absolute;
+
         }
 
         nav > ul {
             list-style-type: none;
-            color: white;
-        }
-
-        nav > ul > li {
-            text-align: left;
-            font-family: 'Ubuntu', sans-serif;
-            display: inline-block;
-            color: white;
-            padding: 0 20px 0 10px;
             text-decoration: none;
         }
 
-        nav > ul > li > a:hover{
+        nav > ul > li {
+            font-family: 'Ubuntu', sans-serif;
+            display: inline;
+            margin-left: 6px;
+            color: white;
+            padding: 0 10px 0 10px;
+        }
+
+        nav > ul > li:hover {
             cursor: pointer;
             color: red;
         }
 
-        body > #header1 > p {
+        body > header > p {
             font-family: 'Roboto', sans-serif;
             color: white;
         }
 
-        /*--------------nav ended-----------*/
+        /*home page*/
 
-        /*---------about started-----------*/
-        #section1 {
-            background-color: #3498db;
-        }
-
-        #section2 {
-            position: relative;
-        }
-
-        #section1 > img {
-            position: relative;
-            left: 132px;
-            top: 58px;
-            /*right: 107px;*/
-            height: 400px;
-            width: 400px;
-            /* opacity: 3;*/
-        }
-
-        #section1 > p {
-            position: relative;
-            margin: 10px;
-        }
-
-        #section1 > p:nth-child(1) {
-            color: white;
-            font-family: 'Ubuntu';
-            position: relative;
-            font-size: 31px;
-            top: 76px;
-        }
-
-        #section1 > p:nth-child(2) {
-            color: white;
-            font-family: 'Ubuntu';
-            position: relative;
-            font-size: 31px;
-            top: 76px;
-        }
-
-        #nav1 > #ul1 {
-            list-style-type: none;
-            margin-top: 39px;
-            /*margin-left: 270px;*/
-            margin-right: 39px;
-            margin-bottom: 345px;
-        }
-
-        #nav1 > #ul1 > li {
-            position: relative;
-            display: flex;
-            top: -558px;
-            padding-bottom: 7px;
-            left: -42px;
-        }
-
-        /* #nav1 > #ul1 > li:nth-child(6) {
-             position: relative;
-             top: 200px;
-         }*/
-
-        body > #paragraph1 {
-            font-size: 200px;
-            position: relative;
-        }
-
-        /*-----------------about ended----------------*/
-
-        /*-----------Who Am I?------------------------*/
-
-        #section2 > #paragraph1 {
-            font-family: 'Oswald', sans-serif;
-            font-kerning: none;
-            color: #F3EBEB;
-            font-size: 49px;
-            top: 100px;
-        }
-
-        #section2 {
-            background-color: #9FCDEF;
-            height: 1006px;
-        }
-
-        #section2 > p {
-            position: relative;
-            top: 300px;
-        }
-
-        #section2 > #subSection1 > aside > img {
-            position: relative;
-            /* background-image: -moz-element(2);*/
-            left: 751px;
-            height: auto;
-            width: 33%;
-            top: -400px;
-        }
-
-        aside {
-            height: 426px;
-        }
-
-        #subSection1 {
-            height: 420px;
-        }
-
-        #paragraph2 {
-            position: relative;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 46px;
-            font-style: inherit;
-            top: 119px;
-        }
-
-        form {
-            position: relative;
-            top: -327px;
-            bottom: 230px;
-            background: #1C2520;
-            color: white;
-            font-weight: 700;
-            border: none;
-            transition: all 0.6s ease;
-            /* z-index: 1;*/
-        }
-
-        .button:hover {
-            background: #1C2520;
-            color: white;
-            font-weight: 700;
-            border: none;
-            transition: all 0.6s ease;
-        }
-
-        .button {
+        body > main > #firstContent > div > p {
             position: absolute;
-            width: 175px;
-            height: 47px;
-            bottom: 0;
-            background-color: #4CAF50;
-            color: white;
-            /*border-radius: 58px;*/
-            /*border: 3px solid #FFA500;*/
-            /*transition: all 0.6s ease;*/
-            /*box-shadow: 0 0 10px #8a8a8e;*/
-            left: 200px;
-            cursor: pointer;
-            font-weight: 600;
-            top: -15px;
             font-family: 'Ubuntu', sans-serif;
+            font-size: 36px;
+            left: 19px;
+            top: 61px;
+
         }
 
-        /*--------Who am I? finished------------------------*/
-
-        /*-----------------------my education----------------*/
-
-        #section4 {
-            /*position: relative;*/
-            background-color: #9FCDEF;
-        }
-
-        #hd1 {
-            position: relative;
-            font-family: 'Oswald', sans-serif;
-            top: 37px;
-        }
-
-        #art1 {
-            position: relative;
+        body > main > #firstContent > #div2 > p {
+            position: absolute;
             font-family: 'Ubuntu', sans-serif;
-            /*border: 2px solid red;*/
-            width: 332px;
-            background-color: #3498db;
-            color: white;
-            font-size: 22px;
-            left: 130px;
-            top: 59px;
-            font-kerning: initial;
+            font-size: 36px;
+            left: 19px;
+            top: 115px;
         }
 
-        #art2 {
-            position: relative;
+
+        body > main > #firstContent > div > img {
+            position: absolute;
+            width: 484px;
+            height: 484px;
+            left: 148px;
+            top: 184px;
+        }
+
+        div > h1 {
+            font-size: 75px;;
+            top: 144px;
+            left: 713px;
+            position: absolute;
+            font-family: 'Nunito', sans-serif;
+            color: yellow;
+        }
+
+        div > #H1-2 {
+            position: absolute;
+            top: 213px;
+            left: 718px;
+            font-size: 53px;
             font-family: 'Ubuntu', sans-serif;
-            /*border: 2px solid red;*/
-            width: 332px;
-            background-color: #3498db;
-            font-size: 21px;
-            left: 765px;
-            color: white;
-            font-kerning: initial;
-            top: 64px;
+            color: #3498db;
         }
 
-        #art3 {
-            position: relative;
+        div > #H1-3 {
+            position: absolute;
+            top: 280px;
+            left: 720px;
+            font-size: 53px;
             font-family: 'Ubuntu', sans-serif;
-            /*border: 2px solid red;*/
-            background-color: #3498db;
-            font-size: 22px;
-            color: white;
-            width: 331px;
-            top: 95px;
-            left: 128px;
+            color: #3498db;
         }
 
-        #art4 {
-            position: relative;
+        div > #HI-4 {
+            position: absolute;
+            top: 389px;
+            left: 720px;
+            font-size: 53px;
             font-family: 'Ubuntu', sans-serif;
-            /* border: 2px solid red;*/
-            background-color: #3498db;
-            color: white;
-            font-size: 21px;
-            width: 331px;
-            top: 72px;
-            left: 761px;
+            color: #3498db;
         }
 
-        /*img:nth-child(1) {
-            position: relative;
-            left: 126px;
-            top: 94px;
-        }*/
-
-
-        /*#section1>p:nth-child(3){
-            position: relative;
-            left: 20px;
-        }*/
-
-        .paragraph{ }
-        #div1 > a {
-            position: relative;
-            left: 126px;
-            top: 94px;
-        }
-
-        /*#div2 > a {
-            position: relative;
-            left: 775px;
-            width: 100px;
-            height: 100px;
-            top: 87px;
-        }
-*/
-        div:last-child {
-            position: relative;
-            left: 755px;
-            top: 63px;
-            width: 286px;
-            width: 286px;
-        }
-
-        /* #div2+a{
-             !*position: relative;*!
-             left: 775px;
-             width: 100px;
-             height: 100px;
-             top: 87px;
-         }*/
-
-
-        /*#section4{
-            border: 2px solid red;
-            width: 200px;
-            top: 0;
-            right: 0;
-            left: 0;
-            bottom: 0;
-        }*/
-
-        /*-----------------------my education finished----------------*/
     </style>
 </head>
+
 <body>
-<header id="header1">
+<header>
     <p>MINDARTLK.COM</p>
     <nav>
         <ul>
-            <li><a href="#WhoAmI?">Who Am I?</a></li>
-            <li><a href="#MyEducation">My Education</a></li>
-            <li><a href="#MySkilsAndTools">My Skils and Tools</a></li>
-            <li><a href="#Gallery">Gallery</a></li>
-            <li><a href="#MyWorks">My Works</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#ContactUs">Contact Us</a></li>
+            <!--<li>MINDARTLK.com</li>-->
+            <li>Home</li>
+            <li>Who AM I?</li>
+            <li>My Education</li>
+            <li>My Skills and Tools</li>
+            <li>Gallery</li>
+            <li>My Work</li>
+            <li>Projects</li>
+            <li>Contact Us</li>
         </ul>
     </nav>
 </header>
+
 <main>
-    <section id="section1">
-        <p>Hello...</p>
-        <p>I'm</p>
+    <!--  <section id="section1">
+          <p>Hello...</p>
+          <p>I'm</p>
 
-        <img alt="main photo" src="assets/images/MainPagePhoto.jpg">
+          <img alt="main photo" src="assets/images/MainPagePhoto.jpg">
 
-        <p class="paragraph">Oshada Eranga.....<br></p>
-            <p>I'm <i>Youtuber.</i></p><br>
-            <p>I'm <i>Software Developer.</i></p><br>
-            <p>I'm <i>loved an video editing<br>and video editing</i></p>
+          <address>
+              Oshada Eranga.....<br>
+              I'm <i>Youtuber.</i><br>
+              I'm <i>Software Developer.</i><br>
+              I'm <i>loved an video editing<br>and video editing</i>
+          </address>
 
+          <nav>
 
-        <nav id="nav1">
-            <ul id="ul1">
-                <li><a href="https://www.instagram.com/mind_art_lk/"><img alt="instagram" height=59
-                                                                          src="assets/images/instagram.png"
-                                                                          width=59></a></li>
-                <li><a href="https://www.linkedin.com/in/oshada-eranga-b2497520a/"><img alt="linkedin" height=59
-                                                                                        src="assets/images/linkedin.png"
-                                                                                        width=59></a></li>
-                <li><a href="https://github.com/oshadaera68"><img alt="github" height=59 src="assets/images/github.png"
-                                                                  width=59></a></li>
-                <li><a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube" height=59
-                                                                                            src="assets/images/youtube.png"
-                                                                                            width=59></a></li>
-                <li><a href="https://twitter.com/mindArtLk10"><img alt="twitter" height=59
-                                                                   src="assets/images/twitter.png"
-                                                                   width=59></a></li>
-                <li><a href="https://www.facebook.com/oshada.eranga.39"><img alt="facebook" height=59
-                                                                             src="assets/images/facebook.png" width=59></a>
-                </li>
-            </ul>
-        </nav>
-    </section>
-    <section id="section2">
-        <p id="paragraph1">Who Am I?</p>
-        <section id="subSection1">
-            <p id="paragraph2">Hello, I’m Oshada Eranga. My <br>
-                age is 20 years old. I’m Started<br>
-                Learning Software Engineering<br>
-                in IJSE @ 2021. And also, I <br>
-                loved a tech, <br>
-                Photo and video editing.In<br>
-                spent my time, I watched<br>
-                movies and listening Songs.
-            </p>
-            <aside>
-                <img alt="page2img" src="../assets/images/page2.jpg">
-            </aside>
-            <form>
-                <button class="button">
-                    Download CV
-                </button>
-            </form>
-        </section>
-    </section>
-    <section id="section4">
-        <h1 id="hd1">My Education</h1>
-        <section id="subSection2">
-            <article id="art1">
-                Firstly, I went to G/Tittagalla <br>
-                Atanikitta College, Tittagalla.<br>
-                (2007-2014)
-            </article>
-            <br>
-            <article id="art2">
-                Secondly, I went to G/Dikkumbura<br>
-                Sri Siddhartha Collage,<br>
-                Dikkumbura.(2014-2020)
-            </article>
-            <br>
-            <article id="art3">
-                Thirdly, I went to Britishway<br>
-                English Academy(galle) for<br>
-                learning English.(2018)<br>
-            </article>
-            <div id="div1"><a href="https://www.britishway.lk/"><img alt="BWEA" height="100"
-                                                                     src="../assets/images/bwea.jpg"
-                                                                     width="100"></a></div>
-            <article id="art4">
-                Forthly, I'm Study now in Institute<br>
-                of Java and Software Enginnering.<br>
-                (IJSE)<br>
-            </article>
-            <div id="div2"><a href="https://www.ijse.lk/"><img alt="IJSE" src="../assets/images/ijse.png"></a></div>
+              <ul>
+                  <li><a href="https://www.instagram.com/mind_art_lk/"><img alt="instagram" height=59
+                                                                            src="assets/images/instagram.png"
+                                                                            width=59></a></li>
+                  <li><a href="https://www.linkedin.com/in/oshada-eranga-b2497520a/"><img alt="linkedin" height=59
+                                                                                          src="assets/images/linkedin.png"
+                                                                                          width=59></a></li>
+                  <li><a href="https://github.com/oshadaera68"><img alt="github" height=59 src="assets/images/github.png"
+                                                                    width=59></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube" height=59
+                                                                                              src="assets/images/youtube.png"
+                                                                                              width=59></a></li>
+                  <li><img alt="twitter" height=59 src="assets/images/twitter.png"
+                           width=59></li>
+                  <li><img alt="facebook" height=59
+                           src="assets/images/facebook.png" width=59></li>
+              </ul>
+              &lt;!&ndash;
+               <a href="https://github.com/oshadaera68"><img alt="github" height=59 src="assets/images/github.png"
+                                                             width=59></a>
+               <a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube"
+                                                                                       height=59
+                                                                                       src="assets/images/youtube.png"
+                                                                                       width=59></a>
+               <a href="https://twitter.com/mindArtLk10"><img alt="twitter" height=59 src="assets/images/twitter.png"
+                                                              width=59></a>
+               <a href="https://www.facebook.com/oshada.eranga.39"><img alt="facebook" height=59
+                                                                        src="assets/images/facebook.png" width=59></a>&ndash;&gt;
+          </nav>
+      </section>-->
 
-        </section>
+    <section id="firstContent">
+        <div><p>Hello...</p></div>
+        <div id="div2"><p>I'm</p></div>
+        <div><img alt="main photo" src="assets/images/MainPagePhoto.jpg"></div>
+
+        <div><h1>Oshada Eranga...</h1></div>
+        <div><h1 id="H1-2">I'm <i>Youtuber.</i></h1></div>
+        <div><h1 id="H1-3">I'm <i>Software Developer.</i></h1></div>
+        <div><h1 id="HI-4">I'm <i>loved an video editing <br> and photo editing</i></h1></div>
+
+        <!--<ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>-->
+
     </section>
 </main>
 </body>
