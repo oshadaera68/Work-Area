@@ -73,6 +73,11 @@
         /*nav ended*/
 
         /*section covering--> section 1(firstContent)*/
+        body > main {
+            position: relative;
+            height: 1540px;
+        }
+
         body > main > #firstContent {
             height: 100vh;
             background-color: #3498db;
@@ -109,7 +114,7 @@
         }
 
         div > h1 {
-            font-size: 75px;;
+            font-size: 75px;
             top: 144px;
             left: 713px;
             position: absolute;
@@ -154,6 +159,51 @@
         }
 
         /*home page ended*/
+
+
+        /*section covering--> section 2(secondContent)*/
+        body > main > #secondContent {
+            height: 100vh;
+            background-color: #9FCDEF;
+        }
+
+        /*#secondContent > div > p {
+            position: absolute;
+            top: 858px;
+        }*/
+
+        div > #para1 {
+            position: absolute;
+            top: 789px;
+            font-size: 50px;
+            font-family: 'Ubuntu', sans-serif;
+            left: 2px;
+        }
+
+        div > #para2 {
+            left: 20px;
+            position: absolute;
+            top: 895px;
+            font-size: 51px;
+        }
+
+        #img1 > img {
+            position: absolute;
+            top: 900px;
+            left: 772px;
+            /* height: 415px; */
+            height: 538px;
+            width: 440px;
+            /*border: 2px solid red;*/
+            border-radius: 9%;
+        }
+
+        /*second content ended------*/
+
+        body>main>#thirdContent{
+            height: 100vh;
+            background-color: red;
+        }
 
     </style>
 </head>
@@ -210,6 +260,25 @@
                 </li>
             </ul>
         </div>
+    </section>
+    <section id="secondContent">
+        <div><p id="para1">Who Am I?</p></div>
+
+        <div><p id="para2">Hello, I’m Oshada Eranga. My <br>
+            age is 20 years old. I’m Started<br>
+            Learning Software Engineering<br>
+            in IJSE @ 2021. And also, I <br>
+            loved a tech, <br>
+            Photo and video editing.In<br>
+            spent my time, I watched<br>
+            movies and listening Songs.
+        </p></div>
+        <div id="img1">
+            <img alt="Error loading image" src="../assets/images/page2.jpg">
+        </div>
+    </section>
+    <section id="thirdContent">
+
     </section>
 </main>
 </body>
