@@ -18,7 +18,7 @@
 
 ## Using Tools
 - Design Tool - Figma
-- IDE - JetBrains Webstrom 2021.3.1/Intelij Idea 2021.2.4
+- IDE - JetBrains WebStrom 2021.3.1/InteliJ Idea 2021.2.4
 
 ## Workstation
 - Dell inspiron 15 3502
