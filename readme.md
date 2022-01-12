@@ -27,4 +27,5 @@
 - RAM - 8GB
 - Processor - intel 11th Gen i7-1165G7 @ 2.80GHz
 
+## Copyrights
 Copyright by MINDARTLK. All Rights Reserved. 2022.
