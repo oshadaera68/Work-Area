@@ -30,6 +30,9 @@
 
     <style>
         /*nav started*/
+        :root {
+            --typewriterSpeed: 1s;
+        }
 
         * {
             text-decoration: none;
@@ -98,21 +101,53 @@
             position: absolute;
             font-family: 'Ubuntu', sans-serif;
             font-size: 36px;
-            left: 19px;
+            left: 15px;
             top: 61px;
             color: white;
-
         }
 
         body > main > #firstContent > #div2 > p {
             position: absolute;
             font-family: 'Ubuntu', sans-serif;
             font-size: 38px;
-            left: 19px;
-            top: 115px;
+            left: 14px;
+            top: 108px;
             color: white;
         }
 
+        /*-- p --> animation started ----*/
+        p::before, p::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        p::before{
+            background-color: #3498db;
+            animation: typewriter var(--typewriterSpeed) steps(10) forwards;
+        }
+
+        p::after{
+            width: 0.125em;
+            background-color: white;
+            animation: typewriter var(--typewriterSpeed) steps(10) forwards,
+            blink var(--typewriterSpeed) 2ms steps(10) forwards;
+        }
+
+        @keyframes typewriter {
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes blink {
+            to {
+                background: transparent;
+            }
+        }
 
         body > main > #firstContent > div > img {
             position: absolute;
@@ -121,6 +156,42 @@
             left: 125px;
             top: 172px;
         }
+
+        /*-- h1 --> animation started ----*/
+        div > h1::before, h1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        h1::before {
+            background-color: #3498db;
+            animation: typewriter var(--typewriterSpeed) steps(10) forwards;
+        }
+
+        h1::after {
+            width: 0.125em;
+            background-color: white;
+            animation: typewriter var(--typewriterSpeed) steps(10) forwards,
+            blink var(--typewriterSpeed) 2ms steps(10) forwards;
+        }
+
+        @keyframes typewriter {
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes blink {
+            to {
+                background: transparent;
+            }
+        }
+
+        /*--h1-->animation ended---*/
 
         div > #H1 {
             font-size: 75px;
@@ -162,7 +233,7 @@
             position: absolute;
             display: inline;
             list-style: none;
-            top: 183px;
+            top: 188px;
             left: -27px;
             padding-bottom: 2px;
         }
@@ -178,7 +249,7 @@
         /*second content started*/
         div > #para1 {
             position: absolute;
-            top: 781px;
+            top: 798px;
             font-size: 50px;
             font-family: 'Ubuntu', sans-serif;
             left: 19px;
@@ -188,14 +259,14 @@
         div > #para2 {
             left: 33px;
             position: absolute;
-            top: 879px;
+            top: 900px;
             font-size: 47px;
             font-family: 'Work Sans', sans-serif;
         }
 
         #img1 > img {
             position: absolute;
-            top: 835px;
+            top: 838px;
             left: 841px;
             /* height: 415px; */
             height: 565px;
@@ -217,7 +288,7 @@
 
         div > #H2-1 {
             position: absolute;
-            top: 1564px;
+            top: 1549px;
             left: 58px;
             font-size: 44px;
             font-family: 'Ubuntu', sans-serif;
@@ -238,6 +309,7 @@
             font-family: 'Poppins', sans-serif;
             font-size: 24px;
             height: 93px;
+
         }
 
         #thirdContent > #art2 {
@@ -366,8 +438,9 @@
 
         #forthContent > #div4 {
             position: absolute;
-            top: 2380px;
+            top: 2379px;
             border: 2px solid red;
+            height: 103px;
         }
 
         #forthContent > #div7 > #sub1 {
@@ -376,11 +449,12 @@
             top: 2566px;
         }
 
-        #div4>section>img{
+        #div4 > section > img {
             padding: 16px;
-            top: -1px;
+            top: -15px;
             position: relative;
         }
+
         /*forth section ended*/
 
 
