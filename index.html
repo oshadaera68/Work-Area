@@ -91,7 +91,7 @@
         /*section covering--> section 1(firstContent)*/
         body > main {
             position: relative;
-            height: 1540px;
+            height: 1580px;
         }
 
         body > main > #firstContent {
@@ -403,7 +403,7 @@
         /*second content started*/
         div > #para1 {
             position: absolute;
-            top: 798px;
+            top: 776px;
             font-size: 50px;
             font-family: 'Ubuntu', sans-serif;
             left: 19px;
@@ -413,7 +413,7 @@
         div > #para2 {
             left: 21px;
             position: absolute;
-            top: 900px;
+            top: 860px;
             letter-spacing: 2px;
             font-size: 49px;
             font-family: 'Work Sans', sans-serif;
@@ -426,6 +426,18 @@
             height: 565px;
             width: 461px;
             border-radius: 10%;
+        }
+
+        div > form > .button {
+            position: absolute;
+            top: 191vh;
+            left: 250px;
+            border-radius: 24px;
+            width: 191px;
+            height: 42px;
+            background-color: #0022ff;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
         }
 
         /*second content ended------*/
@@ -442,7 +454,7 @@
 
         div > #H2-1 {
             position: absolute;
-            top: 1549px;
+            top: 1482px;
             left: 58px;
             font-size: 44px;
             font-family: 'Ubuntu', sans-serif;
@@ -456,7 +468,7 @@
 
         #thirdContent > #art1 {
             position: absolute;
-            top: 1665px;
+            top: 1603px;
             left: 189px;
             color: white;
             background-color: blue;
@@ -469,7 +481,7 @@
         #thirdContent > #art2 {
             position: absolute;
             left: 943px;
-            top: 1760px;
+            top: 1697px;
             background-color: blue;
             color: white;
             font-family: 'Poppins', sans-serif;
@@ -478,7 +490,7 @@
         }
 
         #thirdContent > #art3 {
-            top: 1966px;
+            top: 1903px;
             position: absolute;
             left: 191px;
             background-color: blue;
@@ -489,7 +501,7 @@
         }
 
         #img3 {
-            top: 2062px;
+            top: 2000px;
             position: absolute;
             left: 191px;
             height: 103px;
@@ -497,7 +509,7 @@
 
         #thirdContent > #art4 {
             position: absolute;
-            top: 2041px;
+            top: 1979px;
             left: 943px;
             background-color: blue;
             color: white;
@@ -585,14 +597,14 @@
 
         #forthContent > div > #hr6 {
             position: absolute;
-            top: 2323px;
+            top: 2225px;
             font-family: 'Ubuntu', sans-serif;
             color: white;
         }
 
         #forthContent > #div4 {
             position: absolute;
-            top: 2379px;
+            top: 2292px;
             border: 2px solid red;
             background-color: #6f4e4e;
             /*height: 103px;*/
@@ -633,6 +645,7 @@
         /*section covering end*/
 
         /*fifth section started*/
+
         div > #H3-1 {
             position: absolute;
             left: 657px;
@@ -643,34 +656,56 @@
             font-size: 45px;
         }
 
-        /*fifth section ended*/
+        /*  div > #sub2 > #img56 {
+              position: absolute;
+              width: 347px;
+              height: 556px;
+              left: 73px;
+              top: 3143px;
+          }
 
-        div #img56 {
+          !* #img56:hover{
+               opacity: 0.4%;
+           }*!
+
+          div > #sub2 > #img57 {
+              position: absolute;
+              width: 439px;
+              height: 507px;
+              left: 493px;
+              top: 3230px;
+          }
+
+          div > #sub2 > #img45 {
+              position: absolute;
+              width: 419px;
+              height: 557px;
+              left: 995px;
+              top: 3140px;
+          }*/
+
+        #sub2 > #img56 {
+            height: 577px;
+            width: 362px;
+            top: 3017px;
+            left: 45px;
             position: absolute;
-            width: 347px;
-            height: 556px;
-            left: 73px;
-            top: 3143px;
         }
 
-       /* #img56:hover{
-            opacity: 0.4%;
-        }*/
-
-        #img57 {
+        #sub2 > #img57 {
             position: absolute;
-            width: 439px;
-            height: 507px;
-            left: 493px;
-            top: 3230px;
+            left: 1031px;
+            height: 537px;
+            width: 453px;
+            top: 3043px;
         }
 
-        #img45 {
+        #sub2 > #img45 {
+            height: 582px;
+            width: 443px;
+            left: 491px;
             position: absolute;
-            width: 419px;
-            height: 557px;
-            left: 995px;
-            top: 3140px;
+            top: 3020px;
         }
 
         /*fifth section ended*/
@@ -740,6 +775,13 @@
             spent my time, I watched<br>
             movies and listening Songs.
         </p></div>
+        <div>
+            <form action="">
+                <button class="button">
+                    Download CV
+                </button>
+            </form>
+        </div>
 
         <div id="img1">
             <img alt="Error loading image" src="../assets/images/page2.jpg">
@@ -810,11 +852,13 @@
 
     <section id="fifthContent">
         <div><h2 id="H3-1">Gallery</h2></div>
-        <div><section>
-            <img id="img56" alt="First Image" src="../assets/images/1.jpg">
-            <img id="img57" alt="Second Image" height=500 src="../assets/images/3.jpg" width=500>
-            <img id="img45" alt="3rd image" height=700 src="../assets/images/2.jpg" width=500>
-        </section></div>
+        <div>
+            <section id="sub2">
+                <img id="img56" alt="First Image" src="../assets/images/1.jpg">
+                <img id="img57" alt="Second Image" height=500 src="../assets/images/3.jpg" width=500>
+                <img id="img45" alt="3rd image" height=700 src="../assets/images/2.jpg" width=500>
+            </section>
+        </div>
     </section>
 </main>
 </body>
