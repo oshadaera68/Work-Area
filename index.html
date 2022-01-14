@@ -29,11 +29,15 @@
     <meta name="MINDARTLK.com">
 
     <style>
-        /*nav started*/
+
+        /*main root started*/
         :root {
-            --typewriterSpeed: 1s;
+            --typewriterSpeed: 5s;
         }
 
+        /*main root ended*/
+
+        /*nav started*/
         * {
             text-decoration: none;
         }
@@ -115,8 +119,8 @@
             color: white;
         }
 
-        /*-- p --> animation started ----*/
-        p::before, p::after {
+        /*-- p (#p1)--> animation started ----*/
+        #p1::before, #p1::after {
             content: '';
             position: absolute;
             top: 0;
@@ -125,16 +129,16 @@
             left: 0;
         }
 
-        p::before{
+        #p1::before {
             background-color: #3498db;
-            animation: typewriter var(--typewriterSpeed) steps(10) forwards;
+            animation: typewriter var(--typewriterSpeed) steps(50) forwards;
         }
 
-        p::after{
+        #p1::after {
             width: 0.125em;
             background-color: white;
-            animation: typewriter var(--typewriterSpeed) steps(10) forwards,
-            blink var(--typewriterSpeed) 2ms steps(10) forwards;
+            animation: typewriter var(--typewriterSpeed) steps(50) forwards,
+            blink var(--typewriterSpeed) 7ms steps(50) forwards;
         }
 
         @keyframes typewriter {
@@ -145,9 +149,49 @@
 
         @keyframes blink {
             to {
-                background: transparent;
+                background: initial;
             }
         }
+
+        /*p(#p1) --> animation finished ----*/
+
+        /*p(#p2) --> animation started ----*/
+        #p2::before, #p2::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        #p2::before {
+            background-color: #3498db;
+            animation: typewriter var(--typewriterSpeed) steps(50) forwards;
+        }
+
+        #p2::after {
+            width: 0.125em;
+            background-color: white;
+            animation: typewriter var(--typewriterSpeed) steps(50) forwards,
+            blink var(--typewriterSpeed) 7ms steps(50) forwards;
+        }
+
+        @keyframes typewriter {
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes blink {
+            to {
+                background: initial;
+            }
+        }
+
+        /*p(#p2) --> animation ended ----*/
+
+        /*p(#p3)*/
 
         body > main > #firstContent > div > img {
             position: absolute;
@@ -158,7 +202,7 @@
         }
 
         /*-- h1 --> animation started ----*/
-        div > h1::before, h1::after {
+        #firstContent > div > #H1::before, #H1::after {
             content: '';
             position: absolute;
             top: 0;
@@ -167,16 +211,16 @@
             left: 0;
         }
 
-        h1::before {
+        #H1::before {
             background-color: #3498db;
-            animation: typewriter var(--typewriterSpeed) steps(10) forwards;
+            animation: typewriter var(--typewriterSpeed) steps(40) forwards;
         }
 
-        h1::after {
+        #H1::after {
             width: 0.125em;
             background-color: white;
-            animation: typewriter var(--typewriterSpeed) steps(10) forwards,
-            blink var(--typewriterSpeed) 2ms steps(10) forwards;
+            animation: typewriter var(--typewriterSpeed) steps(40) forwards,
+            blink var(--typewriterSpeed) 4ms steps(40) forwards;
         }
 
         @keyframes typewriter {
@@ -187,11 +231,120 @@
 
         @keyframes blink {
             to {
-                background: transparent;
+                background: initial;
             }
         }
 
-        /*--h1-->animation ended---*/
+        /*--h1(#H1)-->animation ended---*/
+
+
+        /*--h1(#H1-2)-->animation started---*/
+        #firstContent > div > #H1-2::before, #H1-2::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        #H1-2::before {
+            background-color: #3498db;
+            animation: typewriter var(--typewriterSpeed) steps(40) forwards;
+        }
+
+        #H1-2::after {
+            width: 0.125em;
+            background-color: white;
+            animation: typewriter var(--typewriterSpeed) steps(40) forwards,
+            blink var(--typewriterSpeed) 4ms steps(40) forwards;
+        }
+
+        @keyframes typewriter {
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes blink {
+            to {
+                background: initial;
+            }
+        }
+
+        /*--h1(#H1-2)-->animation ended---*/
+
+        /*--h1(#H1-3)-->animation started---*/
+
+        #firstContent > div > #H1-3::before, #H1-3::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        #H1-3::before {
+            background-color: #3498db;
+            animation: typewriter var(--typewriterSpeed) steps(40) forwards;
+        }
+
+        #H1-3::after {
+            width: 0.125em;
+            background-color: white;
+            animation: typewriter var(--typewriterSpeed) steps(40) forwards,
+            blink var(--typewriterSpeed) 4ms steps(40) forwards;
+        }
+
+        @keyframes typewriter {
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes blink {
+            to {
+                background: initial;
+            }
+        }
+
+        /*--h1(#H1-3)-->animation ended---*/
+
+        /*--h1(#H1-4)-->animation started---*/
+        #firstContent > div > #H1-4::before, #H1-4::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        #H1-4::before {
+            background-color: #3498db;
+            animation: typewriter var(--typewriterSpeed) steps(40) forwards;
+        }
+
+        #H1-4::after {
+            width: 0.125em;
+            background-color: white;
+            animation: typewriter var(--typewriterSpeed) steps(40) forwards,
+            blink var(--typewriterSpeed) 4ms steps(40) forwards;
+        }
+
+        @keyframes typewriter {
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes blink {
+            to {
+                background: initial;
+            }
+        }
+        /*--h1(#H1-4)-->animation ended---*/
 
         div > #H1 {
             font-size: 75px;
@@ -209,6 +362,7 @@
             font-size: 53px;
             font-family: 'Ubuntu', sans-serif;
             color: white;
+            letter-spacing: 2px;
         }
 
         div > #H1-3 {
@@ -218,15 +372,17 @@
             font-size: 53px;
             font-family: 'Ubuntu', sans-serif;
             color: white;
+            letter-spacing: 2px;
         }
 
-        div > #HI-4 {
+        div > #H1-4 {
             position: absolute;
             top: 393px;
             left: 720px;
             font-size: 53px;
             font-family: 'Ubuntu', sans-serif;
             color: white;
+            letter-spacing: 2px;
         }
 
         div > #ul-1 {
@@ -257,10 +413,11 @@
         }
 
         div > #para2 {
-            left: 33px;
+            left: 21px;
             position: absolute;
             top: 900px;
-            font-size: 47px;
+            letter-spacing: 2px;
+            font-size: 49px;
             font-family: 'Work Sans', sans-serif;
         }
 
@@ -480,14 +637,14 @@
 
 <main>
     <section id="firstContent">
-        <div><p>Hello...</p></div>
-        <div id="div2"><p>I'm</p></div>
+        <div><p id="p1">Hello...</p></div>
+        <div id="div2"><p id="p2">I'm</p></div>
         <div><img alt="main photo" src="assets/images/MainPagePhoto.jpg"></div>
 
         <div><h1 id="H1">Oshada Eranga...</h1></div>
-        <div><h1 id="H1-2">I'm <i>Youtuber.</i></h1></div>
-        <div><h1 id="H1-3">I'm <i>Software Developer.</i></h1></div>
-        <div><h1 id="HI-4">I'm <i>loved an video editing <br> and photo editing.</i></h1></div>
+        <div><h1 id="H1-2">I'm <i>Youtuber..</i></h1></div>
+        <div><h1 id="H1-3">I'm <i>Software Developer..</i></h1></div>
+        <div><h1 id="H1-4">I'm <i>loved an video editing <br> and photo editing..</i></h1></div>
 
         <div>
             <ul id="ul-1">
