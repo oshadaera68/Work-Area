@@ -191,8 +191,6 @@
 
         /*p(#p2) --> animation ended ----*/
 
-        /*p(#p3)*/
-
         body > main > #firstContent > div > img {
             position: absolute;
             width: 483px;
@@ -236,7 +234,6 @@
         }
 
         /*--h1(#H1)-->animation ended---*/
-
 
         /*--h1(#H1-2)-->animation started---*/
         #firstContent > div > #H1-2::before, #H1-2::after {
@@ -344,6 +341,7 @@
                 background: initial;
             }
         }
+
         /*--h1(#H1-4)-->animation ended---*/
 
         div > #H1 {
@@ -425,7 +423,6 @@
             position: absolute;
             top: 838px;
             left: 841px;
-            /* height: 415px; */
             height: 565px;
             width: 461px;
             border-radius: 10%;
@@ -597,23 +594,86 @@
             position: absolute;
             top: 2379px;
             border: 2px solid red;
-            height: 103px;
+            background-color: #6f4e4e;
+            /*height: 103px;*/
         }
 
         #forthContent > #div7 > #sub1 {
             border: 2px solid red;
+            background-color: #6f4e4e;
             position: absolute;
             top: 2566px;
         }
 
+        #sub1 > img {
+            position: relative;
+            padding: 17px;
+        }
+
         #div4 > section > img {
-            padding: 16px;
-            top: -15px;
+            padding: 20px;
+            /*top: -17px;*/
+            position: relative;
+        }
+
+        #img34 {
+            top: -5px;
+            left: -16px;
             position: relative;
         }
 
         /*forth section ended*/
 
+        /*section covering--> section 5(fifthContent)*/
+        body > main > #fifthContent {
+            height: 100vh;
+            background-color: #3498db;
+        }
+
+        /*section covering end*/
+
+        /*fifth section started*/
+        div > #H3-1 {
+            position: absolute;
+            left: 657px;
+            color: white;
+            top: 2925px;
+            font-family: 'Ubuntu', sans-serif;
+            letter-spacing: 2px;
+            font-size: 45px;
+        }
+
+        /*fifth section ended*/
+
+        div #img56 {
+            position: absolute;
+            width: 347px;
+            height: 556px;
+            left: 73px;
+            top: 3143px;
+        }
+
+       /* #img56:hover{
+            opacity: 0.4%;
+        }*/
+
+        #img57 {
+            position: absolute;
+            width: 439px;
+            height: 507px;
+            left: 493px;
+            top: 3230px;
+        }
+
+        #img45 {
+            position: absolute;
+            width: 419px;
+            height: 557px;
+            left: 995px;
+            top: 3140px;
+        }
+
+        /*fifth section ended*/
 
     </style>
 </head>
@@ -627,7 +687,7 @@
             <li><a href="#secondContent">Who AM I?</a></li>
             <li><a href="#thirdContent">My Education</a></li>
             <li><a href="#forthContent">My Skills and Tools</a></li>
-            <li>Gallery</li>
+            <li><a href="#fifthContent">Gallery</a></li>
             <li>My Work</li>
             <li>Projects</li>
             <li>Contact Us</li>
@@ -650,26 +710,24 @@
             <ul id="ul-1">
                 <li><a href="https://www.instagram.com/mind_art_lk/"><img alt="instagram" height=70
                                                                           src="assets/images/instagram.png"
-                                                                          width=70></a>
-                </li>
+                                                                          width=70></a></li>
                 <li><a href="https://www.linkedin.com/in/oshada-eranga-b2497520a/"><img alt="linkedin" height=70
                                                                                         src="assets/images/linkedin.png"
                                                                                         width=70></a></li>
                 <li><a href="https://github.com/oshadaera68"><img alt="github" height=70 src="assets/images/github.png"
                                                                   width=70></a></li>
-                <li><a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube"
-                                                                                            height=70
+                <li><a href="https://www.youtube.com/channel/UCZgE5vNlzXe6wK8Lsd6x9_A"><img alt="youtube" height=70
                                                                                             src="assets/images/youtube.png"
                                                                                             width=70></a></li>
                 <li><a href="https://twitter.com/mindArtLk10"><img alt="twitter" height=70
-                                                                   src="assets/images/twitter.png"
-                                                                   width=70></a></li>
+                                                                   src="assets/images/twitter.png" width=70></a></li>
                 <li><a href="https://www.facebook.com/oshada.eranga.39"><img alt="facebook" height=70
                                                                              src="assets/images/facebook.png" width=70></a>
                 </li>
             </ul>
         </div>
     </section>
+
     <section id="secondContent">
         <div><p id="para1">Who Am I?</p></div>
 
@@ -682,10 +740,12 @@
             spent my time, I watched<br>
             movies and listening Songs.
         </p></div>
+
         <div id="img1">
             <img alt="Error loading image" src="../assets/images/page2.jpg">
         </div>
     </section>
+
     <section id="thirdContent">
         <div><h1 id="H2-1">My Education</h1></div>
         <article id="art1">
@@ -720,6 +780,7 @@
         <hr id="hr3">
         <hr id="hr4">
     </section>
+
     <section id="forthContent">
         <div><h2 id="hr6">My Skills</h2></div>
         <div id="div4">
@@ -737,14 +798,23 @@
             <section id="sub1">
                 <img alt="Intellij Idea" height="110" id="img7" src="../assets/images/IntelliJ_IDEA_logo_01.png"
                      width="150">
-                <img alt="VS Code" height="100"
-                     id="img34" src="../assets/images/Visual_Studio_Code_1.35_icon.png" width="100">
+                <img alt="VS Code" height="90"
+                     id="img34" src="../assets/images/Visual_Studio_Code_1.35_icon.png" width="90">
                 <img alt="photoshop" height="100" id="img345" src="../assets/images/photoshop-logo_0.png" width="100">
                 <img alt="filmora" height="100" id="img23" src="../assets/images/filmora.jpg" width="100">
                 <img alt="slack" height="100" id="img78"
                      src="../assets/images/271-2713491_slack-on-the-mac-app-store-slack-logo.png" width=120>
             </section>
         </div>
+    </section>
+
+    <section id="fifthContent">
+        <div><h2 id="H3-1">Gallery</h2></div>
+        <div><section>
+            <img id="img56" alt="First Image" src="../assets/images/1.jpg">
+            <img id="img57" alt="Second Image" height=500 src="../assets/images/3.jpg" width=500>
+            <img id="img45" alt="3rd image" height=700 src="../assets/images/2.jpg" width=500>
+        </section></div>
     </section>
 </main>
 </body>
