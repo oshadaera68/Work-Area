@@ -18,7 +18,7 @@
 
 ## Using Tools
 - Design Tool - Figma
-- IDE - InteliJ Idea 2021.2.4
+- IDE - Jetbrains InteliJ Idea 2021.2.4
 
 ## Workstation
 - Dell inspiron 15 3502
