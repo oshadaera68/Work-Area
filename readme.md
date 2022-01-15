@@ -21,7 +21,7 @@
 - IDE - Jetbrains InteliJ Idea 2021.2.4
 
 ## Workstation
-- Dell inspiron 15 3502
+- Model - Dell inspiron 15 3502
 - OS - Windows 10 Home single language
 - Disk Space - 512GB SSD(Solid state disk)
 - RAM - 8GB
