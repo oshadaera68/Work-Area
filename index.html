@@ -910,7 +910,7 @@
 
         #sub7 {
             position: absolute;
-            left: 149vh;
+            left: 134vh;
             top: 711vh;
         }
 
@@ -922,20 +922,96 @@
 
         div > #H3-7 {
             font-family: 'Ubuntu', sans-serif;
+            color: white;
             top: -3vh;
+            left: 1vh;
             position: absolute;
         }
 
         div > .para2 {
-            position: absolute;
-            left: 11vh;
-            top: 20vh;
+            position: relative;
+            left: 1vh;
+            top: 2vh;
+            font-size: 25px;
+            font-family: 'Lato', sans-serif;
+            color: white;
+            letter-spacing: 1px;
         }
 
         div > .para3 {
+            color: white;
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1px;
+            position: relative;
+            left: 1vh;
+            font-size: 22px;
+            top: 1vh;
+        }
+
+        #div6 > form > #input1 {
             position: absolute;
-            left: 11vh;
-            top: 20vh;
+            top: 143px;
+            left: 10vh;
+            width: 344px;
+            height: 26px;
+            border-radius: 19px;
+            border: 2px solid blue;
+        }
+
+        #div6 > form > #input2 {
+            position: absolute;
+            border: 2px solid blue;
+            border-radius: 28px;
+            width: 344px;
+            height: 28px;
+            top: 217px;
+            left: 10vh;
+        }
+
+        div > #H4-1 {
+            position: relative;
+            top: 2vh;
+            left: 1vh;
+            font-size: 20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        div > #H4-2 {
+            position: relative;
+            top: -3vh;
+            left: 7px;
+            font-size: 21px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        div > #H4-3 {
+            position: relative;
+            top: -9vh;
+            font-size: 20px;
+            left: -2vh;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #div6 > form > textarea {
+            position: relative;
+            top: -16vh;
+            left: 78px;
+            border: 2px solid blue;
+            border-radius: 15px;
+            width: 336px;
+        }
+
+        .submit{
+            position: absolute;
+            top: 73vh;
+            left: 1vh;
+            width: 150px;
+            height: 36px;
+            border-radius: 23px;
+            background-color: #9b59b6;
+            font-size: 20px;
+            font-family: 'Ubuntu',sans-serif;
+            color: white;
         }
 
         /*eighth content ended*/
@@ -1156,13 +1232,18 @@
         <section id="sub7">
             <div><h2 id="H3-7">Leave a comment</h2></div>
             <div><p class="para2">What is your feel about me?</p></div>
-            <div><p class="para3">Tell your ideas for comment section</p></div>
+            <div><p class="para3">Tell your ideas for comment section...</p></div>
             <div id="div6">
                 <form action="response.html">
-                    Name:<input id="input1" placeholder="" type="text" width="10px"><br><br>
-                    Email:<input id="input2" placeholder="" type="text"><br><br>
-                    <textarea cols="40" name="address" placeholder="Comment" rows="10"></textarea><br><br>
-                    <button class="submit">submit</button>
+                    <div><h4 id="H4-1">Name:</h4></div>
+                    <input id="input1" placeholder="" type="text" width="10px"><br><br>
+                    <div><h4 id="H4-2">Email:</h4></div>
+                    <input id="input2" placeholder="" type="text"><br><br>
+                    <div><h4 id="H4-3">Comment:</h4></div>
+                    <textarea cols="40" name="address" placeholder="" rows="10"></textarea><br><br>
+                    <div>
+                        <button class="submit">submit</button>
+                    </div>
                 </form>
             </div>
         </section>
