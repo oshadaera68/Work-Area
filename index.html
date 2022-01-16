@@ -80,7 +80,12 @@
 
         }
 
-        nav > ul > li:hover {
+        nav > ul > li > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav > ul > li > a:hover {
             cursor: pointer;
             color: red;
         }
@@ -434,15 +439,26 @@
 
         div > form > .button {
             position: absolute;
-            top: 191vh;
-            left: 250px;
-            width: 191px;
+            top: 190vh;
+            left: 249px;
+            width: 205px;
             height: 42px;
-            background-color: #686de0;
+            background-color: #9b59b6;
             color: white;
             font-family: 'Ubuntu', sans-serif;
-            font-size: 20px;
+            font-size: 21px;
+            border-radius: 20px;
         }
+
+        div > form > .button > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        div > form > .button > a:hover {
+            cursor: pointer;
+        }
+
 
         /*second content ended------*/
 
@@ -823,8 +839,8 @@
             position: absolute;
             left: 135vh;
             top: 633vh;
-            width: 492px;
-            height: 311px;
+            width: 496px;
+            height: 322px;
         }
 
         .bt1 {
@@ -834,24 +850,58 @@
             height: 37px;
             width: 131px;
             font-family: 'Ubuntu', sans-serif;
-            background-color: white;
+            background-color: #9b59b6;
             color: white;
             border-radius: 19px;
         }
 
         .bt2 {
             position: absolute;
-            top: 673vh;
-            left: 161vh;
+            top: 675vh;
+            left: 160vh;
             height: 37px;
-            width: 131px;
+            width: 135px;
             font-family: 'Ubuntu', sans-serif;
-            background-color: white;
+            background-color: #9b59b6;
             color: white;
             border-radius: 19px;
         }
 
+        .bt1 > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .bt2 > a {
+            text-decoration: none;
+            color: white;
+        }
+
         /*seventh content ended*/
+
+        /*section covering--> section 8(eightContent)*/
+        body > main > #eighthContent {
+            height: 100vh;
+            background-color: #76bdf1;
+        }
+
+        /*section covering end*/
+
+        #sub7 {
+            position: absolute;
+            left: 149vh;
+            top: 713vh;
+        }
+
+        div > #H3-6 {
+            position: absolute;
+
+        }
+
+        /*eighth content started*/
+
+
+        /*eighth content ended*/
     </style>
 </head>
 
@@ -867,7 +917,7 @@
             <li><a href="#fifthContent">Gallery</a></li>
             <li><a href="#sixthContent">My Works</a></li>
             <li><a href="#seventhContent">Projects</a></li>
-            <li>Contact Us</li>
+            <li><a href="#eighthContent">Contact Us</a></li>
         </ul>
     </nav>
 </header>
@@ -918,11 +968,10 @@
             movies and listening Songs.
         </p></div>
         <div>
-            <a href="https://drive.google.com/uc?id=1Jx6O2S5SF5DzJSjneDh844I__8Eo44Vu&export=download" download></a>
             <form action="">
-                <button class="button">
-                    Download CV
-                </button>
+                <button class="button"><a
+                        href="https://drive.google.com/uc?id=1Jx6O2S5SF5DzJSjneDh844I__8Eo44Vu&export=download"
+                        download>Download CV</a></button>
             </form>
         </div>
 
@@ -1061,6 +1110,23 @@
                 </form>
             </section>
         </div>
+    </section>
+
+    <section id="eighthContent">
+        <div><h2 id="H3-6">contact us</h2></div>
+        <section id="sub7">
+            <div><h2>Leave a comment</h2></div>
+            <div><p>What is your feel about me?</p></div>
+            <div><p>Tell your ideas for comment section</p></div>
+            <div id="div6">
+                <form action="response.html">
+                    Name:<input id="input1" placeholder="" type="text" width="10px"><br><br>
+                    Email:<input id="input2" placeholder="" type="text"><br><br>
+                    <textarea cols="40" name="address" placeholder="Comment" rows="10"></textarea><br><br>
+                    <button class="submit">submit</button>
+                </form>
+            </div>
+        </section>
     </section>
 </main>
 </body>
