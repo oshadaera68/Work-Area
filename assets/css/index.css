@@ -453,11 +453,11 @@ body > main > #thirdContent {
 
 div > #H2-1 {
     position: absolute;
-    top: 1482px;
-    left: 58px;
+    top: 205vh;
     font-size: 44px;
     font-family: 'Ubuntu', sans-serif;
     color: white;
+    left: 59px;
 }
 
 #thirdContent > section {
@@ -468,7 +468,7 @@ div > #H2-1 {
 #thirdContent > #art1 {
     position: absolute;
     top: 222vh;
-    left: 212px;
+    left: 258px;
     color: white;
     background-color: blue;
     font-family: 'Poppins', sans-serif;
@@ -478,8 +478,8 @@ div > #H2-1 {
 
 #thirdContent > #art2 {
     position: absolute;
-    left: 943px;
-    top: 1697px;
+    left: 914px;
+    top: 234vh;
     background-color: blue;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -490,7 +490,7 @@ div > #H2-1 {
 #thirdContent > #art3 {
     top: 260vh;
     position: absolute;
-    left: 223px;
+    left: 272px;
     background-color: blue;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -501,14 +501,14 @@ div > #H2-1 {
 #img3 {
     top: 272vh;
     position: absolute;
-    left: 223px;
-    height: 103px;
+    left: 272px;
+    height: 108px;
 }
 
 #thirdContent > #art4 {
     position: absolute;
-    top: 1979px;
-    left: 943px;
+    top: 2062px;
+    left: 914px;
     background-color: blue;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -518,8 +518,8 @@ div > #H2-1 {
 
 #img4 {
     position: relative;
-    left: 937px;
-    top: 557px;
+    left: 121vh;
+    top: 564px;
     height: 94px;
 }
 
@@ -536,19 +536,19 @@ hr {
 
 #hr1 {
     position: relative;
-    left: 91px;
+    left: 76px;
     top: 129px;
     transform: rotate(180deg);
-    width: 178px;
+    width: 149px;
     border: 4px solid black;
 }
 
 #hr2 {
-    osition: relative;
-    left: 91px;
+    position: relative;
+    left: 76px;
     top: 56vh;
     transform: rotate(180deg);
-    width: 178px;
+    width: 149px;
     border: 4px solid black;
 }
 
@@ -556,8 +556,8 @@ hr {
     position: relative;
     transform: rotate(180deg);
     border: 4px solid black;
-    left: -113px;
-    width: 193px;
+    left: -89px;
+    width: 146px;
     top: 2vh;
 }
 
@@ -565,8 +565,8 @@ hr {
     position: relative;
     transform: rotate(180deg);
     border: 4px solid black;
-    left: -113px;
-    width: 195px;
+    left: -89px;
+    width: 147px;
     top: 39vh;
 }
 
@@ -816,7 +816,7 @@ div > #sub5 > #img62 {
 
 div > #sub5 > #img63 {
     position: absolute;
-    left: 135vh;
+    left: 129vh;
     top: 631vh;
     width: 503px;
     height: 327px;
@@ -836,8 +836,8 @@ div > #sub5 > #img63 {
 
 .bt2 {
     position: absolute;
-    top: 674vh;
-    left: 160vh;
+    top: 672vh;
+    left: 155vh;
     height: 37px;
     width: 135px;
     font-family: 'Ubuntu', sans-serif;
@@ -1032,7 +1032,7 @@ p > a {
 }
 
 p > a:hover {
-    cursor:pointer;
+    cursor: pointer;
     color: #ff253a;
 }
 
@@ -1046,7 +1046,7 @@ p > #anc1 {
 
 p > #anc2 {
     position: absolute;
-    top: 5248px;
+    top: 727vh;
     left: 81px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -1118,7 +1118,7 @@ div > #p4 {
     color: white;
 }
 
-div>#p5{
+div > #p5 {
     position: absolute;
     top: 82px;
     left: 69px;
@@ -1126,7 +1126,7 @@ div>#p5{
     color: white;
 }
 
-div>#p6{
+div > #p6 {
     position: absolute;
     left: 93vh;
     top: 83px;
@@ -1134,13 +1134,13 @@ div>#p6{
     color: white;
 }
 
-div>#img79{
+div > #img79 {
     left: 86vh;
     top: 85px;
     position: absolute;
 }
 
-div>#p8{
+div > #p8 {
     top: 83px;
     left: 178vh;
     position: absolute;
@@ -1154,7 +1154,7 @@ div > #img80 {
     position: absolute;
 }
 
-div>#img81{
+div > #img81 {
     position: absolute;
     left: 29px;
     top: 82px;
