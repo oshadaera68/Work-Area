@@ -5,17 +5,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Assignments</title>
+    <title>Assignments | MINDARTLK</title>
     <style>
+        * {
+            text-decoration: none;
+            color: white;
+        }
 
+        body > main {
+            position: relative;
+            height: 1580px;
+            background-color: #3498db;
+        }
+
+        div > #H1-1 {
+            position: absolute;
+            left: 92vh;
+            font-family: 'Oxygen', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        #assignment1 > div > #img1 {
+            border-radius: 15px;
+            position: absolute;
+            height: 262px;
+            top: 100px;
+            width: 431px;
+            left: 65px;
+        }
+
+        .btn1 {
+            position: relative;
+            left: 30vh;
+            top: 48vh;
+            z-index: 1;
+            height: 34px;
+            width: 126px;
+            border-radius: 10px;
+            background-color: #9b59b6;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #assignment1 > div > #img2 {
+            position: absolute;
+            left: 124vh;
+            height: 268px;
+            width: 487px;
+            top: 98px;
+            border-radius: 17px;
+        }
+
+        .btn2{
+            position: relative;
+            left: 1090px;
+            top: 44vh;
+            z-index: 1;
+            height: 32px;
+            width: 127px;
+            font-family: 'Ubuntu', sans-serif;
+            border-radius: 10px;
+            background-color: #9b59b6;
+        }
     </style>
 </head>
 <body>
 <main>
-    <div><h1>Assignments</h1></div>
+    <div><h1 id="H1-1">Assignments</h1></div>
     <section id="assignment1">
+        <form action="">
+            <button class="btn1">
+                <a href="https://github.com/oshadaera68/CSS-Assignment-Sense/tree/master/CSS%20Assignment%2001"
+                   target="_blank">Assignment 01</a>
+            </button>
+        </form>
         <div><img id="img1" src="assets/assignment-images/1.png" alt="assignment1"></div>
+        <form action="">
+            <button class="btn2">
+                <a href="https://github.com/oshadaera68/CSS-Assignment-Sense/tree/master/CSS%20Assignment%2002"
+                   target="_blank">Assignment 02</a>
+            </button>
+        </form>
+        <div><img id="img2" src="assets/assignment-images/2.png" alt="assignment2"></div>
     </section>
 </main>
 </body>
