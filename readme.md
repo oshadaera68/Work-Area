@@ -14,6 +14,8 @@
 [Wireframe URL]:  https://wireframe.cc/iouWiz
 [Github Pages URL]: https://oshadaera68.github.io/Work-Area/
 [000WebHost URL]: https://mindartlkcreation.000webhostapp.com/
+
+## Screenshots
 ![Screenshot_2](https://user-images.githubusercontent.com/90706926/149077225-c81570e1-ae2f-44a0-9b1d-d98cac9827bf.png)
 
 ## Using Tools
