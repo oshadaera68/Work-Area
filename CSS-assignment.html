@@ -6,9 +6,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
     <title>CSS Assignments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        /*main content started*/
+
+        body > main {
+            position: relative;
+            height: 1580px;
+        }
+
+        body>main>#main-content{
+            height: 220vh;
+            background-color: #3498db;
+        }
+
+        div>#H1-6{
+            position: absolute;
+            left: 85vh;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 35px;
+            letter-spacing: 2px;
+        }
+
+        div > #img3 {
+            position: absolute;
+            width: 425px;
+            left: 118px;
+            top: 136px;
+        }
+
+        .class1{
+            position: absolute;
+            left: 265px;
+            top: 55vh;
+            width: 21vh;
+            height: 35px;
+        }
+
+        #anc1{
+            text-decoration: none;
+            color: white;
+        }
+
+
+        /*main content ended*/
+
+    </style>
 </head>
 <body>
-
+<main>
+    <section id="main-content">
+       <div><h1 id="H1-6">CSS Assignments</h1></div>
+        <div><img id="img3" src="assets/assignment-images/1.png" alt="assignment1"></div>
+        <button class="class1"><a id="anc1" href="https://github.com/oshadaera68/CSS-Assignment-Sense/tree/master/CSS%20Assignment%2001">Assignment 1</a></button>
+    </section>
+</main>
 </body>
 </html>
