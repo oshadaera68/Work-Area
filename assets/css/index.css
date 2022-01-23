@@ -375,10 +375,11 @@ div > #ul-1 {
     position: absolute;
     display: inline;
     list-style: none;
-    top: 188px;
-    left: -27px;
-    padding-bottom: 2px;
+    top: 183px;
+    left: 3px;
+    padding: 2px;
 }
+
 
 /*home page ended*/
 
@@ -665,9 +666,9 @@ div > #H3-1 {
     position: absolute;
     left: 883px;
     height: 488px;
-    width: 433px;
+    width: 469px;
     top: 422vh;
-    border-radius: 28px;
+    border-radius: 36px;
 }
 
 #sub2 > #img58 {
@@ -866,230 +867,182 @@ body > main > #eighthContent {
 
 /*section covering end*/
 
-/*eighth content started*/
+/* eighth content started */
+
+/*-----form started-------*/
 
 #sub7 {
     position: absolute;
     left: 136vh;
-    top: 711vh;
-}
-
-div > #H3-6 {
-    position: absolute;
-    font-family: 'Ubuntu', sans-serif;
-    top: 708vh;
-    color: white;
+    top: 718vh;
 }
 
 div > #H3-7 {
     font-family: 'Ubuntu', sans-serif;
-    color: white;
-    top: -4vh;
-    left: 1vh;
-    font-size: 28px;
+    top: -9vh;
+    left: 0vh;
+    font-size: 26px;
     position: absolute;
-}
-
-div > .para2 {
-    position: relative;
-    left: 1vh;
-    top: 2vh;
-    font-size: 25px;
-    font-family: 'Lato', sans-serif;
     color: white;
-    letter-spacing: 1px;
 }
 
-div > .para3 {
-    color: white;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 1px;
+.para2 {
     position: relative;
-    left: 1vh;
-    font-size: 22px;
-    top: 1vh;
-}
-
-#div6 > form > #input1 {
-    position: absolute;
-    top: 143px;
-    left: 10vh;
-    width: 344px;
-    height: 26px;
-    border-radius: 19px;
-    border: 2px solid blue;
-}
-
-#div6 > form > #input2 {
-    position: absolute;
-    border: 2px solid blue;
-    border-radius: 28px;
-    width: 344px;
-    height: 28px;
-    top: 217px;
-    left: 10vh;
-}
-
-div > #H4-1 {
-    position: relative;
-    top: 2vh;
-    left: 1vh;
-    font-size: 20px;
+    top: -18px;
     font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    left: 12px;
+    color: black;
 }
 
-div > #H4-2 {
+.para3 {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    top: -21px;
+    font-size: 20px;
+    left: 12px;
+    color: black;
+}
+
+#div1 {
     position: relative;
     top: -3vh;
-    left: 7px;
-    font-size: 21px;
-    font-family: 'Ubuntu', sans-serif;
+    left: 16px;
 }
 
-div > #H4-3 {
-    position: relative;
-    top: -9vh;
-    font-size: 20px;
-    left: -25px;
-    font-family: 'Ubuntu', sans-serif;
+.H4 {
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+    color: white;
 }
 
-#div6 > form > textarea {
+#input1 {
     position: relative;
-    top: -16vh;
-    left: 78px;
-    border: 2px solid blue;
-    border-radius: 15px;
-    width: 342px;
+    top: -62px;
+    left: 8vh
+}
+
+#input2 {
+    position: relative;
+    left: 74px;
+    top: -23vh;
+}
+
+#h4 {
+    position: relative;
+    left: 15px;
+    top: -14vh;
+}
+
+#h41 {
+    position: relative;
+    top: -25vh;
+    left: -11px;
 }
 
 .submit {
     position: absolute;
-    top: 73vh;
-    left: 1vh;
-    width: 150px;
-    height: 36px;
-    border-radius: 23px;
-    background-color: #9b59b6;
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    top: 63vh;
+    left: 10vh;
+    width: 21vh;
+    height: 34px;
+    font-family: 'ubuntu', sans-serif;
     color: white;
+    background-color: #9b59b6;
+    border-radius: 23px;
+}
+
+.inputClz {
+    width: 39vh;
+    border: 2px solid #9b59b6;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.txt {
+    position: relative;
+    left: 74px;
+    top: -33vh;
+    border: 2px solid #9b59b6;
+    border-radius: 15px;
+}
+
+/*-------form ended------*/
+
+.main-content {
+    position: absolute;
+    top: 709vh;
+    font-family: 'ubuntu', sans-serif;
+    color: white;
+}
+
+#sub6 {
+    position: absolute;
+    top: 716vh;
 }
 
 #sub6 > ul {
     list-style: none;
+    position: relative;
+    left: -27px;
 }
 
-#sub6 > ul > li {
-    position: absolute;
-    top: 724vh;
-    left: 14px;
+ul > li {
+    padding: 4px;
 }
 
-ul > li > #list1 {
-    position: absolute;
-    top: -8vh;
+#div5 {
+    position: relative;
+    top: -64vh;
+    left: 12vh;
 }
 
-ul > li > #list2 {
-    position: absolute;
-    top: 1vh;
-}
-
-ul > li > #list3 {
-    position: absolute;
-    top: 73px;
-}
-
-ul > li > #list4 {
-    position: absolute;
-    top: 135px;
-    left: -1px;
-}
-
-ul > li > #list5 {
-    position: absolute;
-    left: -1px;
-    top: 27vh;
-}
-
-ul > li > #list6 {
-    position: absolute;
-    top: 263px;
-}
-
-ul > li > #list7 {
-    position: absolute;
-    top: 45vh;
-    width: 54px;
-    height: 48px;
-    left: -2px;
-}
-
-p > a {
+#div5 > p > a {
     text-decoration: none;
-    color: white;
+    color: black;
+    font-family: 'ubuntu', sans-serif;
 }
 
-p > a:hover {
-    cursor: pointer;
+#div5 > p > a:hover {
     color: #ff253a;
+    cursor: pointer;
 }
 
 p > #anc1 {
-    position: absolute;
-    top: 718vh;
-    left: 11vh;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    position: relative;
+    top: 22px;
 }
 
 p > #anc2 {
-    position: absolute;
-    top: 727vh;
-    left: 81px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    position: relative;
+    top: 52px;
 }
 
 p > #anc3 {
-    position: absolute;
-    top: 736vh;
-    left: 11vh;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    position: relative;
+    top: 83px;
 }
 
 p > #anc4 {
-    position: absolute;
-    top: 745vh;
-    left: 80px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    position: relative;
+    top: 16vh;
 }
 
 p > #anc5 {
-    position: absolute;
-    top: 753vh;
-    left: 11vh;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    position: relative;
+    top: 147px;
 }
 
 p > #anc6 {
-    position: absolute;
-    left: 81px;
-    top: 762vh;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    position: relative;
+    top: 24vh;
 }
 
 p > #anc7 {
-    top: 771vh;
-    position: absolute;
-    left: 80px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    position: relative;
+    top: 27vh;
 }
 
 /*eighth content ended*/
@@ -1097,7 +1050,7 @@ p > #anc7 {
 /*footer started*/
 #footer1 {
     position: relative;
-    background-color: blue;
+    background-color: #34495e;
     /* text-align: center; */
     height: 19vh;
 }

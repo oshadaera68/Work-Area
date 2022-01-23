@@ -1,0 +1,47 @@
+.navbar_h6_ls {
+    position: absolute;
+    left: 167vh;
+    z-index: 1;
+    top: 8px;
+    right: 2px;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar_h6_ls > #anc1, #anc2 {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#anc1:hover {
+    color: red;
+}
+
+#anc2:hover {
+    color: red;
+}
+
+#img2 {
+    width: 1536px;
+    height: 100vh;
+}
+
+#p2 {
+    font-family: 'ubuntu', sans-serif;
+    position: absolute;
+    top: 36vh;
+    left: 60vh;
+    color: white;
+    font-size: 40px;
+}
+
+#p3 {
+    position: absolute;
+    left: 63vh;
+    top: 52vh;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+}

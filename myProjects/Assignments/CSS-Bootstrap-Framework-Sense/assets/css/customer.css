@@ -1,0 +1,38 @@
+body > header > nav {
+    box-shadow: -2px 6px 9px -4px #2c3e50;
+}
+
+.col-xl-9 {
+    width: 130vh;
+    left: 72vh;
+    top: 26vh;
+}
+
+h1 {
+    font-family: 'ubuntu', sans-serif;
+    font-size: 24px;
+}
+
+.btn-warning {
+    left: 2px;
+}
+
+h2{
+    font-family: 'ubuntu', sans-serif;
+    font-size: 24px;
+}
+
+.caption-top{
+    left: 47vh;
+    top: -26px;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 28px;
+}
+
+th{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}

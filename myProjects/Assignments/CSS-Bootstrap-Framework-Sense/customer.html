@@ -1,0 +1,162 @@
+<!--/**
+*Powered By :MINDARTLK.
+*version:0.1.0
+*/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MA POS System | Customer Form</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/customer.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                MA POS System
+            </a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                    data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="item.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="order.html">Place Order</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-success me-2" type="button">Sign Up</button>
+                    <button class="btn btn-sm btn-outline-secondary" type="button">Logout</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="container-fluid mt-4">
+        <section class="row">
+            <div class="col-12 col-md-12 col-lg">
+                <h1 class="text-secondary">Customer Form</h1>
+
+                <form class="col-lg-3">
+                    <div class="mb-3">
+                        <label class="form-label" for="exampleId">Id</label>
+                        <input aria-label="Id" class="form-control me-2" id="exampleId" placeholder="ID" type="ID">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="exampleName">Name</label>
+                        <input aria-label="Name" class="form-control me-2" id="exampleName" placeholder="Name"
+                               type="Name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="exampleAddress">Address</label>
+                        <input aria-label="Address" class="form-control me-2" id="exampleAddress" placeholder="Address"
+                               type="Address">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="exampleSalary">Salary</label>
+                        <input aria-label="Salary" class="form-control me-2" id="exampleSalary" placeholder="Salary"
+                               type="salary">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div>
+            <a class="btn btn-primary" href="#">Add</a>
+            <a class="btn btn-warning" href="#">Renew</a>
+            <a class="btn btn-danger" href="#">Delete</a>
+        </div>
+
+        <br>
+
+        <section class="row">
+            <div class="col-12 col-md-12 col-lg-6">
+                <h1 class="text-secondary">Customer Search</h1>
+                <form class="col-lg-6">
+                    <div class="mb-3 col-lg-12">
+                        <label class="form-label" for="exampleSearch">Search</label>
+                        <input aria-label="search" class="form-control me-2" id="exampleSearch"
+                               placeholder="Search from Id/Name"
+                               type="search">
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" href="#">Search</a>
+                        <a class="btn btn-success" href="#">View All</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <br>
+
+        <div class="col-xl-9 position-absolute">
+            <table class="table table-bordered table-hover mt-3 col-lg-2">
+                <caption class="caption-top position-absolute"> Customer View</caption>
+                <thead class="bg-danger text-white">
+                <tr class="table-success">
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Salary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Saman</td>
+                    <td>galle</td>
+                    <td>2,500</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Asanka</td>
+                    <td>nikawaratiya</td>
+                    <td>3,500</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>kasun</td>
+                    <td>ahangama</td>
+                    <td>4,000</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Amesh</td>
+                    <td>galle</td>
+                    <td>3,000</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">5</th>
+                    <td>nimesh</td>
+                    <td>weligama</td>
+                    <td>5,000</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+<script src="assets/Bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
