@@ -1,3 +1,6 @@
+* {
+    background-color: #0dcaf0;
+}
 
 #H4-2 {
     display: flex;
@@ -30,7 +33,7 @@ div > #img1 {
 
 div > #img2 {
     position: absolute;
-    left: 115vh;
+    left: 132vh;
     width: 324px;
     top: 26vh;
     height: 320px;
@@ -38,7 +41,7 @@ div > #img2 {
 
 .assignment1 {
     position: relative;
-    left: 128vh;
+    left: 144vh;
     top: 52vh;
     width: 18vh;
     height: 35px;
