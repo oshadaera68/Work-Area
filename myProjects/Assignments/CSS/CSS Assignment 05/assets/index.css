@@ -1,0 +1,35 @@
+section{
+    width: 228px;
+    height: 492px;
+    top: 91px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 172px;
+}
+section>div{
+    left: 0;
+    background-color: #5015e5;
+    height: 40px;
+    position: relative;
+    color: white;
+    box-shadow: 1px 2px 3px 2px #3a483b;
+    transition: all 2s;
+}
+section>div>h2{
+    margin: 0;
+    padding: 10px;
+}
+section>div>i{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 28px;
+}
+section>div:hover{
+    cursor: pointer;
+    background-color: blue;
+    left: 172px;
+    transition: all 2s;
+}
