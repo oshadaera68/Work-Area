@@ -9,7 +9,7 @@ var snowColor = ["#DDD", "#EEE"];
 var snowEntity = "&#x2022;";
 
 // Falling Velocity
-var snowSpeed = 0.75;
+var snowSpeed = 0.80;
 
 // Minimum Flake Size
 var snowMinSize = 8;
