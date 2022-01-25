@@ -382,6 +382,22 @@ div > #ul-1 {
 
 /*home page ended*/
 
+/*button ---> contact me --> started*/
+
+.main {
+    position: absolute;
+    width: 120px;
+    height: 39px;
+    background-color: #F1C40F;
+    border-radius: 101px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/*button ---> contact me --> ended*/
+
+
 /*section covering--> section 2(secondContent)*/
 body > main > #secondContent {
     height: 100vh;
@@ -393,7 +409,7 @@ div > #para1 {
     position: absolute;
     top: 104vh;
     font-size: 48px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Acme', sans-serif;
     left: 19px;
     color: white;
 }
@@ -455,7 +471,7 @@ div > #H2-1 {
     position: absolute;
     top: 205vh;
     font-size: 44px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Acme', sans-serif;
     color: white;
     left: 59px;
 }
@@ -647,7 +663,7 @@ div > #H3-1 {
     left: 657px;
     color: white;
     top: 406vh;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Acme', sans-serif;
     letter-spacing: 2px;
     font-size: 45px;
 }
@@ -697,7 +713,7 @@ body > main > #sixthContent {
 /*sixth section started*/
 div > #H3-2 {
     position: absolute;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Acme', sans-serif;
     top: 508vh;
     left: 88vh;
     color: white;
@@ -797,12 +813,12 @@ body > main > #seventhContent {
 /*seventh content started*/
 
 div > #H3-5 {
-    left: 81vh;
+    left: 74vh;
     top: 614vh;
     position: absolute;
     color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
     letter-spacing: 1px;
 }
 
@@ -877,7 +893,7 @@ body > main > #eighthContent {
 }
 
 div > #H3-7 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Acme', sans-serif;
     top: -9vh;
     left: 0vh;
     font-size: 26px;
@@ -972,9 +988,11 @@ div > #H3-7 {
 
 .main-content {
     position: absolute;
-    top: 709vh;
-    font-family: 'ubuntu', sans-serif;
+    top: 708vh;
+    font-family: 'Acme', sans-serif;
     color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
 }
 
 #sub6 {
