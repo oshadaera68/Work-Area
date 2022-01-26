@@ -1,12 +1,14 @@
 * {
-    background-color: #0dcaf0;
+    background-color: #9b59b6;
+    text-decoration: none;
+    color: white;
 }
 
 #H4-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: red;
+    color: white;
     font-family: Oxygen, sans-serif;
     letter-spacing: 1px;
 }
@@ -21,9 +23,9 @@ div > #img1 {
 
 .assignment {
     position: relative;
-    left: 312px;
+    left: 304px;
     top: 380px;
-    width: 123px;
+    width: 148px;
     height: 36px;
     border-radius: 23px;
     background-color: #9b59b6;
@@ -41,12 +43,19 @@ div > #img2 {
 
 .assignment1 {
     position: relative;
-    left: 144vh;
-    top: 52vh;
-    width: 18vh;
-    height: 35px;
-    border-radius: 21px;
-    background-color: #9b59b6;
+    left: 147vh;
+    top: 380px;
+    width: 141px;
+    height: 36px;
+    border-radius: 23px;
+    background-color: #3498db;
     font-family: 'Ubuntu', sans-serif;
     color: white;
+}
+
+#h4 {
+    position: absolute;
+    left: 197vh;
+    top: 0vh;
+    font-size: 24px;
 }
