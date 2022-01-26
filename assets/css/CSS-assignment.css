@@ -1,0 +1,268 @@
+body > main {
+    position: relative;
+    height: 1580px;
+}
+
+body > main > #main-content {
+    height: 220vh;
+    background-color: #3498db;
+}
+
+div > #H1-6 {
+    position: absolute;
+    left: 85vh;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+div > #img3 {
+    position: absolute;
+    width: 327px;
+    left: 111px;
+    top: 139px;
+    border-radius: 28px;
+}
+
+.class1 {
+    position: absolute;
+    left: 28vh;
+    top: 43vh;
+    width: 21vh;
+    height: 33px;
+    border-radius: 21px;
+    background-color: #9b59b6;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 17px;
+}
+
+.class21 {
+    text-decoration: none;
+    color: white;
+}
+
+div > #img4 {
+    position: absolute;
+    width: 57vh;
+    height: 27vh;
+    left: 75vh;
+    top: 136px;
+    border-radius: 27px;
+}
+
+.class2 {
+    top: 318px;
+    position: absolute;
+    left: 93vh;
+    width: 156px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #9b59b6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+}
+
+#img5 {
+    position: absolute;
+    width: 329px;
+    height: 209px;
+    top: 18vh;
+    left: 150vh;
+    border-radius: 30px;
+}
+
+.class3 {
+    position: absolute;
+    left: 163vh;
+    top: 45vh;
+    width: 154px;
+    height: 31px;
+    border-radius: 16px;
+    background-color: #9b59b6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+}
+
+#img6 {
+    position: absolute;
+    width: 46vh;
+    height: 22vh;
+    top: 63vh;
+    left: 14vh;
+    border-radius: 22px;
+}
+
+.class4 {
+    position: absolute;
+    top: 83vh;
+    left: 26vh;
+    width: 151px;
+    height: 31px;
+    border-radius: 16px;
+    background-color: #9b59b6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+}
+
+#img7 {
+    position: absolute;
+    top: 62vh;
+    left: 88vh;
+    width: 37vh;
+    height: 24vh;
+    border-radius: 22px;
+}
+
+.class5 {
+    position: absolute;
+    top: 84vh;
+    left: 96vh;
+    width: 151px;
+    height: 31px;
+    border-radius: 16px;
+    background-color: #9b59b6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+}
+
+#img8 {
+    position: absolute;
+    top: 443px;
+    width: 44vh;
+    height: 25vh;
+    left: 152vh;
+    border-radius: 35px
+}
+
+.class6 {
+    position: absolute;
+    left: 164vh;
+    top: 84vh;
+    width: 149px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #9b59b6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+}
+
+#img9 {
+    position: absolute;
+    top: 103vh;
+    left: 15vh;
+    width: 296px;
+    height: 184px;
+    border-radius: 33px;
+}
+
+.class7 {
+    position: absolute;
+    left: 25vh;
+    top: 127vh;
+    width: 149px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #9b59b6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+}
+
+#img10 {
+    position: absolute;
+    left: 88vh;
+    top: 101vh;
+    width: 35vh;
+    height: 28vh;
+    border-radius: 26px;
+}
+
+.class8 {
+    position: absolute;
+    left: 95vh;
+    top: 127vh;
+    width: 149px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #9b59b6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+}
+
+#img12 {
+    position: absolute;
+    top: 148vh;
+    left: 32vh;
+    height: 34vh;
+    width: 54vh;
+    border-radius: 32px;
+}
+
+.class10 {
+    position: absolute;
+    top: 180vh;
+    left: 48vh;
+    width: 149px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #9b59b6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+}
+
+#h3 {
+    position: absolute;
+    left: 197vh;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 1px;
+    font-size: 23px;
+}
+
+#h3:hover {
+    cursor: pointer;
+}
+
+#img13 {
+    position: absolute;
+    top: 141vh;
+    width: 49vh;
+    height: 49vh;
+    left: 125vh;
+}
+
+.class11 {
+    position: absolute;
+    top: 178vh;
+    left: 139vh;
+    width: 147px;
+    height: 30px;
+    border-radius: 16px;
+    background-color: #9b59b6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+}
+
+#footer {
+    position: relative;
+    background-color: #34495e;
+    height: 12vh;
+    top: 208vh;
+}
+
+div > #p3 {
+    position: absolute;
+    left: 89vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 17px;
+}
+
+div > #p4 {
+    position: absolute;
+    left: 75vh;
+    top: 4vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 17px;
+}
