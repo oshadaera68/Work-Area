@@ -10,7 +10,7 @@
     align-items: center;
     color: white;
     font-family: Oxygen, sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 div > #img1 {
@@ -58,4 +58,5 @@ div > #img2 {
     left: 197vh;
     top: 0vh;
     font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
 }
