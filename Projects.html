@@ -7,27 +7,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Projects | MINDARTLK.</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
     <style>
-        body > main {
-            position: relative;
-            height: 1580px;
-        }
-
         body > main > #main-content {
             height: 220vh;
             background-color: #3498db;
         }
+
+        #h4 {
+            position: absolute;
+            left: 93vh;
+            font-family: 'Noto Sans', sans-serif;
+            color: white;
+        }
+
+        #h3 {
+            position: absolute;
+            left: 202vh;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        #img12 {
+            position: absolute;
+            width: 62vh;
+            height: 34vh;
+            left: 19vh;
+            top: 17vh;
+            border-radius: 16px;
+        }
+
+        .class21 {
+            text-decoration: none;
+            color: white;
+        }
+
+        .pro1 {
+            left: 34vh;
+            position: absolute;
+            top: 49vh;
+            font-size: 15px;
+            font-family: 'ubuntu', sans-serif;
+            height: 32px;
+            width: 30vh;
+            border-radius: 13px;
+            background-color: #9b59b6;
+        }
+
+        #img13 {
+            position: absolute;
+            left: 108vh;
+            top: 16vh;
+            width: 58vh;
+            height: 35vh;
+            border-radius: 4vh;
+        }
+
+        .pro2{
+            position: absolute;
+            left: 128vh;
+            top: 49vh;
+            width: 20vh;
+            height: 5vh;
+            border-radius: 13px;
+            background-color: #9b59b6;
+            font-size: 15px;
+            font-family: 'ubuntu', sans-serif;
+        }
+
     </style>
 
 </head>
 <body>
 <main>
     <section id="main-content">
-        <div><h1>Projects</h1></div>
+        <div><h1 id="h4">Projects</h1></div>
+        <div><h3 id="h3"><a class="class21" href="index.html">Home</a></h3></div>
+
+        <div><img alt="project1" id="img12" src="assets/project-images/1.png"></div>
+        <button class="pro1"><a class="class21" href="https://github.com/oshadaera68/Mind_Art_LK_Final_Project">Timber
+            Management System</a></button>
+
+        <div><img alt="project2" id="img13" src="assets/project-images/2.png"></div>
+        <button class="pro2"><a class="class21" href="https://github.com/oshadaera68/Hibernate-Coursework">Sipsewana
+            LMS</a></button>
     </section>
 </main>
-<script src="assets/JavaScript/Snow.js"></script>
+<!--<script src="assets/JavaScript/Snow.js"></script>-->
 </body>
 </html>
