@@ -1,0 +1,264 @@
+<!--/**
+*Powered By :MINDARTLK.
+*version:0.1.0
+*/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MA POS System</title>
+    <link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">MA POS System</a>
+        <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdownhome">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#" id="homeBtn">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" id="customerBtn">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" id="itemBtn">Item</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="homepage">
+    <div class="page" id="home">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="inputEmail3">Order Id</label>
+                    <div class="col-sm-6">
+                        <input class="form-control" id="inputEmail3" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col ">
+                <h4 align="center" class="align-content-center">Customer</h4>
+                <form class="form-floating">
+                    <input class="form-control" id="customerID" placeholder="id" type="text" value="">
+                    <label for="customerID">Customer ID</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="customerName" placeholder="name" type="text" value="">
+                    <label for="customerName">Customer Name</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="customerAddress" placeholder="address" type="text" value="">
+                    <label for="customerAddress">Customer Address</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="customertpnumber" placeholder="tel.no" type="text" value="">
+                    <label for="customertpnumber">Customer Tel. Number</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="customerpoints" placeholder="points" type="text" value="">
+                    <label for="customerpoints">Customer points</label>
+                </form>
+                <br>
+                <button class="btn btn-success justify-content-center" type="button">Add to cart</button>
+                <button class="btn btn-warning justify-content-center" type="button">Remove from the cart</button>
+            </div>
+
+            <div class="col">
+
+                <h4 align="center" class="justify-content-center">Item</h4>
+                <form class="form-floating">
+                    <input class="form-control" id="itemID" placeholder="id" type="text" value="">
+                    <label for="itemID">Customer ID</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="itemName" placeholder="name" type="text" value="">
+                    <label for="itemName">Brand Name</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="itemQtyOnHand" placeholder="qtyOnHand" type="text"
+                           value="">
+                    <label for="itemQtyOnHand">Qty On Hand</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="unitPrice" placeholder="unitPrice" type="text" value="">
+                    <label for="unitPrice">UnitPrice</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="itemQty" placeholder="qty" type="text" value="">
+                    <label for="itemQty">Qty</label>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="row g-3">
+                    <h4 align="center" class="justify-content-center">Order detail</h4>
+                    <div class="col">
+                        <input aria-label="Total" class="form-control" placeholder="Total" type="text">
+                    </div>
+
+                    <div class="col">
+                        <input aria-label="Paying Amount" class="form-control" placeholder="Paying Amount" type="text">
+                    </div>
+                    <br><br>
+                    <div class="row g-3">
+                        <div class="col">
+                            <input aria-label="Discounts" class="form-control" placeholder="Discounts" type="text">
+                        </div>
+
+                        <div class="col">
+                            <input aria-label="Balance" class="form-control" placeholder="Balance " type="text">
+                        </div>
+                    </div>
+                    <br>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">ItemId</th>
+                            <th scope="col">Brand</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">I001</th>
+                            <td>Lux</td>
+                            <td>50g</td>
+                            <td>Rs.75.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">I002</th>
+                            <td>Yoguet</td>
+                            <td>1 pack</td>
+                            <td>Rs.140.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">I003</th>
+                            <td>Milo</td>
+                            <td>1pack</td>
+                            <td>Rs.45.00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="customerpage">
+    <div class="page" id="customer">
+        <br>
+        <div class="row">
+            <div class="col">
+            </div>
+
+            <div class="col ">
+                <h4 align="center" class="align-content-center" text>Customer</h4>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="floatingInputValueID" placeholder="" type="text" value="">
+                    <label for="floatingInputValueID">Input Customer ID</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="floatingInputValueName" placeholder="" type="text" value="">
+                    <label for="floatingInputValueName">Input Name</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="floatingInputValueAddress" placeholder="" type="text" value="">
+                    <label for="floatingInputValueAddress">Input Address</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="floatingInputValueTpNumber" placeholder="" type="text" value="">
+                    <label for="floatingInputValueTpNumber">Input with Tp Number</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="floatingInputValuePoints" placeholder="" type="text" value="">
+                    <label for="floatingInputValuePoints">Input pointse</label>
+                </form>
+                <br>
+                <button class="btn btn-success" type="button">Add Customer</button>
+                <button class="btn btn-info" type="button">Update Customer</button>
+                <button class="btn btn-danger" type="button">Delete Customer</button>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="itempage">
+    <div class="page" id="item">
+        <br>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <h4 align="center" class="justify-content-center" text>Item</h4>
+                <form class="form-floating">
+                    <input class="form-control" id="floatingInputValueItemID" placeholder="" type="text" value="">
+                    <label for="floatingInputValueItemID">Input Customer ID</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="floatingInputValueItemName" placeholder="" type="text" value="">
+                    <label for="floatingInputValueItemName">Input Brand</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="floatingInputValueItemQtyOnHand" placeholder="" type="text"
+                           value="">
+                    <label for="floatingInputValueItemQtyOnHand">Input Qty On Hand</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="floatingInputValueUnitPrice" placeholder="" type="text" value="">
+                    <label for="floatingInputValueUnitPrice">Input UnitPrice</label>
+                </form>
+                <br>
+                <form class="form-floating">
+                    <input class="form-control" id="floatingInputValueQty" placeholder="" type="text" value="">
+                    <label for="floatingInputValueQty">Input Qty</label>
+                </form>
+                <br>
+                <br>
+                <button class="btn btn-primary" type="button">Add Item</button>
+                <button class="btn btn-warning" type="button">Update Item</button>
+                <button class="btn btn-danger" type="button">Delete Item</button>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<script src="assets/Bootstrap/js/bootstrap.bundle.js"></script>
+<script src="assets/JS/Script.js"></script>
+</html>
