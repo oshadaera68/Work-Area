@@ -5,6 +5,25 @@
     <link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <title>MA POS System</title>
+    <style>
+        .table-hover {
+            position: relative;
+            left: -288px;
+        }
+
+        #searchCus {
+            position: absolute;
+            left: 132vh;
+        }
+
+        #clear {
+            position: absolute;
+            left: 153vh;
+            top: 461px;
+        }
+
+
+    </style>
 </head>
 <body>
 <main>
@@ -162,23 +181,29 @@
                     <form class="form-floating">
                         <input class="form-control" id="id" placeholder="" type="text" value="">
                         <label for="id">Input Customer ID</label>
+                        <p><small id="cusId" class="text-danger pl-1"></small></p>
                     </form>
                     <form class="form-floating">
                         <input class="form-control" id="name" placeholder="" type="text" value="">
                         <label for="name">Input Name</label>
+                        <p><small id="cusName" class="text-danger pl-1"></small></p>
                     </form>
                     <form class="form-floating">
                         <input class="form-control" id="address" placeholder="" type="text" value="">
                         <label for="address">Input Address</label>
+                        <p><small id="cusAddress" class="text-danger pl-1"></small></p>
                     </form>
                     <form class="form-floating">
                         <input class="form-control" id="tpNum" placeholder="" type="text" value="">
                         <label for="tpNum">Input with Tp Number</label>
+                        <p><small id="cusTpNum" class="text-danger pl-1"></small></p>
                     </form>
                     <br>
                     <button class="btn btn-success" id="addCustomer" type="button">Add Customer</button>
                     <button class="btn btn-info" type="button">Update Customer</button>
                     <button class="btn btn-danger" type="button">Delete Customer</button>
+                    <br>
+                    <button class="btn btn-warning" type="button" id="clear">Clear</button>
 
                 </div>
                 <div class="col">
@@ -218,7 +243,8 @@
                 <div class="col">
                     <h4 class="justify-content-center" text>Item</h4>
                     <form class="form-floating">
-                        <label for="itemId"></label><input class="form-control" id="itemId" placeholder="" type="text" value="">
+                        <label for="itemId"></label><input class="form-control" id="itemId" placeholder="" type="text"
+                                                           value="">
                         <label for="ItemId">Input Item ID</label>
                     </form>
                     <form class="form-floating">
@@ -248,7 +274,7 @@
                 <div class="col">
                 </div>
 
-                <div class="col justify-content-center">
+                <div class="col justify-content-center row-mt-4">
                     <table class="table table-hover">
                         <thead class="bg-danger text-white">
                         <tr class="justify-content-center">
@@ -268,9 +294,260 @@
     </section>
 
 </main>
-<script src="assets/JS/Script.js"></script>
+<!--<script src="assets/JS/Script.js"></script>-->
 <script src="assets/Bootstrap/js/bootstrap.bundle.js"></script>
 <script src="assets/JS/jquery/jquery-3.6.0.min.js"></script>
 
+<script>
+    document.getElementById("customerpage").style.display = "none";
+    document.getElementById("itempage").style.display = "none";
+
+    //home btn
+    document.getElementById("homeBtn").addEventListener("click", function () {
+        document.getElementById("customerpage").style.display = "none";
+        document.getElementById("itempage").style.display = "none";
+        document.getElementById("homepage").style.display = "block";
+    });
+
+    //customer btn
+    document.getElementById("customerBtn").addEventListener("click", function () {
+        document.getElementById("homepage").style.display = "none";
+        document.getElementById("itempage").style.display = "none";
+        document.getElementById("customerpage").style.display = "block";
+    });
+
+    //item btn
+    document.getElementById("itemBtn").addEventListener("click", function () {
+        document.getElementById("homepage").style.display = "none";
+        document.getElementById("customerpage").style.display = "none";
+        document.getElementById("itempage").style.display = "block";
+    });
+
+    // customer form
+
+    $("#addCustomer").click(function () {
+        loadAllCustomers();
+        clearAll();
+        saveCustomer();
+    })
+
+    const cusIDRegEx = /^(C00-)[0-9]{1,3}$/;
+    const cusNameRegEx = /^[A-z ]{7,30}$/;
+    const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
+    const cusTelNoRegEx = /^0[0-9][0-9]?(-)?[0-9]{7}$/;
+
+
+    $('#id,#name,#address,#tpNum').on('keydown', function (eventOb) {
+        if (eventOb.key == "Tab") {
+            eventOb.preventDefault(); // stop execution of the button
+        }
+    });
+
+    $('#id,#name,#address,#tpNum').on('blur', function () {
+        formValid();
+    });
+
+    //focusing events
+    $("#id").on('keyup', function (eventOb) {
+        setButton();
+        if (eventOb.key == "Enter") {
+            checkIfValid();
+        }
+
+        if (eventOb.key == "Control") {
+            var typedCustomerID = $("#id").val();
+            var srcCustomer = searchCustomerFromID(typedCustomerID);
+            $("#id").val(srcCustomer.getCustomerID());
+            $("#name").val(srcCustomer.getCustomerName());
+            $("#address").val(srcCustomer.getCustomerAddress());
+            $("#tpNum").val(srcCustomer.getCustomerSalary());
+        }
+
+
+    });
+
+    $("#name").on('keyup', function (eventOb) {
+        setButton();
+        if (eventOb.key == "Enter") {
+            checkIfValid();
+        }
+    });
+
+    $("#address").on('keyup', function (eventOb) {
+        setButton();
+        if (eventOb.key == "Enter") {
+            checkIfValid();
+        }
+    });
+
+    $("#tpNum").on('keyup', function (eventOb) {
+        setButton();
+        if (eventOb.key == "Enter") {
+            checkIfValid();
+        }
+    });
+    // focusing events end
+    $("#addCustomer").attr('disabled', true);
+
+
+    function clearAll() {
+        $('#id,#name,#address,#tpNum').val("");
+        $('#id,#name,#address,#tpNum').css('border', '2px solid #ced4da');
+        $('#id').focus();
+        $("#addCustomer").attr('disabled', true);
+        loadAllCustomers();
+        $("#cusId,#cusName,#cusAddress,#cusTpNum").text("");
+    }
+
+    function formValid() {
+        var cusID = $("#id").val();
+        $("#id").css('border', '2px solid green');
+        $("#cusId").text("");
+        if (cusIDRegEx.test(cusID)) {
+            var cusName = $("#name").val();
+            if (cusNameRegEx.test(cusName)) {
+                $("#name").css('border', '2px solid green');
+                $("#cusName").text("");
+                var cusAddress = $("#address").val();
+                if (cusAddressRegEx.test(cusAddress)) {
+                    var cusTelNo = $("#tpNum").val();
+                    var resp = cusTelNo.test(cusTelNo);
+                    $("#address").css('border', '2px solid green');
+                    $("#cusAddress").text("");
+                    if (resp) {
+                        $("#tpNum").css('border', '2px solid green');
+                        $("#cusTpNum").text("");
+                        return true;
+                    } else {
+                        $("#tpNum").css('border', '2px solid red');
+                        $("#cusTpNum").text("Cus tel.no is a required field : Ex 011-23415621");
+                        return false;
+                    }
+                } else {
+                    $("#address").css('border', '2px solid red');
+                    $("#cusAddress").text("Cus Name is a required field : Minimum 8");
+                    return false;
+                }
+            } else {
+                $("#name").css('border', '2px solid red');
+                $("#cusName").text("Cus Name is a required field : Minimum 7, Max 20, Spaces Allowed");
+                return false;
+            }
+        } else {
+            $("#id").css('border', '2px solid red');
+            $("#cusId").text("Cus ID is a required field : Pattern C00-000");
+            return false;
+        }
+    }
+
+    function checkIfValid() {
+        var cusID = $("#id").val();
+        if (cusIDRegEx.test(cusID)) {
+            $("#name").focus();
+            var cusName = $("#name").val();
+            if (cusNameRegEx.test(cusName)) {
+                $("#address").focus();
+                var cusAddress = $("#address").val();
+                if (cusAddressRegEx.test(cusAddress)) {
+                    $("#cusTpNum").focus();
+                    var cusTpNumber = $("#cusTpNum").val();
+                    var resp = cusTelNoRegEx.test(cusTpNumber);
+                    if (resp) {
+                        let res = confirm("Do you really need to add this Customer..?");
+                        if (res) {
+                            saveCustomer();
+                            clearAll();
+                        }
+                    } else {
+                        $("#tpNum").focus();
+                    }
+                } else {
+                    $("#address").focus();
+                }
+            } else {
+                $("#name").focus();
+            }
+        } else {
+            $("#id").focus();
+        }
+    }
+
+    function setButton() {
+        let b = formValid();
+        if (b) {
+            $("#addCustomer").attr('disabled', false);
+        } else {
+            $("#addCustomer").attr('disabled', true);
+        }
+    }
+
+    $('#addCustomer').click(function () {
+        checkIfValid();
+    });
+
+    /*CRUD --> Customer --> Started*/
+
+    //load all Customers
+    function loadAllCustomers() {
+        $("#tableCus").empty();
+        for (var i of customerDB) {
+            /*create a html row*/
+            let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.address}</td><td>${i.salary}</td></tr>`;
+            /*select the table body and append the row */
+            $("#customerTable").append(row);
+        }
+    }
+
+    //save Customers
+    function saveCustomer() {
+        let cusID = $("#id").val();
+        let cusName = $("#name").val();
+        let cusAddress = $("#address").val();
+        let cusTpNo = $("#tpNum").val();
+
+        //create Object
+        var customerObject = {
+            id: cusID,
+            name: cusName,
+            address: cusAddress,
+            tpNum: cusTpNo
+        };
+
+        customerDb.push(customerObject);
+    }
+
+    /*CRUD --> Customer --> Ended*/
+
+
+
+    // item form
+    $("#addItem").click(function () {
+
+        $("#tableCus>tr").off();
+
+        let itemId = $("#itemId").val();
+        let itemName = $("#itemName").val();
+        let itemQty = $("#qty").val();
+        let itemUnitPrice = $("#uPrice").val();
+
+        let row1 = `<tr><td>${itemId}</td><td>${itemName}</td><td>${itemQty}</td><td>${itemUnitPrice}</td>`;
+        $("#tableItem").append(row1);
+
+
+        $("#tableItem>tr").click(function () {
+            let iId = $(this).children(":eq(0)").text();
+            let iName = $(this).children(":eq(1)").text();
+            let iQty = $(this).children(":eq(2)").text();
+            let iUniPrice = $(this).children(":eq(3)").text();
+
+            $("#itemId").val(iId);
+            $("#itemName").val(iName);
+            $("#qty").val(iQty);
+            $("#uPrice").val(iUniPrice);
+        });
+
+    });
+
+</script>
 </body>
 </html>
