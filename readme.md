@@ -3,13 +3,6 @@
 ### Hi there, I'm Oshada Eranga 😎
 <img src="https://readme-typing-svg.herokuapp.com?size=25&vCenter=true&width=550&lines=Hi+%F0%9F%91%8B%2C+I'm+Oshada+Eranga..😊;This+is+My+Profile+Website..😍;">
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/oshada-eranga-b2497520a/)
-
 ## Links
 -  [Mockup URL][Mockup URL]
 -  [SiteMap URL][SiteMap URL]
