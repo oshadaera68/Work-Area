@@ -1,553 +1,681 @@
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width= deviwidth=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap POS</title>
     <link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <title>MA POS System</title>
-    <style>
-        .table-hover {
-            position: relative;
-            left: -288px;
-        }
-
-        #searchCus {
-            position: absolute;
-            left: 132vh;
-        }
-
-        #clear {
-            position: absolute;
-            left: 153vh;
-            top: 461px;
-        }
-
-
-    </style>
+    <link href="assets/css/index.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
 <body>
-<main>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<section class="position-relative vh-100 d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg posNavi">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">MA POS System</a>
-            <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+            <a class="navbar-brand" href="#">MA POS System
+            </a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                     class="navbar-toggler"
-                    data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">
+                    data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdownhome">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a aria-current="page" class="nav-link active" href="#" id="homeBtn">Home</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 naviItems">
+                    <li class="nav-item nav-link active naviItem-1">
+                        Home
+                        <!--<a class="nav-link" href="#">Customers</a>-->
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="customerBtn">Customer</a>
+                    <li class="nav-item nav-link active naviItem-2">
+                        Customer
+                        <!--<a class="nav-link" href="#">Customers</a>-->
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="itemBtn">Item</a>
+                    <li class="nav-item nav-link active naviItem-3">
+                        Items
+                        <!--<a class="nav-link" href="#">Items</a>-->
+                    </li>
+                    <li class="nav-item nav-link active naviItem-4">
+                        Orders
+                        <!--<a class="nav-link" href="#">Orders</a>-->
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section id="homepage">
-        <div class="page" id="home">
-            <div class="row">
-                <div class="col">
-                </div>
-                <div class="col">
-                    <div class="row mb-3">
-                        <label class="col-sm-3 col-form-label" for="inputEmail3">Oreder Id</label>
-                        <div class="col-sm-6">
-                            <input class="form-control" id="inputEmail3" type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                </div>
+
+
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+        <div class="carousel-indicators">
+            <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                    data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+            <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+            <button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+        </div>
+        <div class="carousel-inner w-100" style="height: 92vh;">
+            <div class="carousel-item active h-100">
+                <img alt="welcome" class="d-block w-100 h-100" src="assets/images/01.jpg">
             </div>
-            <div class="row">
-
-                <div class="col ">
-                    <h4 align="center" class="align-content-center" text>Customer</h4>
-                    <form class="form-floating">
-                        <input class="form-control" id="customerID" placeholder="" type="text" value="">
-                        <label for="customerID">Input Customer ID</label>
-                    </form>
-                    <br>
-                    <form class="form-floating">
-                        <input class="form-control" id="customerName" placeholder="" type="text" value="">
-                        <label for="customerName">Input Name</label>
-                    </form>
-                    <br>
-                    <form class="form-floating">
-                        <input class="form-control" id="customerAddress" placeholder="" type="text" value="">
-                        <label for="customerAddress">Input Address</label>
-                    </form>
-                    <br>
-                    <form class="form-floating">
-                        <input class="form-control" id="customertpnumber" placeholder="" type="text" value="">
-                        <label for="customertpnumber">Input with Tp Number</label>
-                    </form>
-                    <br>
-                    <form class="form-floating">
-                        <input class="form-control" id="customerpoints" placeholder="" type="text" value="">
-                        <label for="customerpoints">Input pointse</label>
-                    </form>
-                    <br>
-                    <button class="btn btn-success justify-content-center" type="button">Add to cart</button>
-
-                </div>
-
-                <div class="col">
-
-                    <h4 align="center" class="justify-content-center" text>Item</h4>
-                    <form class="form-floating">
-                        <input class="form-control" id="iId" placeholder="" type="text" value="">
-                        <label for="iId">Input Customer ID</label>
-                    </form>
-                    <br>
-                    <form class="form-floating">
-                        <input class="form-control" id="iName" placeholder="" type="text" value="">
-                        <label for="iName">Input Brand</label>
-                    </form>
-                    <br>
-                    <form class="form-floating">
-                        <input class="form-control" id="itemQty" placeholder="" type="text" value="">
-                        <label for="itemQty">Input Qty</label>
-                    </form>
-                    <br>
-                    <form class="form-floating">
-                        <input class="form-control" id="unitPrice" placeholder="" type="text" value="">
-                        <label for="unitPrice">Input UnitPrice</label>
-                    </form>
-                    <br>
-
-                    <br>
-                    <button class="btn btn-warning justify-content-center" type="button">Remove from the cart</button>
-                </div>
-                <div class="col-6">
-                    <div class="row g-3">
-                        <h4 align="center" class="justify-content-center">Order detail</h4>
-                        <div class="col">
-                            <input aria-label="Total" class="form-control" placeholder="Total" type="text">
-                        </div>
-
-                        <div class="col">
-                            <input aria-label="Paying Amount" class="form-control" placeholder="Paying Amount"
-                                   type="text">
-                        </div>
-                        <br><br>
-                        <div class="row g-3">
-                            <div class="col">
-                                <input aria-label="Discounts" class="form-control" placeholder="Discounts" type="text">
-                            </div>
-
-                            <div class="col">
-                                <input aria-label="Balance" class="form-control" placeholder="Balance " type="text">
-                            </div>
-                        </div>
-                        <br>
-                        <table class="table bg-danger text-white">
-                            <thead>
-                            <tr>
-                                <th scope="col">ItemId</th>
-                                <th scope="col">Brand</th>
-                                <th scope="col">Qty</th>
-                                <th scope="col">Price</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+            <div class="carousel-item h-100">
+                <img alt="slide 2" class="d-block w-100 h-100" src="assets/images/02.jpg">
+            </div>
+            <div class="carousel-item h-100">
+                <img alt="slide 3" class="d-block w-100 h-100" src="assets/images/03.jpg">
+            </div>
+            <div class="carousel-item h-100">
+                <img alt="slide 4" class="d-block w-100 h-100" src="assets/images/04.jpeg">
+            </div>
+            <div class="carousel-item h-100">
+                <img alt="slide 5" class="d-block w-100 h-100" src="assets/images/05.jpg">
             </div>
         </div>
-    </section>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-    <section id="customerpage">
-        <div class="page" id="customer">
-            <br>
-            <div class="row">
-                <div class="col">
-                </div>
-
-                <div class="col ">
-                    <h4 class="align-content-center" text>Customer</h4>
-                    <br>
-                    <form class="form-floating">
-                        <input class="form-control" id="id" placeholder="" type="text" value="">
-                        <label for="id">Input Customer ID</label>
-                        <p><small id="cusId" class="text-danger pl-1"></small></p>
-                    </form>
-                    <form class="form-floating">
-                        <input class="form-control" id="name" placeholder="" type="text" value="">
-                        <label for="name">Input Name</label>
-                        <p><small id="cusName" class="text-danger pl-1"></small></p>
-                    </form>
-                    <form class="form-floating">
-                        <input class="form-control" id="address" placeholder="" type="text" value="">
-                        <label for="address">Input Address</label>
-                        <p><small id="cusAddress" class="text-danger pl-1"></small></p>
-                    </form>
-                    <form class="form-floating">
-                        <input class="form-control" id="tpNum" placeholder="" type="text" value="">
-                        <label for="tpNum">Input with Tp Number</label>
-                        <p><small id="cusTpNum" class="text-danger pl-1"></small></p>
-                    </form>
-                    <br>
-                    <button class="btn btn-success" id="addCustomer" type="button">Add Customer</button>
-                    <button class="btn btn-info" type="button">Update Customer</button>
-                    <button class="btn btn-danger" type="button">Delete Customer</button>
-                    <br>
-                    <button class="btn btn-warning" type="button" id="clear">Clear</button>
-
-                </div>
-                <div class="col">
-                </div>
+    <!--customer Form-->
+    <div id="customerPage" class="container flex-grow-1 flex-column">
+        <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+            <h1><i class="fas fa-users"></i> Customers</h1>
+            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item customerPageNavi customerHomeNavi"><!--<a class="text-decoration-none" href="index.html">-->Home<!--</a>--></li>
+                    <li aria-current="page" class="breadcrumb-item active">Customers</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row justify-content-around" style="height: max-content">
+            <div class="col-10 col-md-5 col-lg-5 p-0" style="background-color: white">
+                <h3 class="text-center bg-primary p-2 text-light">Search Customer</h3>
+                <form>
+                    <div class="mb-3 ms-3 me-3">
+                        <input class="form-control" id="custId"
+                               placeholder="Input Customer ID"
+                               type="text">
+                    </div>
+                    <button class="btn btn-success ms-3 mb-3 ms-md-3 ms-lg-3" type="submit">Search</button>
+                    <button class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3" type="reset">Clear</button>
+                </form>
             </div>
-            <br>
-            <div class="row">
-                <div class="col">
-                </div>
-
-                <div class="col justify-content-center">
-                    <table class="table table-hover">
-                        <thead class="bg-danger text-white">
-                        <tr class="justify-content-center">
-                            <th>Id</th>
+            <div class="col-10 col-md-5 col-lg-5 mt-2">
+                <button class="btn btn-info position-relative m-2" data-bs-target="#registerCustomer"
+                        data-bs-toggle="modal">Add Customer
+                </button>
+                <button class="btn btn-warning position-relative m-2">View All Customers</button>
+                <button class="btn btn-primary position-relative m-2" data-bs-target="#updateCustomer"
+                        data-bs-toggle="modal">Update Customer
+                </button>
+                <button class="btn btn-danger position-relative m-2" data-bs-target="#deleteCustomer"
+                        data-bs-toggle="modal">Delete Customer
+                </button>
+            </div>
+        </div>
+        <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
+            <div class="col-10">
+                <h3 class="text-center bg-black p-2 text-light mb-0">Customer Details</h3>
+                <div class="customeTableDiv">
+                    <table class="table bg-light table-bordered w-100 h-100 table-hover">
+                        <thead class="bg-danger text-light text-center">
+                        <tr>
+                            <th>ID</th>
                             <th>Name</th>
                             <th>Address</th>
-                            <th>Telephone</th>
+                            <th>Salary</th>
                         </tr>
                         </thead>
-                        <tbody id="tableCus">
+                        <tbody id="customerTable">
 
                         </tbody>
                     </table>
                 </div>
             </div>
-
-
         </div>
-    </section>
-    <section id="itempage">
-        <div class="page" id="item">
-            <br>
-            <div class="row">
-                <div class="col">
-                </div>
-                <div class="col">
-                    <h4 class="justify-content-center" text>Item</h4>
-                    <form class="form-floating">
-                        <label for="itemId"></label><input class="form-control" id="itemId" placeholder="" type="text"
-                                                           value="">
-                        <label for="ItemId">Input Item ID</label>
-                    </form>
-                    <form class="form-floating">
-                        <input class="form-control" id="itemName" placeholder="" type="text" value="">
-                        <label for="itemName">Input Brand</label>
-                    </form>
-                    <form class="form-floating">
-                        <input class="form-control" id="qty" placeholder="" type="text" value="">
-                        <label for="qty">Input Qty</label>
-                    </form>
-                    <form class="form-floating">
-                        <input class="form-control" id="uPrice" placeholder="" type="text"
-                               value="">
-                        <label for="uPrice">Input UnitPrice</label>
-                    </form>
+    </div>
 
-                    <br>
-                    <button class="btn btn-primary " id="addItem" type="button">Add Item</button>
-                    <button class="btn btn-warning " type="button">Update Item</button>
-                    <button class="btn btn-danger" type="button">Delete Item</button>
-                </div>
-                <div class="col">
-                </div>
+    <!--item form-->
+    <div id="itemPage" class="container flex-grow-1 flex-column">
+        <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+            <h1><i class="fas fa-boxes"></i> Items</h1>
+            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item itemPageNavi itemHomeNavi"><!--<a class="text-decoration-none" href="index.html">-->Home<!--</a>--></li>
+                    <li aria-current="page" class="breadcrumb-item active">Items</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row justify-content-around" style="height: max-content">
+            <div class="col-10 col-md-5 col-lg-5 p-0" style="background-color: white">
+                <h3 class="text-center bg-danger p-2 text-light">Search Item</h3>
+                <form>
+                    <div class="mb-3 ms-3 me-3">
+                        <input class="form-control" id="searchcode"
+                               placeholder="Input Item Code"
+                               type="text">
+                    </div>
+                    <button class="btn btn-success ms-3 mb-3 ms-md-3 ms-lg-3" type="submit">Search</button>
+                    <button class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3" type="reset">Clear</button>
+                </form>
             </div>
-            <br>
-            <div class="row">
-                <div class="col">
-                </div>
-
-                <div class="col justify-content-center row-mt-4">
-                    <table class="table table-hover">
-                        <thead class="bg-danger text-white">
-                        <tr class="justify-content-center">
-                            <th>Id</th>
+            <div class="col-10 col-md-5 col-lg-5 mt-2">
+                <button class="btn btn-info position-relative m-2" data-bs-target="#addItem"
+                        data-bs-toggle="modal">Add Item</button>
+                <button class="btn btn-warning position-relative m-2">View All Items</button>
+                <button class="btn btn-primary position-relative m-2" data-bs-target="#updateItem"
+                        data-bs-toggle="modal">Update Item</button>
+                <button class="btn btn-danger position-relative m-2" data-bs-target="#deleteItem"
+                        data-bs-toggle="modal">Delete Item</button>
+            </div>
+        </div>
+        <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
+            <div class="col-10">
+                <h3 class="text-center bg-success p-2 text-light mb-0">Item Details</h3>
+                <div class="itemTableDiv">
+                    <table class="table bg-light table-bordered w-100 h-100 table-hover">
+                        <thead class="bg-primary text-center text-light">
+                        <tr>
+                            <th>Code</th>
                             <th>Name</th>
-                            <th>Qty</th>
                             <th>Unit Price</th>
+                            <th>Quantity</th>
                         </tr>
                         </thead>
-                        <tbody id="tableItem">
+                        <tbody id="itemTable">
 
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-</main>
-<!--<script src="assets/JS/Script.js"></script>-->
-<script src="assets/Bootstrap/js/bootstrap.bundle.js"></script>
+    <!--placeOrder Form-->
+    <div id="placeOrderPage" class="container-fluid flex-grow-1 flex-column">
+        <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+            <h1><i class="fas fa-cart-plus"></i> Place Order</h1>
+            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item placeOrderPageNavi placeOrderHomeNavi"><!--<a class="text-decoration-none" href="index.html">-->Home<!--</a>--></li>
+                    <li aria-current="page" class="breadcrumb-item active">Orders</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row justify-content-around" style="height: max-content">
+            <div class="col-10 col-md-5 col-lg-3 p-3 mt-3" style="background-color: white">
+                <h3 class="text-center bg-black p-2 text-light">Invoice</h3>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="orderId">Order ID</label>
+                        <input class="form-control border-dark" id="orderId" type="text">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="orderDate">Order Date</label>
+                        <input class="form-control border-dark" id="orderDate" type="date">
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="selectcustomerId">Customer ID</label>
+                        <select aria-label="Default select example" class="form-select border-dark" id="selectcustomerId">
+                            <option selected>-Select Customer-</option>
+                            <option value="1">C001</option>
+                            <option value="2">C002</option>
+                            <option value="3">C003</option>
+                            <option value="4">C004</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="pocName">Customer Name</label>
+                        <input class="form-control border-dark" id="pocName" type="text" disabled>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="pocaddress">Customer Address</label>
+                        <input class="form-control border-dark" id="pocaddress" type="text" disabled>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="pocsalary">Customer Salary</label>
+                        <input class="form-control border-dark" id="pocsalary" type="text" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-5 col-lg-3 p-3 mt-3" style="background-color: white">
+                <h3 class="text-center bg-primary p-2 text-light">Items</h3>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="itemcode">Item Code</label>
+                        <select aria-label="Default select example" class="form-select border-dark" id="itemcode">
+                            <option selected>-Select Item-</option>
+                            <option value="1">I001</option>
+                            <option value="2">I002</option>
+                            <option value="3">I003</option>
+                            <option value="4">I004</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="poiName">Item Name</label>
+                        <input class="form-control border-dark" id="poiName" type="text" disabled>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="itemPrice">Unit Price</label>
+                        <input class="form-control border-dark" id="itemPrice" type="text" disabled>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="qtyOnHand">Qty On Hand</label>
+                        <input class="form-control border-dark" id="qtyOnHand" type="text" disabled>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="buyQty">Buy Qty</label>
+                        <input class="form-control border-dark" id="buyQty" type="text">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <button type="submit" class="btn btn-primary rounded-2">Add To Cart</button>
+                        <button type="submit" class="btn btn-danger rounded-2">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-10 col-lg-3 p-3 mt-3 bg-light mt-1">
+                <h3 class="text-center bg-danger p-2 text-light">Payment Details</h3>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="total">Total (Rs.)</label>
+                        <input class="form-control border-dark" id="total" type="text" disabled>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="noOfItems">No Of Items</label>
+                        <input class="form-control border-dark" id="noOfItems" type="text" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="cash">Cash (Rs.)</label>
+                        <input class="form-control border-dark" id="cash" type="text">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <label class="fw-bold" for="balance">Balance (Rs.)</label>
+                        <input class="form-control border-dark" id="balance" type="text" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary rounded-2 mt-2">Place Order</button>
+                        <button type="submit" class="btn bg-danger rounded-2 mt-2">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1 justify-content-around">
+            <div class="col-10 p-3 mt-3">
+                <h3 class="text-center bg-success p-2 text-light">Cart Details</h3>
+                <div class="cartTbleDiv bg-light">
+                    <table class="table table-hover table-bordered">
+                        <thead class="bg-danger text-light text-center">
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Name</th>
+                            <th>Unit Price</th>
+                            <th>Qty On Hand</th>
+                            <th>Buy Qty</th>
+                            <th>Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>I001</td>
+                            <td>Keerisamba 5kg</td>
+                            <td>150.00</td>
+                            <td>200</td>
+                            <td>2</td>
+                            <td><button type="button" class="bg-danger text-light">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>I002</td>
+                            <td>Dhal 2kg</td>
+                            <td>200.00</td>
+                            <td>100</td>
+                            <td>1</td>
+                            <td><button type="button" class="bg-danger text-light">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>I003</td>
+                            <td>Keerisamba 10kg</td>
+                            <td>450.00</td>
+                            <td>150</td>
+                            <td>1</td>
+                            <td><button type="button" class="bg-danger text-light">Delete</button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Register Customer -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="registerCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <h5 class="modal-title text-light">Register Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerId">Customer ID :</label>
+                        <input class="form-control" id="txtCustomerId"
+                               type="text">
+                        <p><small id="customerIdError" class="text-danger"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerName">Customer Name :</label>
+                        <input class="form-control" id="txtCustomerName"
+                               type="text">
+                        <p><small id="customerNameError" class="text-danger"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerAddress">Customer Address :</label>
+                        <input class="form-control" id="txtCustomerAddress"
+                               type="text">
+                        <p><small id="customerAddressError" class="text-danger"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCustomerSalary">Customer Salary :</label>
+                        <input class="form-control" id="txtCustomerSalary"
+                               type="number">
+                        <p><small id="customerSalaryError" class="text-danger"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnRegisterCustomer" type="submit">Save</button>
+                <button class="btn btn-secondary" type="reset" id="btnclearcustomerform">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Update Customer -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="updateCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h5 class="modal-title text-light">Update Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtSearchCustomerId">Search Customer ID :</label>
+                        <input class="form-control" id="txtSearchCustomerId"
+                               type="text">
+                        <p><small id="searchCustIdError" class="text-danger"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCName">Customer Name :</label>
+                        <input class="form-control" id="txtCName"
+                               type="text">
+                        <p><small id="cNameError" class="text-danger"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCaddress">Customer Address :</label>
+                        <input class="form-control" id="txtCaddress"
+                               type="text">
+                        <p><small id="cAddressError" class="text-danger"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtCsalary">Customer Salary :</label>
+                        <input class="form-control" id="txtCsalary"
+                               type="number">
+                        <p><small id="cSalaryError" class="text-danger"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit" id="btnUpdateCust">Update</button>
+                <button class="btn btn-secondary" type="reset" id="btnClearUpdateCustomer">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Delete Customer -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="deleteCustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Delete Customer</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="searchCId">Search Customer ID :</label>
+                        <input class="form-control" id="searchCId"
+                               type="text">
+                    </div>
+                    <fieldset disabled>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="dcName">Customer Name :</label>
+                            <input class="form-control" id="dcName"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="dcAddress">Customer Address :</label>
+                            <input class="form-control" id="dcAddress"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="dcSalary">Customer Salary :</label>
+                            <input class="form-control" id="dcSalary"
+                                   type="number">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-target="#deleteconfirmationcustomer" data-bs-toggle="modal"
+                        type="submit">Delete
+                </button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Modal delete confirmation massage-->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="deleteconfirmationcustomer" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">Confirmation Alert</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure whether you want to delete this customer?
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal" type="submit">Yes</button>
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="reset">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Add Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="addItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-black">
+                <h5 class="modal-title text-light">Add Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIcode">Item Code :</label>
+                        <input class="form-control" id="txtIcode"
+                               type="text">
+                        <p><small id="itemCodeError" class="text-danger"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemName">Item Name :</label>
+                        <input class="form-control" id="txtItemName"
+                               type="text">
+                        <p><small id="itemNameError" class="text-danger"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemUnitPrice">Item Unit Price :</label>
+                        <input class="form-control" id="txtItemUnitPrice"
+                               type="number">
+                        <p><small id="itemUnitPriceError" class="text-danger"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemQty">Item Quantity :</label>
+                        <input class="form-control" id="txtItemQty"
+                               type="number">
+                        <p><small id="itemQtyError" class="text-danger"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit" id="btnAddItem">Save</button>
+                <button class="btn btn-secondary" type="reset" id="btnclearitemform">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Update Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="updateItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-danger">
+                <h5 class="modal-title text-light">Update Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtSearchItemCode">Search Item Code :</label>
+                        <input class="form-control" id="txtSearchItemCode"
+                               type="text">
+                        <p><small class="text-danger" id="searchItemCodeError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIName">Item Name :</label>
+                        <input class="form-control" id="txtIName"
+                               type="text">
+                        <p><small class="text-danger" id="inameError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIUnitPrice">Item Unit Price :</label>
+                        <input class="form-control" id="txtIUnitPrice"
+                               type="number">
+                        <p><small class="text-danger" id="iunitpriceError"></small></p>
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIQty">Item Qty :</label>
+                        <input class="form-control" id="txtIQty"
+                               type="number">
+                        <p><small class="text-danger" id="iqtyError"></small></p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit" id="btnUpdateItem">Update</button>
+                <button class="btn btn-secondary" type="reset" id="btnClearUpdateItem">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Delete Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="deleteItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Delete Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="searchIcode">Search Item Code :</label>
+                        <input class="form-control" id="searchIcode"
+                               type="text">
+                    </div>
+                    <fieldset disabled>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledName">Item Name :</label>
+                            <input class="form-control" id="disabledName"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledAddress">Item Unit Price :</label>
+                            <input class="form-control" id="disabledAddress"
+                                   type="number">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledSalary">Item Quantity :</label>
+                            <input class="form-control" id="disabledSalary"
+                                   type="number">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" type="submit" data-bs-dismiss="modal" data-bs-target="#confirmation"
+                        data-bs-toggle="modal">Delete</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Modal delete confirmation massage-->
+<div class="modal fade" id="confirmation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmation Alert</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure whether you want to delete this item?
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" type="submit" data-bs-dismiss="modal">Yes</button>
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="reset">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/JS/jquery/jquery-3.6.0.min.js"></script>
-
-<script>
-    document.getElementById("customerpage").style.display = "none";
-    document.getElementById("itempage").style.display = "none";
-
-    //home btn
-    document.getElementById("homeBtn").addEventListener("click", function () {
-        document.getElementById("customerpage").style.display = "none";
-        document.getElementById("itempage").style.display = "none";
-        document.getElementById("homepage").style.display = "block";
-    });
-
-    //customer btn
-    document.getElementById("customerBtn").addEventListener("click", function () {
-        document.getElementById("homepage").style.display = "none";
-        document.getElementById("itempage").style.display = "none";
-        document.getElementById("customerpage").style.display = "block";
-    });
-
-    //item btn
-    document.getElementById("itemBtn").addEventListener("click", function () {
-        document.getElementById("homepage").style.display = "none";
-        document.getElementById("customerpage").style.display = "none";
-        document.getElementById("itempage").style.display = "block";
-    });
-
-    // customer form
-
-    $("#addCustomer").click(function () {
-        loadAllCustomers();
-        clearAll();
-        saveCustomer();
-    })
-
-    const cusIDRegEx = /^(C00-)[0-9]{1,3}$/;
-    const cusNameRegEx = /^[A-z ]{7,30}$/;
-    const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
-    const cusTelNoRegEx = /^0[0-9][0-9]?(-)?[0-9]{7}$/;
-
-
-    $('#id,#name,#address,#tpNum').on('keydown', function (eventOb) {
-        if (eventOb.key == "Tab") {
-            eventOb.preventDefault(); // stop execution of the button
-        }
-    });
-
-    $('#id,#name,#address,#tpNum').on('blur', function () {
-        formValid();
-    });
-
-    //focusing events
-    $("#id").on('keyup', function (eventOb) {
-        setButton();
-        if (eventOb.key == "Enter") {
-            checkIfValid();
-        }
-
-        if (eventOb.key == "Control") {
-            var typedCustomerID = $("#id").val();
-            var srcCustomer = searchCustomerFromID(typedCustomerID);
-            $("#id").val(srcCustomer.getCustomerID());
-            $("#name").val(srcCustomer.getCustomerName());
-            $("#address").val(srcCustomer.getCustomerAddress());
-            $("#tpNum").val(srcCustomer.getCustomerSalary());
-        }
-
-
-    });
-
-    $("#name").on('keyup', function (eventOb) {
-        setButton();
-        if (eventOb.key == "Enter") {
-            checkIfValid();
-        }
-    });
-
-    $("#address").on('keyup', function (eventOb) {
-        setButton();
-        if (eventOb.key == "Enter") {
-            checkIfValid();
-        }
-    });
-
-    $("#tpNum").on('keyup', function (eventOb) {
-        setButton();
-        if (eventOb.key == "Enter") {
-            checkIfValid();
-        }
-    });
-    // focusing events end
-    $("#addCustomer").attr('disabled', true);
-
-
-    function clearAll() {
-        $('#id,#name,#address,#tpNum').val("");
-        $('#id,#name,#address,#tpNum').css('border', '2px solid #ced4da');
-        $('#id').focus();
-        $("#addCustomer").attr('disabled', true);
-        loadAllCustomers();
-        $("#cusId,#cusName,#cusAddress,#cusTpNum").text("");
-    }
-
-    function formValid() {
-        var cusID = $("#id").val();
-        $("#id").css('border', '2px solid green');
-        $("#cusId").text("");
-        if (cusIDRegEx.test(cusID)) {
-            var cusName = $("#name").val();
-            if (cusNameRegEx.test(cusName)) {
-                $("#name").css('border', '2px solid green');
-                $("#cusName").text("");
-                var cusAddress = $("#address").val();
-                if (cusAddressRegEx.test(cusAddress)) {
-                    var cusTelNo = $("#tpNum").val();
-                    var resp = cusTelNo.test(cusTelNo);
-                    $("#address").css('border', '2px solid green');
-                    $("#cusAddress").text("");
-                    if (resp) {
-                        $("#tpNum").css('border', '2px solid green');
-                        $("#cusTpNum").text("");
-                        return true;
-                    } else {
-                        $("#tpNum").css('border', '2px solid red');
-                        $("#cusTpNum").text("Cus tel.no is a required field : Ex 011-23415621");
-                        return false;
-                    }
-                } else {
-                    $("#address").css('border', '2px solid red');
-                    $("#cusAddress").text("Cus Name is a required field : Minimum 8");
-                    return false;
-                }
-            } else {
-                $("#name").css('border', '2px solid red');
-                $("#cusName").text("Cus Name is a required field : Minimum 7, Max 20, Spaces Allowed");
-                return false;
-            }
-        } else {
-            $("#id").css('border', '2px solid red');
-            $("#cusId").text("Cus ID is a required field : Pattern C00-000");
-            return false;
-        }
-    }
-
-    function checkIfValid() {
-        var cusID = $("#id").val();
-        if (cusIDRegEx.test(cusID)) {
-            $("#name").focus();
-            var cusName = $("#name").val();
-            if (cusNameRegEx.test(cusName)) {
-                $("#address").focus();
-                var cusAddress = $("#address").val();
-                if (cusAddressRegEx.test(cusAddress)) {
-                    $("#cusTpNum").focus();
-                    var cusTpNumber = $("#cusTpNum").val();
-                    var resp = cusTelNoRegEx.test(cusTpNumber);
-                    if (resp) {
-                        let res = confirm("Do you really need to add this Customer..?");
-                        if (res) {
-                            saveCustomer();
-                            clearAll();
-                        }
-                    } else {
-                        $("#tpNum").focus();
-                    }
-                } else {
-                    $("#address").focus();
-                }
-            } else {
-                $("#name").focus();
-            }
-        } else {
-            $("#id").focus();
-        }
-    }
-
-    function setButton() {
-        let b = formValid();
-        if (b) {
-            $("#addCustomer").attr('disabled', false);
-        } else {
-            $("#addCustomer").attr('disabled', true);
-        }
-    }
-
-    $('#addCustomer').click(function () {
-        checkIfValid();
-    });
-
-    /*CRUD --> Customer --> Started*/
-
-    //load all Customers
-    function loadAllCustomers() {
-        $("#tableCus").empty();
-        for (var i of customerDB) {
-            /*create a html row*/
-            let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.address}</td><td>${i.salary}</td></tr>`;
-            /*select the table body and append the row */
-            $("#customerTable").append(row);
-        }
-    }
-
-    //save Customers
-    function saveCustomer() {
-        let cusID = $("#id").val();
-        let cusName = $("#name").val();
-        let cusAddress = $("#address").val();
-        let cusTpNo = $("#tpNum").val();
-
-        //create Object
-        var customerObject = {
-            id: cusID,
-            name: cusName,
-            address: cusAddress,
-            tpNum: cusTpNo
-        };
-
-        customerDb.push(customerObject);
-    }
-
-    /*CRUD --> Customer --> Ended*/
-
-
-
-    // item form
-    $("#addItem").click(function () {
-
-        $("#tableCus>tr").off();
-
-        let itemId = $("#itemId").val();
-        let itemName = $("#itemName").val();
-        let itemQty = $("#qty").val();
-        let itemUnitPrice = $("#uPrice").val();
-
-        let row1 = `<tr><td>${itemId}</td><td>${itemName}</td><td>${itemQty}</td><td>${itemUnitPrice}</td>`;
-        $("#tableItem").append(row1);
-
-
-        $("#tableItem>tr").click(function () {
-            let iId = $(this).children(":eq(0)").text();
-            let iName = $(this).children(":eq(1)").text();
-            let iQty = $(this).children(":eq(2)").text();
-            let iUniPrice = $(this).children(":eq(3)").text();
-
-            $("#itemId").val(iId);
-            $("#itemName").val(iName);
-            $("#qty").val(iQty);
-            $("#uPrice").val(iUniPrice);
-        });
-
-    });
-
-</script>
+<script src="assets/JS/Script.js"></script>
 </body>
 </html>
