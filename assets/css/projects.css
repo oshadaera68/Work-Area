@@ -2,4 +2,121 @@
 *Powered By:MINDARTLK.
 *version:v0.1.0
 **/
+/*webkit scrollbar --> started*/
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9b59b6;
+}
+
+/*webkit scrollbar --> ended*/
+
+body > main > #main-content {
+    height: 220vh;
+    background-color: #3498db;
+}
+
+#h4 {
+    position: absolute;
+    left: 93vh;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+
+#h3 {
+    position: absolute;
+    left: 198vh;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.class21 {
+    text-decoration: none;
+    color: white;
+}
+
+#footer {
+    position: relative;
+    background-color: #34495e;
+    height: 12vh;
+    top: 208vh;
+}
+
+div > #p3 {
+    position: absolute;
+    left: 89vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 17px;
+}
+
+div > #p4 {
+    position: absolute;
+    left: 75vh;
+    top: 4vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 17px;
+}
+
+#img1 {
+    position: absolute;
+    width: 66vh;
+    left: 15vh;
+    top: 20vh;
+    border-radius: 5vh;
+}
+
+#btn1 {
+    position: absolute;
+    width: 149px;
+    height: 36px;
+    top: 605px;
+    left: 36vh;
+    background-color: #9b59b6;
+    font-family: 'Redressed', cursive;
+    font-size: 23px;
+}
+
+#img2 {
+    position: absolute;
+    left: 110vh;
+    width: 84vh;
+    top: 23vh;
+    border-radius: 5vh;
+}
+
+#btn2 {
+    position: absolute;
+    left: 140vh;
+    top: 83vh;
+    width: 158px;
+    height: 38px;
+    background-color: #9b59b6;
+    font-family: 'Redressed', cursive;
+    font-size: 23px;
+}
+
+#img3 {
+    position: absolute;
+    width: 127vh;
+    top: 108vh;
+    left: 39vh;
+    border-radius: 5vh;
+}
+
+#btn3 {
+    position: absolute;
+    top: 177vh;
+    left: 92vh;
+    width: 27vh;
+    height: 6vh;
+    background-color: #9b59b6;
+    font-family: 'Redressed', cursive;
+    font-size: 23px;
+}
