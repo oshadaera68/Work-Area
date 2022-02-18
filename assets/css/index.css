@@ -476,7 +476,6 @@ div > form > .button > a:hover {
     cursor: pointer;
 }
 
-
 /*second content ended------*/
 
 /*section covering--> section 3(thirdContent)*/
@@ -506,7 +505,7 @@ div > #H2-1 {
 #thirdContent > #art1 {
     position: absolute;
     top: 222vh;
-    left: 258px;
+    left: 262px;
     color: white;
     background-color: blue;
     font-family: 'Poppins', sans-serif;
@@ -516,7 +515,7 @@ div > #H2-1 {
 
 #thirdContent > #art2 {
     position: absolute;
-    left: 914px;
+    left: 918px;
     top: 234vh;
     background-color: blue;
     color: white;
@@ -528,7 +527,7 @@ div > #H2-1 {
 #thirdContent > #art3 {
     top: 260vh;
     position: absolute;
-    left: 272px;
+    left: 275px;
     background-color: blue;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -539,14 +538,14 @@ div > #H2-1 {
 #img3 {
     top: 272vh;
     position: absolute;
-    left: 272px;
+    left: 275px;
     height: 108px;
 }
 
 #thirdContent > #art4 {
     position: absolute;
     top: 1983px;
-    left: 914px;
+    left: 918px;
     background-color: blue;
     color: white;
     font-family: 'Poppins', sans-serif;
