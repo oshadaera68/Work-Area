@@ -74,7 +74,7 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
     cursor: pointer;
-    color: #e74c3c;
+    color: red;
 }
 
 body > header > p {

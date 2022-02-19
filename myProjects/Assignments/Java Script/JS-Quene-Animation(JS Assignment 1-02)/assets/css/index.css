@@ -1,0 +1,61 @@
+/**
+ *Powered By:MINDARTLK.
+ *version:v0.1.0
+ **/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#head {
+    width: 800px;
+    color: royalblue;
+    position: relative;
+    left: 600px;
+}
+
+#bottom {
+    width: 800px;
+    color: royalblue;
+    position: relative;
+    top: 100px;
+    right: 630px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+div {
+    width: 100px;
+    height: 30px;
+    border: 1.8px solid black;
+    margin: 0 10px;
+    position: relative;
+
+}
+
+#one {
+    bottom: 30px
+}
+
+#two, #three, #four, #five, #six {
+    top: 50px
+}
+
+#six {
+    top: 130px;
+}
+
+#H1-1{
+    position: absolute;
+    top: 32vh;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #9b59b6;
+}

@@ -1,0 +1,32 @@
+/**
+ *Powered By:MINDARTLK.
+ *version:v0.1.0
+ **/
+section {
+    height: 10vh;
+    width: 75vw;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid black;
+}
+
+section > div {
+    width: 15vw;
+    border: 1px solid black;
+}
+
+
+body > div {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 35vh;
+}

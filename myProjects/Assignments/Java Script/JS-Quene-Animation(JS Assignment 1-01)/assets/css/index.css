@@ -1,0 +1,71 @@
+/**
+ *Powered By:MINDARTLK.
+ *version:v0.1.0
+ **/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+div {
+
+    position: relative;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2em;
+
+}
+
+body > div:first-child {
+    top: 450px;
+    left: 90px;
+
+}
+
+body > div:nth-child(2) {
+    top: 420px;
+    left: 320px;
+
+}
+
+body > div:nth-child(3) {
+    top: 390px;
+    left: 540px;
+
+}
+
+body > div:nth-child(4) {
+    top: 360px;
+    left: 760px;
+
+}
+
+body > div:nth-child(5) {
+    top: 330px;
+    left: 990px;
+
+}
+
+body > div:nth-child(6) {
+    top: 300px;
+    left: 1210px;
+
+}
+
+img {
+    width: 220px;
+    height: auto;
+    position: relative;
+    top: 300px;
+}
+
+#park {
+    position: absolute;
+    width: 20rem;
+    top: 350px;
+    right: 150px;
+}
