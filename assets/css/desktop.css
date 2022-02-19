@@ -1,0 +1,154 @@
+/**
+ *Powered By:MINDARTLK.
+ *version:v0.1.0
+ **/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9b59b6;
+}
+
+body > main {
+    position: relative;
+    height: 1580px;
+}
+
+body > main > #main-content {
+    height: 218vh;
+    background-color: #3498db;
+}
+
+div > #H1-6 {
+    position: absolute;
+    left: 78vh;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.class21 {
+    text-decoration: none;
+    color: white;
+}
+
+div > #h3 {
+    position: absolute;
+    left: 196vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px;
+    top: 1px;
+    letter-spacing: 1px;
+}
+
+#img12 {
+    position: absolute;
+    width: 62vh;
+    height: 34vh;
+    left: 19vh;
+    top: 17vh;
+    border-radius: 16px;
+}
+
+.pro1 {
+    left: 34vh;
+    position: absolute;
+    top: 49vh;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    height: 32px;
+    width: 30vh;
+    border-radius: 13px;
+    background-color: #9b59b6;
+}
+
+#img13 {
+    position: absolute;
+    left: 121vh;
+    top: 16vh;
+    width: 58vh;
+    height: 35vh;
+    border-radius: 4vh;
+}
+
+.pro2 {
+    position: absolute;
+    left: 139vh;
+    top: 49vh;
+    width: 19vh;
+    height: 4vh;
+    border-radius: 13px;
+    background-color: #9b59b6;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#img14 {
+    position: absolute;
+    left: 23vh;
+    top: 64vh;
+    width: 54vh;
+    height: 35vh;
+    border-radius: 16px;
+}
+
+.pro3 {
+    position: absolute;
+    top: 97vh;
+    left: 38vh;
+    width: 24vh;
+    height: 4vh;
+    border-radius: 13px;
+    background-color: #9b59b6;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#img15 {
+    position: absolute;
+    height: 251px;
+    width: 435px;
+    left: 120vh;
+    top: 64vh;
+    border-radius: 16px;
+}
+
+.pro4 {
+    position: absolute;
+    left: 140vh;
+    top: 96vh;
+    width: 143px;
+    height: 30px;
+    border-radius: 13px;
+    background-color: #9b59b6;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#img16 {
+    position: absolute;
+    width: 59vh;
+    height: 33vh;
+    top: 111vh;
+    left: 19vh;
+    border-radius: 33px;
+}
+
+.pro5 {
+    position: absolute;
+    top: 142vh;
+    left: 37vh;
+    height: 4vh;
+    width: 21vh;
+    border-radius: 13px;
+    background-color: #9b59b6;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}

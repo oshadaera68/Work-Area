@@ -7,14 +7,28 @@
 <head>
     <meta charset="UTF-8">
     <title>JS Assignment</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="assets/css/normalize.css" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #9b59b6;
+        }
+
         body > main {
             position: relative;
             height: 1580px;
@@ -34,12 +48,12 @@
             letter-spacing: 1px;
         }
 
-        .class21{
+        .class21 {
             text-decoration: none;
             color: white;
         }
 
-        div>#h3{
+        div > #h3 {
             position: absolute;
             left: 196vh;
             font-family: 'Roboto', sans-serif;
@@ -48,7 +62,7 @@
             letter-spacing: 1px;
         }
 
-        #img45{
+        #img45 {
             position: absolute;
             width: 70vh;
             height: 42vh;
@@ -57,7 +71,7 @@
             border-radius: 20px;
         }
 
-        .but21{
+        .but21 {
             position: absolute;
             top: 55vh;
             left: 35vh;
@@ -93,7 +107,7 @@
             font-size: 17px;
         }
 
-        #img46{
+        #img46 {
             position: absolute;
             left: 109vh;
             top: 16vh;
@@ -101,7 +115,7 @@
             border-radius: 20px;
         }
 
-        .but22{
+        .but22 {
             position: absolute;
             top: 56vh;
             left: 138vh;
@@ -113,7 +127,7 @@
             font-size: 17px;
         }
 
-        #img47{
+        #img47 {
             position: absolute;
             top: 68vh;
             width: 70vh;
@@ -122,7 +136,7 @@
             border-radius: 4vh;
         }
 
-        .but23{
+        .but23 {
             position: absolute;
             border-radius: 16px;
             background-color: #9b59b6;
@@ -134,7 +148,7 @@
             height: 34px;
         }
 
-        #img48{
+        #img48 {
             position: absolute;
             top: 68vh;
             width: 74vh;
@@ -144,7 +158,7 @@
         }
 
 
-        .but24{
+        .but24 {
             position: absolute;
             border-radius: 16px;
             background-color: #9b59b6;
@@ -164,28 +178,35 @@
 </head>
 <body>
 <main>
-<section id="main-content">
-    <div><h1 id="H1-6">JavaScript Assignments</h1></div>
-    <div><h3 id="h3"><a class="class21" href="index.html">Home</a></h3></div>
+    <section id="main-content">
+        <div><h1 id="H1-6">JavaScript Assignments</h1></div>
+        <div><h3 id="h3"><a class="class21" href="index.html">Home</a></h3></div>
 
-    <img src="assets/assignment-images/SPA.png" alt="SPA" id="img45">
-    <button class="but21"><a href="https://github.com/oshadaera68/POS-System-SPA" class="class21">POS System SPA</a></button>
+        <img alt="SPA" id="img45" src="assets/assignment-images/SPA.png">
+        <button class="but21"><a class="class21" href="https://github.com/oshadaera68/POS-System-SPA">POS System SPA</a>
+        </button>
 
-    <img src="assets/assignment-images/JSAss1.png" alt="Ass1" id="img46">
-    <button class="but22"><a href="https://github.com/oshadaera68/JS-Assignment-Sense/tree/master/JS-Quene-Animation(JS%20Assignment%201-01)" class="class21">JS que 1</a></button>
+        <img alt="Ass1" id="img46" src="assets/assignment-images/JSAss1.png">
+        <button class="but22"><a
+                class="class21"
+                href="https://github.com/oshadaera68/JS-Assignment-Sense/tree/master/JS-Quene-Animation(JS%20Assignment%201-01)">JS que 1</a></button>
 
-    <img src="assets/assignment-images/JSAss2.png" alt="Ass2" id="img47">
-    <button class="but23"><a class="class21" href="https://github.com/oshadaera68/JS-Assignment-Sense/tree/master/JS-Quene-Animation(JS%20Assignment%201-02)">JS que 2</a></button>
+        <img alt="Ass2" id="img47" src="assets/assignment-images/JSAss2.png">
+        <button class="but23"><a class="class21"
+                                 href="https://github.com/oshadaera68/JS-Assignment-Sense/tree/master/JS-Quene-Animation(JS%20Assignment%201-02)">JS
+            que 2</a></button>
 
-    <img src="assets/assignment-images/JSAss3.png" alt="Ass3" id="img48">
-    <button class="but24"><a href="https://github.com/oshadaera68/JS-Assignment-Sense/tree/master/JS-Night_Rider-KITT-Animation(JS%20Assignment%202)" class="class21">Night Rider KITT Animation</a></button>
+        <img alt="Ass3" id="img48" src="assets/assignment-images/JSAss3.png">
+        <button class="but24"><a
+                class="class21"
+                href="https://github.com/oshadaera68/JS-Assignment-Sense/tree/master/JS-Night_Rider-KITT-Animation(JS%20Assignment%202)">Night Rider KITT Animation</a></button>
 
-    <footer id="footer">
-        <div><p id="p3">Powered By MINDARTLK.</p></div>
-        <div><p id="p4">CopyRight By MINDARTLK. All Rights Reserved.2022</p></div>
-    </footer>
+        <footer id="footer">
+            <div><p id="p3">Powered By MINDARTLK.</p></div>
+            <div><p id="p4">CopyRight By MINDARTLK. All Rights Reserved.2022</p></div>
+        </footer>
 
-</section>
+    </section>
 </main>
 <script src="assets/JavaScript/Snow.js"></script>
 </body>
