@@ -1,0 +1,136 @@
+/**
+ *Powered By:MINDARTLK.
+ *version:v0.1.0
+ **/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9b59b6;
+}
+
+body > main {
+    position: relative;
+    height: 1580px;
+}
+
+body > main > #main-content {
+    height: 218vh;
+    background-color: #3498db;
+}
+
+div > #H1-6 {
+    position: absolute;
+    left: 78vh;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.class21 {
+    text-decoration: none;
+    color: white;
+}
+
+div > #h3 {
+    position: absolute;
+    left: 196vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
+    top: 1px;
+    letter-spacing: 1px;
+}
+
+#img15 {
+    position: absolute;
+    height: 251px;
+    width: 435px;
+    left: 9vh;
+    top: 20vh;
+    border-radius: 16px;
+}
+
+.pro4 {
+    position: absolute;
+    left: 26vh;
+    top: 52vh;
+    width: 143px;
+    height: 30px;
+    border-radius: 13px;
+    background-color: #9b59b6;
+    font-size: 15px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#img16 {
+    position: absolute;
+    width: 63vh;
+    height: 35vh;
+    top: 19vh;
+    left: 118vh;
+    border-radius: 18px;
+}
+
+.pro5 {
+    position: absolute;
+    top: 52vh;
+    left: 138vh;
+    height: 4vh;
+    width: 21vh;
+    border-radius: 13px;
+    background-color: #9b59b6;
+    font-size: 15px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#img17{
+    position: absolute;
+    width: 437px;
+    height: 237px;
+    top: 67vh;
+    left: 8vh;
+    border-radius: 15px;
+}
+
+.pro6{
+    position: absolute;
+    top: 98vh;
+    left: 25vh;
+    width: 153px;
+    height: 28px;
+    border-radius: 13px;
+    background-color: #9b59b6;
+    font-size: 15px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#footer {
+    position: relative;
+    background-color: #34495e;
+    height: 12vh;
+    top: 208vh;
+}
+
+div > #p3 {
+    position: absolute;
+    left: 89vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 17px;
+}
+
+div > #p4 {
+    position: absolute;
+    left: 75vh;
+    top: 4vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 17px;
+}
