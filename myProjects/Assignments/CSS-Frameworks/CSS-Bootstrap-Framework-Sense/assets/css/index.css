@@ -1,47 +1,43 @@
-.navbar_h6_ls {
-    position: absolute;
-    left: 167vh;
-    z-index: 1;
-    top: 8px;
-    right: 2px;
-    color: white;
-    font-size: 18px;
-}
+/**
+ *Powered By:MINDARTLK.
+ *version:v0.1.0
+ **/
 
-.navbar_h6_ls > #anc1, #anc2 {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-
-#anc1:hover {
-    color: red;
-}
-
-#anc2:hover {
-    color: red;
-}
-
-#img2 {
-    width: 1536px;
+.homePageSection{
+    width: 100vw;
     height: 100vh;
 }
-
-#p2 {
-    font-family: 'ubuntu', sans-serif;
-    position: absolute;
-    top: 36vh;
-    left: 60vh;
-    color: white;
-    font-size: 40px;
+.posNavi{
+    z-index: 5;
+    width: 100vw;
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
 }
-
-#p3 {
-    position: absolute;
-    left: 63vh;
-    top: 52vh;
-    color: white;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 30px;
+.naviItems>li:hover{
+    background-color: lightgreen;
+}
+.searchCustomer{
+    background-color: #c8c8c8;
+}
+.btnRegister{
+    right: 30%;
+}
+.btnViewAllCustomers{
+    right: 0%;
+}
+.itemTableDiv{
+    position: relative;
+    height: 30vh;
+    overflow: auto;
+    background-color: white;
+}
+.customeTableDiv{
+    position: relative;
+    height: 30vh;
+    overflow: auto;
+    background-color: white;
+}
+.cartTbleDiv{
+    position: relative;
+    height: 20vh;
+    overflow: auto;
 }

@@ -278,3 +278,12 @@ div > #p4 {
     color: white;
     font-size: 17px;
 }
+
+#img11{
+    position: absolute;
+    top: 101vh;
+    width: 317px;
+    height: 204px;
+    left: 152vh;
+    border-radius: 32px;
+}
