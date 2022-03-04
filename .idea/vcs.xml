@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/myProjects/Assignments/CSS-Frameworks/POS-System-SPA-Updated" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/myProjects/Assignments/SPA(Single Page Application)/POS-System-SPA-in-memory" vcs="Git" />
   </component>
 </project>

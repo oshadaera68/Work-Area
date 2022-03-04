@@ -1,0 +1,1260 @@
+/**
+*Powered By:MINDARTLK.
+*version:v0.1.0
+**/
+
+/*main root started*/
+:root {
+    --typewriterSpeed: 2s;
+}
+
+/*main root ended*/
+
+/*webkit scroll bar --> started*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9b59b6;
+}
+
+/*webkit scroll bar --> ended*/
+
+/*nav started*/
+* {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    height: 65px;
+    width: 100%;
+    font-size: 19px;
+    background-color: #3498db;
+    box-shadow: 2px 1px 2px 1px black;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+header > nav {
+    top: 0;
+    right: 0;
+    position: absolute;
+
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+nav > ul > li {
+    font-family: 'Ubuntu', sans-serif;
+    display: inline;
+    margin-left: 6px;
+    color: white;
+    padding: 0 10px 0 10px;
+
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+nav > ul > li > a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+body > header > p {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+/*nav ended*/
+
+/*section covering--> section 1(firstContent)*/
+body > main {
+    position: relative;
+    height: 1580px;
+}
+
+body > main > #firstContent {
+    height: 100vh;
+    background-color: #3498db;
+}
+
+/*section covering ended*/
+
+/*home page started*/
+body > main > #firstContent > div > p {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 36px;
+    left: 15px;
+    top: 61px;
+    color: white;
+}
+
+body > main > #firstContent > #div2 > p {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 38px;
+    left: 14px;
+    top: 108px;
+    color: white;
+}
+
+/*-- p (#p1)--> animation started ----*/
+#p1::before, #p1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#p1::before {
+    background-color: #3498db;
+    animation: typewriter var(--typewriterSpeed) steps(50) forwards;
+}
+
+#p1::after {
+    width: 0.125em;
+    background-color: white;
+    animation: typewriter var(--typewriterSpeed) steps(50) forwards,
+    blink var(--typewriterSpeed) 3ms steps(50) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: initial;
+    }
+}
+
+/*p(#p1) --> animation finished ----*/
+
+/*p(#p2) --> animation started ----*/
+#p2::before, #p2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#p2::before {
+    background-color: #3498db;
+    animation: typewriter var(--typewriterSpeed) steps(50) forwards;
+}
+
+#p2::after {
+    width: 0.125em;
+    background-color: white;
+    animation: typewriter var(--typewriterSpeed) steps(50) forwards,
+    blink var(--typewriterSpeed) 7ms steps(50) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: initial;
+    }
+}
+
+/*p(#p2) --> animation ended ----*/
+
+body > main > #firstContent > div > img {
+    position: absolute;
+    width: 483px;
+    height: 483px;
+    left: 125px;
+    top: 172px;
+}
+
+/*-- h1 --> animation started ----*/
+#firstContent > div > #H1::before, #H1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#H1::before {
+    background-color: #3498db;
+    animation: typewriter var(--typewriterSpeed) steps(40) forwards;
+}
+
+#H1::after {
+    width: 0.125em;
+    background-color: white;
+    animation: typewriter var(--typewriterSpeed) steps(40) forwards,
+    blink var(--typewriterSpeed) 4ms steps(40) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: initial;
+    }
+}
+
+/*--h1(#H1)-->animation ended---*/
+
+/*--h1(#H1-2)-->animation started---*/
+#firstContent > div > #H1-2::before, #H1-2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#H1-2::before {
+    background-color: #3498db;
+    animation: typewriter var(--typewriterSpeed) steps(40) forwards;
+}
+
+#H1-2::after {
+    width: 0.125em;
+    background-color: white;
+    animation: typewriter var(--typewriterSpeed) steps(40) forwards,
+    blink var(--typewriterSpeed) 4ms steps(40) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: initial;
+    }
+}
+
+/*--h1(#H1-2)-->animation ended---*/
+
+/*--h1(#H1-3)-->animation started---*/
+
+#firstContent > div > #H1-3::before, #H1-3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#H1-3::before {
+    background-color: #3498db;
+    animation: typewriter var(--typewriterSpeed) steps(40) forwards;
+}
+
+#H1-3::after {
+    width: 0.125em;
+    background-color: white;
+    animation: typewriter var(--typewriterSpeed) steps(40) forwards,
+    blink var(--typewriterSpeed) 4ms steps(40) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: initial;
+    }
+}
+
+/*--h1(#H1-3)-->animation ended---*/
+
+/*--h1(#H1-4)-->animation started---*/
+#firstContent > div > #H1-4::before, #H1-4::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#H1-4::before {
+    background-color: #3498db;
+    animation: typewriter var(--typewriterSpeed) steps(40) forwards;
+}
+
+#H1-4::after {
+    width: 0.125em;
+    background-color: white;
+    animation: typewriter var(--typewriterSpeed) steps(40) forwards,
+    blink var(--typewriterSpeed) 4ms steps(40) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: initial;
+    }
+}
+
+/*--h1(#H1-4)-->animation ended---*/
+
+div > #H1 {
+    font-size: 75px;
+    top: 144px;
+    left: 713px;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    color: yellow;
+}
+
+div > #H1-2 {
+    position: absolute;
+    top: 250px;
+    left: 718px;
+    font-size: 53px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+div > #H1-3 {
+    position: absolute;
+    top: 324px;
+    left: 719px;
+    font-size: 53px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+div > #H1-4 {
+    position: absolute;
+    top: 405px;
+    left: 720px;
+    font-size: 53px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+div > .button3 {
+    position: absolute;
+    left: 134vh;
+    top: 81vh;
+    width: 164px;
+    height: 40px;
+    font-size: 23px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    background-color: #9b59b6;
+    letter-spacing: 1px;
+    border-radius: 21px;
+}
+
+div > #ul-1 {
+    position: absolute;
+    display: inline;
+    list-style: none;
+    top: 183px;
+    left: 3px;
+    padding: 2px;
+}
+
+/*home page ended*/
+
+/*button ---> contact me --> started*/
+
+.main {
+    position: absolute;
+    width: 120px;
+    height: 39px;
+    background-color: #F1C40F;
+    border-radius: 101px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/*button ---> contact me --> ended*/
+
+
+/*section covering--> section 2(secondContent)*/
+body > main > #secondContent {
+    height: 100vh;
+    background-color: #76bdf1;
+}
+
+/*second content started*/
+div > #para1 {
+    position: absolute;
+    top: 104vh;
+    font-size: 48px;
+    font-family: 'Acme', sans-serif;
+    left: 19px;
+    color: white;
+}
+
+div > #para2 {
+    left: 22px;
+    position: absolute;
+    top: 114vh;
+    letter-spacing: 1px;
+    font-size: 51px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#img1 > img {
+    position: absolute;
+    top: 112vh;
+    left: 863px;
+    height: 575px;
+    width: 460px;
+    border-radius: 10%;
+}
+
+div > form > .button {
+    position: absolute;
+    top: 190vh;
+    left: 249px;
+    width: 205px;
+    height: 42px;
+    background-color: #9b59b6;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 21px;
+    border-radius: 20px;
+}
+
+div > form > .button > a {
+    text-decoration: none;
+    color: white;
+}
+
+div > form > .button > a:hover {
+    cursor: pointer;
+}
+
+/*second content ended------*/
+
+/*section covering--> section 3(thirdContent)*/
+body > main > #thirdContent {
+    height: 100vh;
+    background-color: #3498db;
+}
+
+/*section covering end*/
+
+/*third content started*/
+
+div > #H2-1 {
+    position: absolute;
+    top: 205vh;
+    font-size: 44px;
+    font-family: 'Acme', sans-serif;
+    color: white;
+    left: 59px;
+}
+
+#thirdContent > section {
+    position: absolute;
+    top: 200px;
+}
+
+#thirdContent > #art1 {
+    position: absolute;
+    top: 222vh;
+    left: 262px;
+    color: white;
+    background-color: blue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    height: 84px;
+}
+
+#thirdContent > #art2 {
+    position: absolute;
+    left: 918px;
+    top: 234vh;
+    background-color: blue;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    height: 84px;
+}
+
+#thirdContent > #art3 {
+    top: 260vh;
+    position: absolute;
+    left: 275px;
+    background-color: blue;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    height: 85px;
+}
+
+#img3 {
+    top: 272vh;
+    position: absolute;
+    left: 275px;
+    height: 108px;
+}
+
+#thirdContent > #art4 {
+    position: absolute;
+    top: 1983px;
+    left: 918px;
+    background-color: blue;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    height: 85px;
+}
+
+#img4 {
+    position: relative;
+    left: 126vh;
+    top: 551px;
+    height: 94px;
+}
+
+hr {
+    transform: rotate(90deg);
+    width: 531px;
+    top: 33vh;
+    left: -7px;
+    border: 4px solid blue;
+    height: 1px;
+    position: relative;
+    margin: auto;
+}
+
+#hr1 {
+    position: relative;
+    left: 76px;
+    top: 129px;
+    transform: rotate(180deg);
+    width: 149px;
+    border: 4px solid black;
+}
+
+#hr2 {
+    position: relative;
+    left: 76px;
+    top: 56vh;
+    transform: rotate(180deg);
+    width: 149px;
+    border: 4px solid black;
+}
+
+#hr3 {
+    position: relative;
+    transform: rotate(180deg);
+    border: 4px solid black;
+    left: -89px;
+    width: 146px;
+    top: 2vh;
+}
+
+#hr4 {
+    position: relative;
+    transform: rotate(180deg);
+    border: 4px solid black;
+    left: -89px;
+    width: 147px;
+    top: 39vh;
+}
+
+/*third content ended*/
+
+/*section covering--> section 4(forthContent)*/
+body > main > #forthContent {
+    height: 100vh;
+    background-color: #76bdf1;
+}
+
+/*section covering end*/
+
+/*forth section started*/
+
+#forthContent > div > #hr4 {
+    position: absolute;
+}
+
+#forthContent > div > #hr5 {
+    position: absolute;
+    top: 2515px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+#forthContent > div > #hr6 {
+    position: absolute;
+    top: 2225px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+#forthContent > #div4 {
+    position: absolute;
+    top: 2292px;
+    border: 2px solid red;
+    background-color: #6f4e4e;
+}
+
+#forthContent > #div7 > #sub1 {
+    border: 2px solid red;
+    background-color: #6f4e4e;
+    position: absolute;
+    top: 2566px;
+}
+
+#sub1 > img {
+    position: relative;
+    padding: 17px;
+}
+
+#div4 > section > img {
+    padding: 20px;
+    position: relative;
+}
+
+#img34 {
+    top: -5px;
+    left: -16px;
+    position: relative;
+}
+
+/*forth section ended*/
+
+/*section covering--> section 5(fifthContent)*/
+body > main > #fifthContent {
+    height: 100vh;
+    background-color: #3498db;
+}
+
+/*section covering end*/
+
+/*fifth section started*/
+
+div > #H3-1 {
+    position: absolute;
+    left: 657px;
+    color: white;
+    top: 406vh;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
+    font-size: 45px;
+}
+
+#sub2 > #img56 {
+    height: 488px;
+    width: 305px;
+    top: 422vh;
+    left: 152px;
+    position: absolute;
+    border-radius: 11px;
+}
+
+#sub2 > #img57 {
+    position: absolute;
+    left: 883px;
+    height: 488px;
+    width: 469px;
+    top: 422vh;
+    border-radius: 36px;
+}
+
+#sub2 > #img58 {
+    height: 489px;
+    width: 379px;
+    left: 479px;
+    position: absolute;
+    top: 422vh;
+    border-radius: 20px;
+}
+
+#img56, #img57, #img58:hover {
+    cursor: pointer;
+    opacity: 3;
+}
+
+/*fifth section ended*/
+
+/*section covering--> section 6(sixthContent)*/
+body > main > #sixthContent {
+    height: 100vh;
+    background-color: #76bdf1;
+}
+
+/*section covering end*/
+
+/*sixth section started*/
+div > #H3-2 {
+    position: absolute;
+    font-family: 'Acme', sans-serif;
+    top: 508vh;
+    left: 88vh;
+    color: white;
+    font-size: 34px;
+}
+
+div > #H3-3 {
+    position: absolute;
+    top: 554vh;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-size: 26px;
+    left: 1vh;
+}
+
+div > #H3-4 {
+    position: absolute;
+    font-family: 'Source Code Pro', monospace;
+    top: 516vh;
+    color: white;
+    font-size: 28px;
+}
+
+div > #sub3 {
+    position: absolute;
+    top: 526vh;
+}
+
+div > #sub4 {
+    position: absolute;
+    top: 562vh;
+    left: -1vh;
+}
+
+#sub3 > #IF1 {
+    position: absolute;
+    left: 1vh;
+    height: 180px;
+    width: 281px;
+}
+
+#sub3 > #IF2 {
+    position: absolute;
+    left: 44vh;
+    height: 180px;
+    width: 281px;
+}
+
+#sub3 > #IF3 {
+    position: absolute;
+    left: 87vh;
+    width: 280px;
+    height: 180px;
+}
+
+#sub3 > #IF4 {
+    position: absolute;
+    left: 130vh;
+    width: 281px;
+    height: 180px;
+}
+
+#sub4 > #img59 {
+    position: absolute;
+    height: 238px;
+    width: 418px;
+    left: 2vh;
+    top: 2vh;
+}
+
+#sub4 > #img60 {
+    position: absolute;
+    width: 372px;
+    height: 238px;
+    left: 65vh;
+    top: 2vh;
+}
+
+#sub4 > #img61 {
+    position: absolute;
+    left: 123vh;
+    width: 407px;
+    height: 246px;
+    top: 1vh;
+}
+
+/*sixth section ended*/
+
+/*section covering--> section 7(seventhContent)*/
+body > main > #seventhContent {
+    height: 100vh;
+    background-color: #3498db;
+}
+
+/*section covering end*/
+
+/*seventh content started*/
+
+div > #H3-5 {
+    left: 74vh;
+    top: 614vh;
+    position: absolute;
+    color: white;
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+div > #sub5 > #img62 {
+    position: absolute;
+    width: 499px;
+    left: 9vh;
+    top: 630vh;
+    height: 330px;
+}
+
+div > #sub5 > #img63 {
+    position: absolute;
+    left: 129vh;
+    top: 631vh;
+    width: 503px;
+    height: 327px;
+}
+
+.bt1 {
+    position: absolute;
+    top: 673vh;
+    left: 34vh;
+    height: 37px;
+    width: 131px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #9b59b6;
+    color: white;
+    border-radius: 19px;
+}
+
+.bt2 {
+    position: absolute;
+    top: 674vh;
+    left: 155vh;
+    height: 37px;
+    width: 135px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #9b59b6;
+    color: white;
+    border-radius: 19px;
+}
+
+.bt1 > a {
+    text-decoration: none;
+    color: white;
+}
+
+.bt2 > a {
+    text-decoration: none;
+    color: white;
+}
+
+/*seventh content ended*/
+
+/*section covering--> section 8(eightContent)*/
+body > main > #eighthContent {
+    height: 100vh;
+    background-color: #76bdf1;
+}
+
+/*section covering end*/
+
+/* eighth content started */
+
+/*-----form started-------*/
+
+#sub7 {
+    position: absolute;
+    left: 136vh;
+    top: 718vh;
+}
+
+div > #H3-7 {
+    font-family: 'Acme', sans-serif;
+    top: -9vh;
+    left: 0vh;
+    font-size: 26px;
+    position: absolute;
+    color: white;
+}
+
+.para2 {
+    position: relative;
+    top: -18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    left: 12px;
+    color: black;
+}
+
+.para3 {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    top: -21px;
+    font-size: 20px;
+    left: 12px;
+    color: black;
+}
+
+#div1 {
+    position: relative;
+    top: -3vh;
+    left: 16px;
+}
+
+.H4 {
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+#input1 {
+    position: relative;
+    top: -62px;
+    left: 8vh
+}
+
+#input2 {
+    position: relative;
+    left: 74px;
+    top: -23vh;
+}
+
+#h4 {
+    position: relative;
+    left: 15px;
+    top: -14vh;
+}
+
+#h41 {
+    position: relative;
+    top: -25vh;
+    left: -11px;
+}
+
+.submit {
+    position: absolute;
+    top: 63vh;
+    left: 10vh;
+    width: 21vh;
+    height: 34px;
+    font-family: 'ubuntu', sans-serif;
+    color: white;
+    background-color: #9b59b6;
+    border-radius: 23px;
+}
+
+.inputClz {
+    width: 39vh;
+    border: 2px solid #9b59b6;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.txt {
+    position: relative;
+    left: 74px;
+    top: -33vh;
+    border: 2px solid #9b59b6;
+    border-radius: 15px;
+}
+
+/*-------form ended------*/
+
+.main-content {
+    position: absolute;
+    top: 708vh;
+    font-family: 'Acme', sans-serif;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#sub6 {
+    position: absolute;
+    top: 716vh;
+}
+
+#sub6 > ul {
+    list-style: none;
+    position: relative;
+    left: -27px;
+}
+
+ul > li {
+    padding: 4px;
+}
+
+#div5 {
+    position: relative;
+    top: -64vh;
+    left: 12vh;
+}
+
+#div5 > p > a {
+    text-decoration: none;
+    color: white;
+    font-family: 'ubuntu', sans-serif;
+}
+
+#div5 > p > a:hover {
+    color: #ff253a;
+    cursor: pointer;
+}
+
+p > #anc1 {
+    position: relative;
+    top: 22px;
+}
+
+p > #anc2 {
+    position: relative;
+    top: 52px;
+}
+
+p > #anc3 {
+    position: relative;
+    top: 83px;
+}
+
+p > #anc4 {
+    position: relative;
+    top: 16vh;
+}
+
+p > #anc5 {
+    position: relative;
+    top: 147px;
+}
+
+p > #anc6 {
+    position: relative;
+    top: 24vh;
+}
+
+p > #anc7 {
+    position: relative;
+    top: 27vh;
+}
+
+/*eighth content ended*/
+
+/*footer started*/
+#footer1 {
+    position: relative;
+    background-color: #34495e;
+    /* text-align: center; */
+    height: 19vh;
+}
+
+div > #p3 {
+    position: absolute;
+    left: 86vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 17px;
+}
+
+div > #p4 {
+    position: absolute;
+    left: 75vh;
+    top: 4vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+div > #p5 {
+    position: absolute;
+    top: 82px;
+    left: 69px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+div > #p6 {
+    position: absolute;
+    left: 93vh;
+    top: 83px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+div > #img79 {
+    left: 86vh;
+    top: 85px;
+    position: absolute;
+}
+
+div > #p8 {
+    top: 83px;
+    left: 178vh;
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+div > #img80 {
+    left: 171vh;
+    top: 86px;
+    position: absolute;
+}
+
+div > #img81 {
+    position: absolute;
+    left: 29px;
+    top: 82px;
+}
+
+#img123 {
+    position: fixed;
+    z-index: 1;
+    width: 6vh;
+    top: 89vh;
+    left: 197vh;
+}
+
+/*main page images --> started*/
+
+#facebook {
+    height: 70px;
+    width: 70px;
+}
+
+#instagram {
+    height: 70px;
+    width: 70px;
+}
+
+#linkedin {
+    height: 70px;
+    width: 70px;
+}
+
+#github {
+    height: 70px;
+    width: 70px;
+}
+
+#youtube {
+    height: 70px;
+    width: 70px;
+}
+
+#twitter {
+    height: 70px;
+    width: 70px;
+}
+
+/*main page images --> ended*/
+
+
+/*Contact Us Page --> started*/
+
+#list1 {
+    height: 52px;
+    width: 53px;
+}
+
+#list2 {
+    height: 54px;
+    width: 54px;
+}
+
+#list3 {
+    height: 54px;
+    width: 54px;
+}
+
+#list4 {
+    height: 54px;
+    width: 54px;
+}
+
+#list5 {
+    height: 53px;
+    width: 54px;
+}
+
+#list6 {
+    height: 48px;
+    width: 52px;
+}
+
+#list7 {
+    height: 45px;
+    width: 47px;
+}
+
+/*My Skils --> Started*/
+/*My Skils --> Started*/
+#java {
+    height: 100px;
+    width: 100px;
+}
+
+#hibernate {
+    height: 100px;
+    width: 100px;
+}
+
+#mysql {
+    height: 100px;
+    width: 100px;
+}
+
+#nodeJs {
+    height: 100px;
+    width: 100px;
+}
+
+#html {
+    height: 100px;
+    width: 100px;
+}
