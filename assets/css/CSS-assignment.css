@@ -290,9 +290,12 @@ div > #p4 {
 
 .class9{
     position: absolute;
-    left: 166vh;
-    top: 128vh;
+    left: 165vh;
+    top: 127vh;
     border-radius: 17px;
-    width: 129px;
-    height: 31px;
+    width: 143px;
+    height: 34px;
+    background-color: #9b59b6;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
 }
