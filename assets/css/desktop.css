@@ -29,7 +29,7 @@ div > #H1-6 {
     position: absolute;
     left: 78vh;
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
     font-size: 35px;
     letter-spacing: 1px;
 }
@@ -42,7 +42,7 @@ div > #H1-6 {
 div > #h3 {
     position: absolute;
     left: 196vh;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
     font-size: 27px;
     top: 1px;
     letter-spacing: 1px;
