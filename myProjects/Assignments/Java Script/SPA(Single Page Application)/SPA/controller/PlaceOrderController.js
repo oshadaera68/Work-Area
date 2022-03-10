@@ -377,18 +377,18 @@ $("#searchOrder").on('shown.bs.modal', function () {
 
 // btn search order function
 $("#btnSearchOrder").click(function (){
-    let searchOid = $("#txtSearchOrderId").val();
-    searchOrderByOrderDetailTable(searchOid);
-    searchOrderByOrderTable(searchOid);
+   let searchOid = $("#txtSearchOrderId").val();
+   searchOrderByOrderDetailTable(searchOid);
+   searchOrderByOrderTable(searchOid);
 });
 
 // btn clear search field function
 $("#btnClearSearchOrderField").click(function () {
-    $("#txtSearchOrderId").val("");
-    $("#txtSearchOrderId").css('border','1px solid #ced4da');
-    $("#txtSearchOrderId").focus();
-    loadOrderTable();
-    loadOrderDetailTable();
+   $("#txtSearchOrderId").val("");
+   $("#txtSearchOrderId").css('border','1px solid #ced4da');
+   $("#txtSearchOrderId").focus();
+   loadOrderTable();
+   loadOrderDetailTable();
 });
 
 // add validation to search order text field

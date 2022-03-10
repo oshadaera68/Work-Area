@@ -4,7 +4,7 @@
     background: black;
 }
 .naviItems>li:hover{
-    background-color: red;
+    background-color: lightgreen;
     cursor: pointer;
 }
 .customerPageNavi:hover{
@@ -29,11 +29,13 @@
     position: relative;
     height: 30vh;
     overflow: auto;
+    /*background-color: white;*/
 }
 .customeTableDiv{
     position: relative;
     height: 30vh;
     overflow: auto;
+    /*background-color: white;*/
 }
 .cartTbleDiv{
     position: relative;
@@ -55,5 +57,6 @@
     height: 85vh;
 }
 .orderTableDiv{
-    height: 35%;
+    height: 20vh;
+    overflow: auto;
 }
