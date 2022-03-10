@@ -434,7 +434,7 @@ div > #para1 {
     font-size: 48px;
     font-family: 'Acme', sans-serif;
     left: 19px;
-    color: white;
+    color: rgba(255, 255, 255, 0.73);
 }
 
 div > #para2 {
@@ -628,14 +628,14 @@ body > main > #forthContent {
     position: absolute;
     top: 2515px;
     font-family: 'Ubuntu', sans-serif;
-    color: white;
+    color: rgba(255, 255, 255, 0.73);
 }
 
 #forthContent > div > #hr6 {
     position: absolute;
     top: 2225px;
     font-family: 'Ubuntu', sans-serif;
-    color: white;
+    color: rgba(255, 255, 255, 0.73);
 }
 
 #forthContent > #div4 {
@@ -738,7 +738,7 @@ div > #H3-2 {
     font-family: 'Acme', sans-serif;
     top: 508vh;
     left: 88vh;
-    color: white;
+    color: rgba(255, 255, 255, 0.73);
     font-size: 34px;
 }
 
@@ -746,7 +746,7 @@ div > #H3-3 {
     position: absolute;
     top: 554vh;
     font-family: 'Source Code Pro', monospace;
-    color: white;
+    color: rgba(255, 255, 255, 0.73);
     font-size: 26px;
     left: 1vh;
 }
@@ -755,7 +755,7 @@ div > #H3-4 {
     position: absolute;
     font-family: 'Source Code Pro', monospace;
     top: 516vh;
-    color: white;
+    color: rgba(255, 255, 255, 0.76);
     font-size: 28px;
 }
 
@@ -1257,4 +1257,9 @@ div > #img81 {
 #html {
     height: 100px;
     width: 100px;
+}
+
+.new{
+    text-decoration: none;
+    color: white;
 }

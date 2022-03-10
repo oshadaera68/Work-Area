@@ -1,0 +1,46 @@
+/**
+ *Powered By:MINDARTLK.
+ *version:v0.1.0
+ **/
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 78px;
+}
+
+p:nth-child(1) {
+    color: #3498db;
+    left: 21vh;
+    position: absolute;
+    top: 8vh;
+}
+
+p:nth-child(2) {
+    color: #9b59b6;
+    left: 33vh;
+    position: absolute;
+    top: 35vh;
+}
+#footer {
+    position: relative;
+    background-color: #34495e;
+    height: 13vh;
+    top: 87vh;
+}
+div > #p3 {
+    position: absolute;
+    left: 88vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 17px;
+    top: 0;
+}
+
+div > #p4 {
+    position: absolute;
+    left: 75vh;
+    top: 4vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 17px;
+}
