@@ -4,7 +4,7 @@
     background: black;
 }
 .naviItems>li:hover{
-    background-color: lightgreen;
+    background-color: red;
     cursor: pointer;
 }
 .customerPageNavi:hover{
