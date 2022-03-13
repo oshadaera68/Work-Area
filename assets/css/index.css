@@ -862,7 +862,7 @@ div > #sub5 > #img63 {
 
 .bt1 {
     position: absolute;
-    top: 673vh;
+    top: 671vh;
     left: 34vh;
     height: 37px;
     width: 131px;
@@ -874,7 +874,7 @@ div > #sub5 > #img63 {
 
 .bt2 {
     position: absolute;
-    top: 674vh;
+    top: 671vh;
     left: 155vh;
     height: 37px;
     width: 135px;
@@ -1033,8 +1033,8 @@ ul > li {
 }
 
 #div5 {
-    position: relative;
-    top: -64vh;
+    position: absolute;
+    top: 0vh;
     left: 12vh;
 }
 
@@ -1056,32 +1056,32 @@ p > #anc1 {
 
 p > #anc2 {
     position: relative;
-    top: 52px;
+    top: 50px;
 }
 
 p > #anc3 {
     position: relative;
-    top: 83px;
+    top: 81px;
 }
 
 p > #anc4 {
     position: relative;
-    top: 16vh;
+    top: 15vh;
 }
 
 p > #anc5 {
     position: relative;
-    top: 147px;
+    top: 145px;
 }
 
 p > #anc6 {
     position: relative;
-    top: 24vh;
+    top: 170px;
 }
 
 p > #anc7 {
     position: relative;
-    top: 27vh;
+    top: 25vh;
 }
 
 /*eighth content ended*/
@@ -1156,8 +1156,8 @@ div > #img81 {
     position: fixed;
     z-index: 1;
     width: 6vh;
-    top: 89vh;
-    left: 197vh;
+    top: 81vh;
+    left: 187vh;
 }
 
 /*main page images --> started*/
@@ -1259,7 +1259,7 @@ div > #img81 {
     width: 100px;
 }
 
-.new{
+.new {
     text-decoration: none;
     color: white;
 }
