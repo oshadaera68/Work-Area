@@ -545,7 +545,7 @@ div > #H2-1 {
 
 #thirdContent > #art4 {
     position: absolute;
-    top: 1983px;
+    top: 2094px !important;
     left: 918px;
     background-color: blue;
     color: white;
@@ -556,8 +556,8 @@ div > #H2-1 {
 
 #img4 {
     position: relative;
-    left: 126vh;
-    top: 551px;
+    left: 120vh;
+    top: 573px !important;
     height: 94px;
 }
 

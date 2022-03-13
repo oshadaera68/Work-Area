@@ -225,7 +225,7 @@ div > #img4 {
 
 #h3 {
     position: absolute;
-    left: 197vh;
+    left: 188vh !important;
     font-family: 'Acme', sans-serif;
     letter-spacing: 1px;
     font-size: 23px;
