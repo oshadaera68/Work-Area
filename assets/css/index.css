@@ -626,21 +626,21 @@ body > main > #forthContent {
 
 #forthContent > div > #hr5 {
     position: absolute;
-    top: 2515px;
+    top: 338vh;
     font-family: 'Ubuntu', sans-serif;
     color: rgba(255, 255, 255, 0.73);
 }
 
 #forthContent > div > #hr6 {
     position: absolute;
-    top: 2225px;
+    top: 311vh !important;
     font-family: 'Ubuntu', sans-serif;
     color: rgba(255, 255, 255, 0.73);
 }
 
 #forthContent > #div4 {
     position: absolute;
-    top: 2292px;
+    top: 319vh;
     border: 2px solid red;
     background-color: #6f4e4e;
 }
@@ -649,7 +649,7 @@ body > main > #forthContent {
     border: 2px solid red;
     background-color: #6f4e4e;
     position: absolute;
-    top: 2566px;
+    top: 345vh;
 }
 
 #sub1 > img {
@@ -1012,7 +1012,7 @@ div > #H3-7 {
     position: absolute;
     top: 708vh;
     font-family: 'Acme', sans-serif;
-    color: white;
+    color: rgba(255, 255, 255, 0.73);
     font-size: 30px;
     letter-spacing: 1px;
 }
