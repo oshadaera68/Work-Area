@@ -39,8 +39,8 @@ div > #img3 {
 
 .class1 {
     position: absolute;
-    left: 28vh;
-    top: 43vh;
+    left: 26vh;
+    top: 41vh;
     width: 21vh;
     height: 33px;
     border-radius: 21px;
@@ -65,7 +65,7 @@ div > #img4 {
 }
 
 .class2 {
-    top: 318px;
+    top: 326px;
     position: absolute;
     left: 93vh;
     width: 156px;
@@ -87,8 +87,8 @@ div > #img4 {
 
 .class3 {
     position: absolute;
-    left: 163vh;
-    top: 45vh;
+    left: 162vh;
+    top: 43vh;
     width: 154px;
     height: 31px;
     border-radius: 16px;
@@ -150,8 +150,8 @@ div > #img4 {
 
 .class6 {
     position: absolute;
-    left: 164vh;
-    top: 84vh;
+    left: 165vh;
+    top: 81vh;
     width: 149px;
     height: 32px;
     border-radius: 16px;
@@ -172,7 +172,7 @@ div > #img4 {
 .class7 {
     position: absolute;
     left: 25vh;
-    top: 127vh;
+    top: 125vh;
     width: 149px;
     height: 32px;
     border-radius: 16px;
