@@ -43,8 +43,8 @@ div > #img2 {
 
 .assignment1 {
     position: relative;
-    left: 147vh;
-    top: 380px;
+    left: 144vh;
+    top: 398px;
     width: 141px;
     height: 36px;
     border-radius: 23px;
@@ -55,7 +55,7 @@ div > #img2 {
 
 #h4 {
     position: absolute;
-    left: 188vh;
+    left: 175vh !important;
     top: 0vh;
     font-size: 24px;
     font-family: 'Ubuntu', sans-serif;

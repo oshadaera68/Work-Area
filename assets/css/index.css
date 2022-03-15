@@ -382,7 +382,7 @@ div > #H1-4 {
 
 div > .button3 {
     position: absolute;
-    left: 134vh;
+    left: 111vh;
     top: 81vh;
     width: 164px;
     height: 40px;
@@ -525,6 +525,17 @@ div > #H2-1 {
     height: 84px;
 }
 
+#thirdContent > #art4 {
+    position: absolute;
+    top: 2171px !important;
+    left: 918px;
+    background-color: blue;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    height: 85px;
+}
+
 #thirdContent > #art3 {
     top: 260vh;
     position: absolute;
@@ -543,21 +554,10 @@ div > #H2-1 {
     height: 108px;
 }
 
-#thirdContent > #art4 {
-    position: absolute;
-    top: 2094px !important;
-    left: 918px;
-    background-color: blue;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    height: 85px;
-}
-
 #img4 {
     position: relative;
     left: 120vh;
-    top: 573px !important;
+    top: 584px !important;
     height: 94px;
 }
 
@@ -854,7 +854,7 @@ div > #sub5 > #img62 {
 
 div > #sub5 > #img63 {
     position: absolute;
-    left: 129vh;
+    left: 126vh !important;
     top: 631vh;
     width: 503px;
     height: 327px;
@@ -862,8 +862,8 @@ div > #sub5 > #img63 {
 
 .bt1 {
     position: absolute;
-    top: 671vh;
-    left: 34vh;
+    top: 669vh;
+    left: 32vh;
     height: 37px;
     width: 131px;
     font-family: 'Ubuntu', sans-serif;
@@ -874,8 +874,8 @@ div > #sub5 > #img63 {
 
 .bt2 {
     position: absolute;
-    top: 671vh;
-    left: 155vh;
+    top: 670vh;
+    left: 149vh !important;
     height: 37px;
     width: 135px;
     font-family: 'Ubuntu', sans-serif;
@@ -1134,14 +1134,14 @@ div > #img79 {
 
 div > #p8 {
     top: 83px;
-    left: 178vh;
+    left: 172vh;
     position: absolute;
     font-family: 'Ubuntu', sans-serif;
     color: white;
 }
 
 div > #img80 {
-    left: 171vh;
+    left: 165vh !important;
     top: 86px;
     position: absolute;
 }
@@ -1157,7 +1157,7 @@ div > #img81 {
     z-index: 1;
     width: 6vh;
     top: 81vh;
-    left: 187vh;
+    left: 181vh;
 }
 
 /*main page images --> started*/
