@@ -1,29 +1,46 @@
 /**
  *Powered By:MINDARTLK.
  *version:v0.1.0
- **/
+**/
 
-function animateColors() {
-    let colour1 = $("section>div:nth-child(1)").css('background-color');
-    let colour2 = $("section>div:nth-child(2)").css('background-color');
-    let colour3 = $("section>div:nth-child(3)").css('background-color');
-    let colour4 = $("section>div:nth-child(4)").css('background-color');
-    let colour5 = $("section>div:nth-child(5)").css('background-color');
+var divColors=["#ff0000", "#ff3333", "#ff5c5c", "#ff7575", "#ff9999", "#fac3c3"];
+var divIds=[$("#d1"),$("#d2"),$("#d3"),$("#d4"),$("#d5"),$("#d6")];
 
-    $("section>div:nth-child(1)").css('background-color',colour2);
-    $("section>div:nth-child(2)").css('background-color',colour3);
-    $("section>div:nth-child(3)").css('background-color',colour4);
-    $("section>div:nth-child(4)").css('background-color',colour5);
-    $("section>div:nth-child(5)").css('background-color',colour1);
+function makeArray() {
 
 }
 
-let timerId
-$("#btnStart").click(function () {
-    clearInterval(timerId);
-    timerId =   setInterval(animateColors,100);
-});
+function clearColor() {
+    for (var i = 0; i < divIds.length; i++) {
+        divIds[i].css("background-color", "white");
+    }
+}
+let IntervalX;
+var i= 0;
+function forward() {
+    clearColor();
+    divIds[i].css("background-color", divColors[0]);
+    i++;
+    if (i == 6) {
+        i=0;
+        clearInterval(intervalF);
+        IntervalX = setInterval(backward,300);
+    }
+}
 
-$("#btnStop").click(function () {
-    clearInterval(timerId);
-});
+
+x = 5
+function backward() {
+    clearColor();
+    divIds[x].css("background-color", divColors[0]);
+    x--;
+    if (x == -1) {
+        x=5;
+        clearInterval(IntervalX);
+        start();
+    }
+}
+function start() {
+    intervalF = setInterval(forward, 300);
+}
+let intervalF = setInterval(forward, 300);
